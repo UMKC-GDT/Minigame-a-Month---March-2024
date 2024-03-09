@@ -1,0 +1,3519 @@
+fileFormatVersion: 2
+guid: 6ccfea0841afa3447b15030be9033894
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: office tiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69.811874, y: 70.18469}
+        - {x: 69.79187, y: 60.306396}
+        - {x: 60.008133, y: 60.278442}
+        - {x: 59.986877, y: -9.730591}
+        - {x: 50.186874, y: -9.712524}
+        - {x: 50.16562, y: 0.14953613}
+        - {x: -30.779377, y: 0.1015625}
+        - {x: -30.799374, y: -9.690674}
+        - {x: -39.494377, y: -9.690674}
+        - {x: -37.734375, y: 61.53846}
+        - {x: -39.921875, y: 63.726494}
+        - {x: -47.578125, y: 63.726494}
+        - {x: -47.578125, y: 72.47863}
+        - {x: -49.765625, y: 74.666664}
+        - {x: -70.546875, y: 74.666664}
+        - {x: -73.828125, y: 71.38461}
+        - {x: -73.651024, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 70}
+      - - {x: -39.600628, y: -30.486938}
+        - {x: -30.733128, y: -30.567017}
+        - {x: -30.833126, y: -39.275024}
+        - {x: -39.540623, y: -39.234985}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 71fa99da1f64a1f4db5d18384efcb6ca
+      internalID: -70680313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 41, y: 80}
+        - {x: -30.003159, y: 80}
+        - {x: -30.028702, y: 70.13464}
+        - {x: -80, y: 70.18982}
+        - {x: -80, y: -80}
+        - {x: 71, y: -80}
+        - {x: 71, y: 71}
+        - {x: 41, y: 71}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6f6c4621273cc47867b7d8901cdb0f
+      internalID: 2105117375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: 80}
+        - {x: -41, y: 80}
+        - {x: -41, y: 71}
+        - {x: -71, y: 71}
+        - {x: -71, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 71}
+        - {x: 31, y: 71}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 13ad8119bc8f5534b9da0c09f899d65b
+      internalID: 352970734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1120
+        width: 159
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 48.5, y: 71}
+        - {x: 48.5, y: 61}
+        - {x: 38.5, y: 61}
+        - {x: 38.67188, y: -6.2905984}
+        - {x: 34.29688, y: -6.2905984}
+        - {x: 34.29688, y: 2.4615386}
+        - {x: 32.10938, y: 4.649573}
+        - {x: -48.82812, y: 4.649573}
+        - {x: -51.01562, y: 2.4615386}
+        - {x: -51.01562, y: -6.2905984}
+        - {x: -55.39062, y: -6.2905984}
+        - {x: -55.39062, y: 61.53846}
+        - {x: -57.57812, y: 63.726494}
+        - {x: -65.23437, y: 63.726494}
+        - {x: -65.23437, y: 71.38461}
+        - {x: -68.51562, y: 74.666664}
+        - {x: -79.45312, y: 74.666664}
+        - {x: -79.5, y: -80}
+        - {x: 74.5, y: -80}
+        - {x: 74.5, y: 71}
+      - - {x: 31.5, y: -31}
+        - {x: 39.5, y: -31}
+        - {x: 39.5, y: -39}
+        - {x: 31.5, y: -39}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 08bffd6856c4bb94e9b2bc08e4719c70
+      internalID: -463951747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b28074f07de7f4296e47d3e68fee6f
+      internalID: -1332082667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d82b123c56c0d48860877719fa8dd4
+      internalID: 1341824033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332d00cdf541d5242ab73a95ca1c113f
+      internalID: 636417838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e4853a06124554bb289b1aa44d28db
+      internalID: 1178357636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e61d806c6ed67d42a269e2120257eeb
+      internalID: 1828844987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c1e65413f02e043b2c99ba16236a3c
+      internalID: 452841593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_10
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd696edeb3fe4304095a9c6e577e7959
+      internalID: -704083055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_11
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e19389ad8d33934790a67889963636a
+      internalID: 820020879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_12
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f45352fdd772e4d9cc542888aa805e
+      internalID: 1879846137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_13
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1120
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd03cdfdee8f8ff4ca6731d22ccdacd5
+      internalID: 869778017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70.159004, y: 80}
+        - {x: -70.16, y: 59.5}
+        - {x: -60.392838, y: 59.509277}
+        - {x: -60.363125, y: 9.138062}
+        - {x: -50.546875, y: 9.118042}
+        - {x: -50.579376, y: -0.6879883}
+        - {x: -30.779373, y: -0.6879883}
+        - {x: -30.771873, y: -11.53418}
+        - {x: -21.135624, y: -11.554199}
+        - {x: -21.115623, y: -39.002563}
+        - {x: -30.759373, y: -39.01062}
+        - {x: -30.819374, y: -49.888733}
+        - {x: -40.663124, y: -49.87671}
+        - {x: -40.655624, y: -70.70514}
+        - {x: -8.996872, y: -70.74512}
+        - {x: -8.969376, y: -60.858948}
+        - {x: 9.629379, y: -60.79712}
+        - {x: 9.616875, y: -70.785095}
+        - {x: 40.34938, y: -70.7771}
+        - {x: 40.32937, y: -49.87677}
+        - {x: 30.445625, y: -49.90869}
+        - {x: 30.465622, y: -39.9906}
+        - {x: 20.66188, y: -40.06256}
+        - {x: 20.701874, y: -10.614136}
+        - {x: 30.438126, y: -10.574219}
+        - {x: 30.445625, y: -0.6480713}
+        - {x: 60.043137, y: -0.7080078}
+        - {x: 60.03061, y: 9.238037}
+        - {x: 69.85188, y: 9.258057}
+        - {x: 69.773346, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 5d544da1701adfd4abbae31bf95ca248
+      internalID: -198202014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: -21}
+        - {x: 29, y: -21}
+        - {x: 29, y: -71}
+        - {x: 39, y: -71}
+        - {x: 39, y: -80}
+        - {x: 61, y: -80}
+        - {x: 61, y: 9}
+        - {x: 71, y: 9}
+        - {x: 71, y: 80}
+        - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: -69, y: -80}
+        - {x: -69, y: -71}
+        - {x: -59, y: -71}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: eb3e1a866f6d4814fb0aed5bf43b9dca
+      internalID: 216381852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_16
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: -71}
+        - {x: -29, y: -21}
+        - {x: 59, y: -21}
+        - {x: 59, y: -71}
+        - {x: 69, y: -71}
+        - {x: 69, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+        - {x: -71, y: 80}
+        - {x: -71, y: 9}
+        - {x: -61, y: 9}
+        - {x: -61, y: -80}
+        - {x: -39, y: -80}
+        - {x: -39, y: -71}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 3d9dd2d50b9edc8459d963cc1fedcf30
+      internalID: -1970591085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_17
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 960
+        width: 159
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -61.95312, y: 0}
+        - {x: -59.76562, y: -2.1880343}
+        - {x: -31.32812, y: -2.1880343}
+        - {x: -31.32812, y: -9.846154}
+        - {x: -29.14062, y: -12.034188}
+        - {x: -21.48437, y: -12.034188}
+        - {x: -21.48437, y: -36.102566}
+        - {x: -29.14062, y: -36.102566}
+        - {x: -31.32812, y: -38.2906}
+        - {x: -31.32812, y: -45.94872}
+        - {x: -38.98437, y: -45.94872}
+        - {x: -41.17187, y: -48.136753}
+        - {x: -41.17187, y: -70.0171}
+        - {x: -38.98437, y: -72.20513}
+        - {x: -7.26562, y: -72.20513}
+        - {x: -5.07812, y: -70.0171}
+        - {x: -5.07812, y: -62.358974}
+        - {x: 8.04688, y: -62.358974}
+        - {x: 8.04688, y: -70.0171}
+        - {x: 10.23438, y: -72.20513}
+        - {x: 41.95313, y: -72.20513}
+        - {x: 44.14063, y: -70.0171}
+        - {x: 44.14063, y: -48.136753}
+        - {x: 41.95313, y: -45.94872}
+        - {x: 34.29688, y: -45.94872}
+        - {x: 34.29688, y: -38.2906}
+        - {x: 32.10938, y: -36.102566}
+        - {x: 24.453129, y: -36.102566}
+        - {x: 24.453129, y: -12.034188}
+        - {x: 32.10938, y: -12.034188}
+        - {x: 34.29688, y: -9.846154}
+        - {x: 34.29688, y: -2.1880343}
+        - {x: 51.79688, y: -2.1880343}
+        - {x: 53.98438, y: 0}
+        - {x: 53.98438, y: 7.6581197}
+        - {x: 62.73438, y: 7.6581197}
+        - {x: 64.92188, y: 9.846154}
+        - {x: 64.92188, y: 57.982906}
+        - {x: 72.57813, y: 57.982906}
+        - {x: 74.76563, y: 60.17094}
+        - {x: 74.76563, y: 80}
+        - {x: -79.45312, y: 80}
+        - {x: -79.45312, y: -79.86325}
+        - {x: -65.23437, y: -79.86325}
+        - {x: -65.23437, y: 7.6581197}
+        - {x: -61.95312, y: 7.6581197}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 8484c702f9e53ef4ab7509e994e1036d
+      internalID: -1773986327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_18
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232fab3a925656c4984943dfbb000a7c
+      internalID: 1572294258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b77213ff42941f42a116af5cd55fd17
+      internalID: -125547278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30aae8114f2150342b0276a798a03a41
+      internalID: 554822144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_21
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db3b227fc273154698d07447871ef0e
+      internalID: -1301446447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a69a3aa30617e64cabab7c31a0d0834
+      internalID: 1519835861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_23
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d8e804505505b438823bd0e5858383
+      internalID: 1045159702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_24
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a75a58757ef0a409cfb38406e680a6
+      internalID: 31477449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_25
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6440189a3aca3c140aa22adde0d21260
+      internalID: -646312006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_26
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b794d760c9a92424b8e7ed96be330af0
+      internalID: 205521267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_27
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc4f68cae21a894bacafa2b0e8ee584
+      internalID: 1910883180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1546ad493168f4469b2e302293ba5ac
+      internalID: 321312607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43.475616, y: 79.42175}
+        - {x: 39.995636, y: 79.42169}
+        - {x: 39.983124, y: 80}
+        - {x: -33.046867, y: 80}
+        - {x: -33.046867, y: 73.02564}
+        - {x: -80, y: 73.02564}
+        - {x: -80, y: -80}
+        - {x: 73.04688, y: -80}
+        - {x: 73.04688, y: 70.83761}
+        - {x: 70.85938, y: 73.02564}
+        - {x: 43.515633, y: 73.02564}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: ec69b3d9c55c5ba42932d6a86cca7c63
+      internalID: -1656963475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_30
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.98439, y: 80}
+        - {x: -42.585022, y: 80}
+        - {x: -42.57811, y: 73.02564}
+        - {x: -69.92186, y: 73.02564}
+        - {x: -72.10936, y: 70.83761}
+        - {x: -72.10936, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 73.02564}
+        - {x: 33.98439, y: 73.02564}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 5226fcb544bae3d4598a1fe63051e8e1
+      internalID: 1230353635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b87f7262f0e42440afacb5259796966
+      internalID: -781071676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -72.578094, y: -28.717949}
+        - {x: -72.578094, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: -16.683762}
+        - {x: -60.546844, y: -16.683762}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce300849d17508b4ebeddf2a6ecebfc5
+      internalID: -29713756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_33
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -79.92185, y: -16.683762}
+        - {x: -79.92185, y: -80}
+        - {x: 73.20314, y: -80}
+        - {x: 73.20314, y: -25.435898}
+        - {x: 64.45314, y: -16.683762}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa8d961a974e9d46be8317782285cc9
+      internalID: 1441431265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_34
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.328114, y: -18.871796}
+        - {x: -41.328114, y: -26.529915}
+        - {x: -48.984364, y: -26.529915}
+        - {x: -52.265614, y: -29.811966}
+        - {x: -52.265614, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: -16.683762}
+        - {x: -39.140614, y: -16.683762}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: d7a15c5a995662b4289203542dff10d4
+      internalID: 338249491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_35
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: -16.683762}
+        - {x: -80, y: -16.683762}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 5db8f578166b9834c8647960204aef1b
+      internalID: 351280721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_36
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.86609, y: 80}
+        - {x: 36.953182, y: 73.02564}
+        - {x: -10.078068, y: 73.02564}
+        - {x: -12.265568, y: 70.83761}
+        - {x: -12.265568, y: 63.179485}
+        - {x: -30.859318, y: 63.179485}
+        - {x: -33.046818, y: 60.99145}
+        - {x: -33.046818, y: 53.333332}
+        - {x: -40.703068, y: 53.333332}
+        - {x: -42.890568, y: 51.145298}
+        - {x: -42.890568, y: -0.2735043}
+        - {x: -40.703068, y: -2.4615386}
+        - {x: -33.046818, y: -2.4615386}
+        - {x: -33.046818, y: -16.683762}
+        - {x: -50.546818, y: -16.683762}
+        - {x: -52.734318, y: -18.871796}
+        - {x: -52.734318, y: -26.529915}
+        - {x: -60.390568, y: -26.529915}
+        - {x: -62.578068, y: -28.717949}
+        - {x: -62.578068, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 5286f08f3b675e548a4d47f17dfa1fec
+      internalID: 1294476127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_37
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.35935, y: -18.871796}
+        - {x: 71.17185, y: -16.683762}
+        - {x: 53.671856, y: -16.683762}
+        - {x: 53.671856, y: -2.4615386}
+        - {x: 61.328106, y: -2.4615386}
+        - {x: 63.515606, y: -0.2735043}
+        - {x: 63.515606, y: 51.145298}
+        - {x: 61.328106, y: 53.333332}
+        - {x: 53.671856, y: 53.333332}
+        - {x: 53.671856, y: 60.99145}
+        - {x: 51.484356, y: 63.179485}
+        - {x: 33.984356, y: 63.179485}
+        - {x: 33.984356, y: 70.83761}
+        - {x: 31.796856, y: 73.02564}
+        - {x: -16.328144, y: 73.02564}
+        - {x: -16.328125, y: 80}
+        - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: -26.529915}
+        - {x: 73.35935, y: -26.529915}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: a0e462ae3d369644bb28b0d01143c95d
+      internalID: 563918917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_38
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.12504, y: 70.83761}
+        - {x: 38.12504, y: 63.179485}
+        - {x: 20.625038, y: 63.179485}
+        - {x: 18.437538, y: 60.99145}
+        - {x: 18.437538, y: 53.333332}
+        - {x: 10.781288, y: 53.333332}
+        - {x: 7.500038, y: 50.05128}
+        - {x: 7.500038, y: -47.31624}
+        - {x: -0.15621185, y: -47.31624}
+        - {x: -2.3437119, y: -49.504272}
+        - {x: -2.3437119, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 73.02564}
+        - {x: 40.31254, y: 73.02564}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 84903a922898c1b49973d381d79ffa77
+      internalID: -1200081176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_39
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.953163, y: 51.145298}
+        - {x: -9.140663, y: 53.333332}
+        - {x: -16.796913, y: 53.333332}
+        - {x: -16.796913, y: 60.99145}
+        - {x: -18.984413, y: 63.179485}
+        - {x: -37.578163, y: 63.179485}
+        - {x: -37.578163, y: 70.83761}
+        - {x: -39.765663, y: 73.02564}
+        - {x: -80, y: 73.02564}
+        - {x: -80, y: -80}
+        - {x: 2.8905869, y: -80}
+        - {x: 2.8905869, y: -49.504272}
+        - {x: 0.70308685, y: -47.31624}
+        - {x: -6.953163, y: -47.31624}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 2db42ee22b3bd6647bd44b90b9eaf6a3
+      internalID: -1013872419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_40
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.20314, y: 41.299145}
+        - {x: 71.01564, y: 43.48718}
+        - {x: 50.234394, y: 43.48718}
+        - {x: 48.046894, y: 41.299145}
+        - {x: 48.046894, y: 32.54701}
+        - {x: 19.609394, y: 32.54701}
+        - {x: 17.421894, y: 30.358974}
+        - {x: 17.421894, y: 22.700855}
+        - {x: 9.765644, y: 22.700855}
+        - {x: 7.578144, y: 20.512821}
+        - {x: 7.578144, y: 9.57265}
+        - {x: 9.765644, y: 7.3846154}
+        - {x: 17.421894, y: 7.3846154}
+        - {x: 17.421894, y: 3.008547}
+        - {x: 9.765644, y: 3.008547}
+        - {x: 7.578144, y: 0.82051283}
+        - {x: 7.578144, y: -6.837607}
+        - {x: -0.07810593, y: -6.837607}
+        - {x: -2.265606, y: -9.025641}
+        - {x: -2.265606, y: -16.683762}
+        - {x: -9.921856, y: -16.683762}
+        - {x: -12.109356, y: -18.871796}
+        - {x: -12.109356, y: -26.529915}
+        - {x: -19.765606, y: -26.529915}
+        - {x: -21.953106, y: -28.717949}
+        - {x: -21.953106, y: -37.470085}
+        - {x: -30.703106, y: -37.470085}
+        - {x: -32.890606, y: -39.65812}
+        - {x: -32.890606, y: -50.59829}
+        - {x: -30.703106, y: -52.786324}
+        - {x: -21.953106, y: -52.786324}
+        - {x: -21.953106, y: -60.444443}
+        - {x: -19.765606, y: -62.632477}
+        - {x: 7.578144, y: -62.632477}
+        - {x: 7.578144, y: -70.290596}
+        - {x: 9.765644, y: -72.47863}
+        - {x: 27.265644, y: -72.47863}
+        - {x: 27.265644, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 32.54701}
+        - {x: 73.20314, y: 32.54701}
+      physicsShape:
+      - - {x: 79, y: -80}
+        - {x: 79, y: -79}
+        - {x: 80, y: -79}
+        - {x: 80, y: -80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40940dd7d5a09944e88c8bcdf8177fd0
+      internalID: 763869560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_41
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.796799, y: -70.290596}
+        - {x: -9.609299, y: -72.47863}
+        - {x: 2.4219513, y: -72.47863}
+        - {x: 4.6094513, y: -70.290596}
+        - {x: 4.6094513, y: -62.632477}
+        - {x: 12.265701, y: -62.632477}
+        - {x: 14.453201, y: -60.444443}
+        - {x: 14.453201, y: -49.504272}
+        - {x: 12.265701, y: -47.31624}
+        - {x: 4.6094513, y: -47.31624}
+        - {x: 4.6094513, y: -42.94017}
+        - {x: 12.265701, y: -42.94017}
+        - {x: 14.453201, y: -40.752136}
+        - {x: 14.453201, y: -18.871796}
+        - {x: 12.265701, y: -16.683762}
+        - {x: 4.6094513, y: -16.683762}
+        - {x: 4.6094513, y: -9.025641}
+        - {x: 2.4219513, y: -6.837607}
+        - {x: -6.3280487, y: -6.837607}
+        - {x: -6.3280487, y: 0.82051283}
+        - {x: -8.515549, y: 3.008547}
+        - {x: -16.171799, y: 3.008547}
+        - {x: -16.171799, y: 10.666667}
+        - {x: -18.359299, y: 12.854701}
+        - {x: -26.015549, y: 12.854701}
+        - {x: -26.015549, y: 20.512821}
+        - {x: -28.203049, y: 22.700855}
+        - {x: -35.8593, y: 22.700855}
+        - {x: -35.8593, y: 30.358974}
+        - {x: -38.0468, y: 32.54701}
+        - {x: -69.76555, y: 32.54701}
+        - {x: -71.95305, y: 30.358974}
+        - {x: -71.95305, y: 22.700855}
+        - {x: -76.32805, y: 22.700855}
+        - {x: -76.32805, y: 30.358974}
+        - {x: -78.51555, y: 32.54701}
+        - {x: -79.6093, y: 32.54701}
+        - {x: -79.6093, y: -80}
+        - {x: -16.171799, y: -80}
+        - {x: -16.171799, y: -62.632477}
+        - {x: -11.796799, y: -62.632477}
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: -79}
+        - {x: -79, y: -79}
+        - {x: -79, y: -80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e3c63785f081c4980f4d52116d18a2
+      internalID: -1552574884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd1615afffc49e4b9f188d09d2a3fc2
+      internalID: -666339181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_43
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.109367, y: -71.65812}
+        - {x: -57.109367, y: -23.521368}
+        - {x: 27.109383, y: -23.521368}
+        - {x: 27.109383, y: -71.65812}
+        - {x: 29.296883, y: -73.84615}
+        - {x: 36.953133, y: -73.84615}
+        - {x: 36.953133, y: -80}
+        - {x: 63.203133, y: -80}
+        - {x: 63.203133, y: 7.111111}
+        - {x: 70.85938, y: 7.111111}
+        - {x: 73.04688, y: 9.299146}
+        - {x: 73.04688, y: 80}
+        - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: -66.95312, y: -80}
+        - {x: -66.95312, y: -73.84615}
+        - {x: -59.296867, y: -73.84615}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: e70d12196b904cc4f93959bd9ca76f0a
+      internalID: 992943087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_44
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.17186, y: -23.521368}
+        - {x: 58.04689, y: -23.521368}
+        - {x: 58.04689, y: -71.65812}
+        - {x: 60.23439, y: -73.84615}
+        - {x: 67.89064, y: -73.84615}
+        - {x: 67.89064, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+        - {x: -72.10936, y: 80}
+        - {x: -72.10936, y: 9.299146}
+        - {x: -69.92186, y: 7.111111}
+        - {x: -62.26561, y: 7.111111}
+        - {x: -62.26561, y: -80}
+        - {x: -36.01561, y: -80}
+        - {x: -36.01561, y: -73.84615}
+        - {x: -28.35936, y: -73.84615}
+        - {x: -26.17186, y: -71.65812}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 4e3e10b28ab92254da97a7e60097307e
+      internalID: 1601967834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_45
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5c23a3a31d67a4a9d7553f46a333a7
+      internalID: -1414047662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_46
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: 80}
+        - {x: -72.578094, y: 80}
+        - {x: -72.578094, y: -21.333334}
+        - {x: -70.390594, y: -23.521368}
+        - {x: -62.734344, y: -23.521368}
+        - {x: -62.734344, y: -71.65812}
+        - {x: -60.546844, y: -73.84615}
+        - {x: -52.890594, y: -73.84615}
+        - {x: -52.890594, y: -80}
+        - {x: -26.640596, y: -80}
+        - {x: -26.640596, y: -53.05983}
+        - {x: 80, y: -53.05983}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 699a2701bf335704a936c3db158c9eb4
+      internalID: 153446543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_47
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.359394, y: -23.521368}
+        - {x: 71.01564, y: -23.521368}
+        - {x: 73.20314, y: -21.333334}
+        - {x: 73.20314, y: 80}
+        - {x: -79.92185, y: 80}
+        - {x: -79.92185, y: -53.05983}
+        - {x: 27.265644, y: -53.05983}
+        - {x: 27.265644, y: -80}
+        - {x: 53.515644, y: -80}
+        - {x: 53.515644, y: -73.84615}
+        - {x: 61.171894, y: -73.84615}
+        - {x: 63.359394, y: -71.65812}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: e8952ce0a4e57b241893ffcbb6e9c963
+      internalID: -949302483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_48
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.265614, y: 80}
+        - {x: -52.324646, y: -23.531311}
+        - {x: -43.62036, y: -23.609009}
+        - {x: -42.64441, y: -73.88928}
+        - {x: -33.447388, y: -73.90027}
+        - {x: -33.59143, y: -80}
+        - {x: -8.286743, y: -80}
+        - {x: -7.927002, y: -53.275513}
+        - {x: 80, y: -53.038208}
+        - {x: 80, y: 80}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c13e27f7ef413743a3eef3a9cb05546
+      internalID: -998152152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_49
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 80}
+        - {x: -80, y: -53.05983}
+        - {x: 46.484375, y: -53.05983}
+        - {x: 46.484375, y: -80}
+        - {x: 72.734375, y: -80}
+        - {x: 72.734375, y: -73.84615}
+        - {x: 80, y: -73.84615}
+        - {x: 80, y: 80}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 2acf480696ef60d41b02d8aab2f2d434
+      internalID: -1408592856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_50
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: 80}
+        - {x: -62.578068, y: 80}
+        - {x: -62.578068, y: -21.333334}
+        - {x: -60.390568, y: -23.521368}
+        - {x: -52.734318, y: -23.521368}
+        - {x: -52.734318, y: -71.65812}
+        - {x: -50.546818, y: -73.84615}
+        - {x: -42.890568, y: -73.84615}
+        - {x: -42.890568, y: -80}
+        - {x: -16.640568, y: -80}
+        - {x: -16.640568, y: -53.05983}
+        - {x: 80, y: -53.05983}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 6b315c7ad7dc53946ae188254de20a29
+      internalID: 416145276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_51
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.35935, y: -23.521368}
+        - {x: 80, y: -23.521368}
+        - {x: 80, y: 80}
+        - {x: -80, y: 80}
+        - {x: -80, y: -53.08905}
+        - {x: 38.359356, y: -53.05983}
+        - {x: 38.359356, y: -80}
+        - {x: 63.515606, y: -80}
+        - {x: 63.515606, y: -73.84615}
+        - {x: 71.17185, y: -73.84615}
+        - {x: 73.35935, y: -71.65812}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 08140887e8bec924f864a2e310cf478b
+      internalID: 1579638833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_52
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.3437119, y: 80}
+        - {x: -2.3437119, y: -70.5641}
+        - {x: 0.93753815, y: -73.84615}
+        - {x: 7.500038, y: -73.84615}
+        - {x: 7.500038, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 01b30980c4761c24bb3c047910a3334f
+      internalID: 756355679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_53
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.8905869, y: 80}
+        - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: -6.953163, y: -80}
+        - {x: -6.953163, y: -73.84615}
+        - {x: 0.70308685, y: -73.84615}
+        - {x: 2.8905869, y: -71.65812}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 2f5ea96818ac4314fb2f3d9c1b4bcaa3
+      internalID: -1727213481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_54
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 27.265644, y: 80}
+        - {x: 28.359394, y: 77.128204}
+        - {x: 48.046894, y: 77.128204}
+        - {x: 48.046894, y: 58.529915}
+        - {x: 50.234394, y: 56.34188}
+        - {x: 57.890644, y: 56.34188}
+        - {x: 57.890644, y: 42.11966}
+        - {x: 29.453144, y: 42.11966}
+        - {x: 27.265644, y: 39.931625}
+        - {x: 27.265644, y: 32.273506}
+        - {x: 19.609394, y: 32.273506}
+        - {x: 17.421894, y: 30.08547}
+        - {x: 17.421894, y: 22.427351}
+        - {x: 9.765644, y: 22.427351}
+        - {x: 7.578144, y: 20.239317}
+        - {x: 7.578144, y: -21.333334}
+        - {x: 9.765644, y: -23.521368}
+        - {x: 17.421894, y: -23.521368}
+        - {x: 17.421894, y: -50.871796}
+        - {x: 19.609394, y: -53.05983}
+        - {x: 27.265644, y: -53.05983}
+        - {x: 27.265644, y: -60.71795}
+        - {x: 29.453144, y: -62.905983}
+        - {x: 37.109394, y: -62.905983}
+        - {x: 37.109394, y: -70.5641}
+        - {x: 40.390644, y: -73.84615}
+        - {x: 48.046894, y: -73.84615}
+        - {x: 48.046894, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+      physicsShape:
+      - - {x: 58.984394, y: 41.025642}
+        - {x: 30.546894, y: 41.025642}
+        - {x: 28.359394, y: 38.83761}
+        - {x: 28.359394, y: 31.179487}
+        - {x: 20.703144, y: 31.179487}
+        - {x: 18.515644, y: 28.991453}
+        - {x: 18.515644, y: 21.333334}
+        - {x: 10.859394, y: 21.333334}
+        - {x: 8.671894, y: 19.1453}
+        - {x: 8.671894, y: -20.239317}
+        - {x: 10.859394, y: -22.427351}
+        - {x: 18.515644, y: -22.427351}
+        - {x: 18.515644, y: -49.77778}
+        - {x: 20.703144, y: -51.965813}
+        - {x: 28.359394, y: -51.965813}
+        - {x: 28.359394, y: -59.62393}
+        - {x: 30.546894, y: -61.811966}
+        - {x: 38.203144, y: -61.811966}
+        - {x: 38.203144, y: -69.470085}
+        - {x: 41.484394, y: -72.75214}
+        - {x: 49.140644, y: -72.75214}
+        - {x: 49.140644, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 41}
+      tessellationDetail: 1
+      bones: []
+      spriteID: ce858b0e1079365499d2ca10efad16e9
+      internalID: 853168596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_55
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.70305, y: -71.65812}
+        - {x: -45.70305, y: -62.905983}
+        - {x: -38.0468, y: -62.905983}
+        - {x: -35.8593, y: -60.71795}
+        - {x: -35.8593, y: -53.05983}
+        - {x: -28.203049, y: -53.05983}
+        - {x: -26.015549, y: -50.871796}
+        - {x: -26.015549, y: -23.521368}
+        - {x: -18.359299, y: -23.521368}
+        - {x: -16.171799, y: -21.333334}
+        - {x: -16.171799, y: 20.239317}
+        - {x: -18.359299, y: 22.427351}
+        - {x: -26.015549, y: 22.427351}
+        - {x: -26.015549, y: 30.08547}
+        - {x: -28.203049, y: 32.273506}
+        - {x: -35.8593, y: 32.273506}
+        - {x: -35.8593, y: 39.931625}
+        - {x: -38.0468, y: 42.11966}
+        - {x: -65.39055, y: 42.11966}
+        - {x: -65.39055, y: 46.495728}
+        - {x: -57.7343, y: 46.495728}
+        - {x: -55.5468, y: 48.68376}
+        - {x: -55.5468, y: 56.34188}
+        - {x: -18.359299, y: 56.34188}
+        - {x: -16.171799, y: 58.529915}
+        - {x: -16.171799, y: 80}
+        - {x: -79.6093, y: 80}
+        - {x: -79.6093, y: -80}
+        - {x: -55.5468, y: -80}
+        - {x: -55.5468, y: -73.84615}
+        - {x: -47.89055, y: -73.84615}
+      physicsShape:
+      - - {x: -46.7968, y: -70.5641}
+        - {x: -46.7968, y: -61.811966}
+        - {x: -39.14055, y: -61.811966}
+        - {x: -36.95305, y: -59.62393}
+        - {x: -36.95305, y: -51.965813}
+        - {x: -29.296799, y: -51.965813}
+        - {x: -27.109299, y: -49.77778}
+        - {x: -27.109299, y: -22.427351}
+        - {x: -19.453049, y: -22.427351}
+        - {x: -17.265549, y: -20.239317}
+        - {x: -17.265549, y: 19.1453}
+        - {x: -19.453049, y: 21.333334}
+        - {x: -27.109299, y: 21.333334}
+        - {x: -27.109299, y: 28.991453}
+        - {x: -29.296799, y: 31.179487}
+        - {x: -36.95305, y: 31.179487}
+        - {x: -36.95305, y: 38.83761}
+        - {x: -39.14055, y: 41.025642}
+        - {x: -66.4843, y: 41.025642}
+        - {x: -80, y: 41}
+        - {x: -79.6093, y: -80}
+        - {x: -56.64055, y: -80}
+        - {x: -56.64055, y: -72.75214}
+        - {x: -48.9843, y: -72.75214}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 7629fa4e8a1dd404987810fd43429642
+      internalID: -744361116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d428209abb59a674f858800b2bab7266
+      internalID: -1197128312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_57
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: -80}
+        - {x: 73, y: -80}
+        - {x: 73.04688, y: 72.47863}
+        - {x: 70.85938, y: 74.666664}
+        - {x: -80, y: 74.666664}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cb5d93b8249354e8174cb0bddc188e
+      internalID: -2005838496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cbba559caa34c4c87c10f8af2fb18d
+      internalID: 451835587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_59
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f53367dfe5b04a4b80b1cdb1150966a
+      internalID: 1432088116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_60
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.4219, y: 72.47863}
+        - {x: 30.234404, y: 74.666664}
+        - {x: -20.078096, y: 74.666664}
+        - {x: -23.359346, y: 71.38461}
+        - {x: -23.359346, y: 63.726494}
+        - {x: -70.390594, y: 63.726494}
+        - {x: -72.578094, y: 61.53846}
+        - {x: -72.55615, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 63.726494}
+        - {x: 32.4219, y: 63.726494}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: ce04bd8b856ba164d9f22c7ac6ab90b4
+      internalID: -360912889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_61
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.640606, y: 72.47863}
+        - {x: -8.828106, y: 74.666664}
+        - {x: -60.234356, y: 74.666664}
+        - {x: -62.421856, y: 72.47863}
+        - {x: -62.421856, y: 63.726494}
+        - {x: -79.92185, y: 63.726494}
+        - {x: -80, y: -80}
+        - {x: 73.29999, y: -80}
+        - {x: 73.20314, y: 61.53846}
+        - {x: 71.01564, y: 63.726494}
+        - {x: -6.640606, y: 63.726494}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: a436a2f7e494ed44c8767b27f034e359
+      internalID: 551027036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_62
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33ff420bba9e684fae0e0343cddccc3
+      internalID: -1671767438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_63
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f7820e348942f4189f831b6b4aaeb6
+      internalID: 1624168930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_64
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -62.578068, y: 72.47863}
+        - {x: -62.578068, y: -79.589745}
+        - {x: 80, y: -79.589745}
+        - {x: 80, y: 74.666664}
+        - {x: -60.390568, y: 74.666664}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 7d9ccc596161d22488792c7f0a0b152e
+      internalID: -1861885894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_65
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -79.76564, y: -79.589745}
+        - {x: 80, y: -79.589745}
+        - {x: 80, y: 74.666664}
+        - {x: -79.76564, y: 74.666664}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: df63632f2525e1c47a71cad3edbb7910
+      internalID: -342262532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_66
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57.81254, y: -8.478633}
+        - {x: 57.81254, y: -16.136753}
+        - {x: 40.31254, y: -16.136753}
+        - {x: 38.12504, y: -18.324787}
+        - {x: 38.12504, y: -25.982906}
+        - {x: 30.468788, y: -25.982906}
+        - {x: 28.281288, y: -28.17094}
+        - {x: 28.281288, y: -35.82906}
+        - {x: 20.625038, y: -35.82906}
+        - {x: 18.437538, y: -38.017094}
+        - {x: 18.437538, y: -45.675213}
+        - {x: 9.687538, y: -45.675213}
+        - {x: 7.500038, y: -47.863247}
+        - {x: 7.500038, y: -55.521366}
+        - {x: -0.15621185, y: -55.521366}
+        - {x: -2.3437119, y: -57.7094}
+        - {x: -2.3437119, y: -79.589745}
+        - {x: 80, y: -79.589745}
+        - {x: 80, y: -6.2905984}
+        - {x: 60.00004, y: -6.2905984}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: f4141b7234e1fb54dac8ed7b2007789d
+      internalID: 42124309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_67
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.8905869, y: -47.863247}
+        - {x: 0.70308685, y: -45.675213}
+        - {x: -6.953163, y: -45.675213}
+        - {x: -6.953163, y: -38.017094}
+        - {x: -9.140663, y: -35.82906}
+        - {x: -16.796913, y: -35.82906}
+        - {x: -16.796913, y: -28.17094}
+        - {x: -18.984413, y: -25.982906}
+        - {x: -26.640663, y: -25.982906}
+        - {x: -26.640663, y: -18.324787}
+        - {x: -28.828163, y: -16.136753}
+        - {x: -47.421913, y: -16.136753}
+        - {x: -47.421913, y: -8.478633}
+        - {x: -49.609413, y: -6.2905984}
+        - {x: -80, y: -6.2905984}
+        - {x: -80, y: -79.589745}
+        - {x: 12.734337, y: -79.589745}
+        - {x: 12.734337, y: -57.7094}
+        - {x: 10.546837, y: -55.521366}
+        - {x: 2.8905869, y: -55.521366}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 6baa7fd693081e94d9c7a3e00612bc73
+      internalID: 1610148122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_68
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 67.73439, y: 41.846153}
+        - {x: 67.73439, y: 34.188034}
+        - {x: 60.078144, y: 34.188034}
+        - {x: 57.890644, y: 32}
+        - {x: 57.890644, y: 19.965813}
+        - {x: 60.078144, y: 17.777779}
+        - {x: 67.73439, y: 17.777779}
+        - {x: 67.73439, y: 14.495727}
+        - {x: 60.078144, y: 14.495727}
+        - {x: 57.890644, y: 12.307693}
+        - {x: 57.890644, y: 4.649573}
+        - {x: 40.390644, y: 4.649573}
+        - {x: 37.109394, y: 1.3675214}
+        - {x: 37.109394, y: -9.57265}
+        - {x: 39.296894, y: -11.760684}
+        - {x: 48.046894, y: -11.760684}
+        - {x: 48.046894, y: -19.418804}
+        - {x: 50.234394, y: -21.606838}
+        - {x: 77.57814, y: -21.606838}
+        - {x: 77.57814, y: -35.82906}
+        - {x: 60.078144, y: -35.82906}
+        - {x: 57.890644, y: -38.017094}
+        - {x: 57.890644, y: -45.675213}
+        - {x: 50.234394, y: -45.675213}
+        - {x: 48.046894, y: -47.863247}
+        - {x: 48.046894, y: -59.897434}
+        - {x: 50.234394, y: -62.08547}
+        - {x: 67.73439, y: -62.08547}
+        - {x: 67.73439, y: -69.74359}
+        - {x: 69.92189, y: -71.931625}
+        - {x: 77.57814, y: -71.931625}
+        - {x: 77.57814, y: -76.30769}
+        - {x: 63.359394, y: -76.30769}
+        - {x: 63.359394, y: -67.55556}
+        - {x: 61.171894, y: -65.36752}
+        - {x: 43.671894, y: -65.36752}
+        - {x: 43.671894, y: -57.7094}
+        - {x: 41.484394, y: -55.521366}
+        - {x: 9.765644, y: -55.521366}
+        - {x: 8, y: -58}
+        - {x: 8, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 44.034187}
+        - {x: 69.92189, y: 44.034187}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 5c6d6aa14fda8fe4a8fb9d2bee522b20
+      internalID: 587763182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_69
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: -49}
+        - {x: -29, y: -49}
+        - {x: -29, y: -29}
+        - {x: -39, y: -29}
+        - {x: -39, y: -21}
+        - {x: -29, y: -21}
+        - {x: -29, y: 11}
+        - {x: -39, y: 11}
+        - {x: -39, y: 21}
+        - {x: -59, y: 21}
+        - {x: -59, y: 31}
+        - {x: -79, y: 31}
+        - {x: -79, y: 41}
+        - {x: -80, y: 41}
+        - {x: -80, y: -80}
+        - {x: -19, y: -80}
+        - {x: -19, y: -72}
+        - {x: 1, y: -72}
+      - - {x: -79, y: -41}
+        - {x: -61, y: -41}
+        - {x: -61, y: -49}
+        - {x: -79, y: -49}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 7ed65b9619e599549b9b426e780a4e6d
+      internalID: -1044986187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ca93d62b03d214e98a178f697d41ee
+      internalID: 1617027764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_71
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69088e90be3f4794d937106962da130e
+      internalID: -1485379241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_72
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70.7894, y: 80}
+        - {x: -70.746765, y: 9.065308}
+        - {x: -60.90692, y: 9.016785}
+        - {x: -60.915375, y: -79.480194}
+        - {x: 80, y: -79.47275}
+        - {x: 80, y: 80}
+      - - {x: -39.05362, y: -70.689026}
+        - {x: -29.19931, y: -70.66919}
+        - {x: -29.19931, y: -20.339935}
+        - {x: 59.352814, y: -20.365997}
+        - {x: 59.358, y: -70.683044}
+        - {x: 69.20477, y: -70.74628}
+        - {x: 69.21991, y: -79.44}
+        - {x: -39.04306, y: -79.45007}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 509f0342564a92b4e98200728deb2e9c
+      internalID: 1193458094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_73
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8e73e2dbe30a641aacd6ef342843e6
+      internalID: -1124479243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_74
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: -62.358974}
+        - {x: 80, y: 80}
+        - {x: -72.578094, y: 80}
+        - {x: -72.578094, y: 70.0171}
+        - {x: -70.390594, y: 67.82906}
+        - {x: -62.734344, y: 67.82906}
+        - {x: -62.734344, y: -19.692308}
+        - {x: -60.546844, y: -21.880342}
+        - {x: -52.890594, y: -21.880342}
+        - {x: -52.890594, y: -29.538462}
+        - {x: -50.703094, y: -31.726496}
+        - {x: -28.828096, y: -31.726496}
+        - {x: -26.640596, y: -29.538462}
+        - {x: -26.640596, y: -12.034188}
+        - {x: -13.515596, y: -12.034188}
+        - {x: -13.515596, y: -19.692308}
+        - {x: -11.328096, y: -21.880342}
+        - {x: 56.4844, y: -21.880342}
+        - {x: 56.4844, y: -36.102566}
+        - {x: 48.82815, y: -36.102566}
+        - {x: 46.64065, y: -38.2906}
+        - {x: 46.64065, y: -45.94872}
+        - {x: 38.9844, y: -45.94872}
+        - {x: 36.7969, y: -48.136753}
+        - {x: 36.7969, y: -70.0171}
+        - {x: 38.9844, y: -72.20513}
+        - {x: 70.703156, y: -72.20513}
+        - {x: 72.890656, y: -70.0171}
+        - {x: 72.890656, y: -62.358974}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 8cde900e5932fe5498f16046d2681704
+      internalID: -1360914203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_75
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.015606, y: -45.94872}
+        - {x: -46.015606, y: -39.384617}
+        - {x: -49.296856, y: -36.102566}
+        - {x: -56.953106, y: -36.102566}
+        - {x: -56.953106, y: -21.880342}
+        - {x: 10.859394, y: -21.880342}
+        - {x: 13.046894, y: -19.692308}
+        - {x: 13.046894, y: -12.034188}
+        - {x: 27.265644, y: -12.034188}
+        - {x: 27.265644, y: -29.538462}
+        - {x: 29.453144, y: -31.726496}
+        - {x: 51.328144, y: -31.726496}
+        - {x: 53.515644, y: -29.538462}
+        - {x: 53.515644, y: -21.880342}
+        - {x: 61.171894, y: -21.880342}
+        - {x: 63.359394, y: -19.692308}
+        - {x: 63.359394, y: 67.82906}
+        - {x: 71.01564, y: 67.82906}
+        - {x: 73, y: 70}
+        - {x: 73, y: 80}
+        - {x: -80, y: 80}
+        - {x: -80, y: -62.360016}
+        - {x: -72.2656, y: -62.358974}
+        - {x: -72.2656, y: -70.0171}
+        - {x: -70.0781, y: -72.20513}
+        - {x: -38.359356, y: -72.20513}
+        - {x: -36.171856, y: -70.0171}
+        - {x: -36.171856, y: -48.136753}
+        - {x: -38.359356, y: -45.94872}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 0a0b08a8eecd53040aa7768caa294a7c
+      internalID: -460740871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_76
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: 38.2906}
+        - {x: 80, y: 80}
+        - {x: -52.265614, y: 80}
+        - {x: -51.171864, y: 77.67522}
+        - {x: -41.328114, y: 77.67522}
+        - {x: -41.328114, y: -9.846154}
+        - {x: -39.140614, y: -12.034188}
+        - {x: -31.484365, y: -12.034188}
+        - {x: -31.484365, y: -19.692308}
+        - {x: -29.296865, y: -21.880342}
+        - {x: -8.515615, y: -21.880342}
+        - {x: -6.3281155, y: -19.692308}
+        - {x: -6.3281155, y: 38.2906}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: a03610507634b544fb59977ce16a795d
+      internalID: 553268233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_77
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: 80}
+        - {x: -80, y: 80}
+        - {x: -80, y: 38.2906}
+        - {x: 46.484375, y: 38.2906}
+        - {x: 46.484375, y: -19.692308}
+        - {x: 48.671875, y: -21.880342}
+        - {x: 70.546875, y: -21.880342}
+        - {x: 72.734375, y: -19.692308}
+        - {x: 72.734375, y: -12.034188}
+        - {x: 80, y: -12.034188}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 0ea765b04ea303f4eab7616c1207cc3f
+      internalID: 328641251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_78
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: 38.2906}
+        - {x: 80, y: 80}
+        - {x: -62.578068, y: 80}
+        - {x: -61.484318, y: 77.67522}
+        - {x: -52.734318, y: 77.67522}
+        - {x: -52.734318, y: -9.846154}
+        - {x: -50.546818, y: -12.034188}
+        - {x: -42.890568, y: -12.034188}
+        - {x: -42.890568, y: -19.692308}
+        - {x: -40.703068, y: -21.880342}
+        - {x: -18.828068, y: -21.880342}
+        - {x: -16.640568, y: -19.692308}
+        - {x: -16.640568, y: 38.2906}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 349b27ff5f21548438f0a08a97cb59f3
+      internalID: 214058697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_79
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 73.35935, y: -9.846154}
+        - {x: 73.35935, y: 77.67522}
+        - {x: 80, y: 77.67522}
+        - {x: 80, y: 80}
+        - {x: -79.76564, y: 80}
+        - {x: -79.76564, y: 38.2906}
+        - {x: 38.359356, y: 38.2906}
+        - {x: 38.359356, y: -19.692308}
+        - {x: 40.546856, y: -21.880342}
+        - {x: 61.328106, y: -21.880342}
+        - {x: 63.515606, y: -19.692308}
+        - {x: 63.515606, y: -12.034188}
+        - {x: 71.17185, y: -12.034188}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 864c12a9a53c4fb4988c7bf07bd72544
+      internalID: 1787568219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_80
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.3437119, y: 80}
+        - {x: -2.3437119, y: 43.760685}
+        - {x: 12.968788, y: 14.222222}
+        - {x: 55.62504, y: -12.034188}
+        - {x: 80, y: -12.034188}
+        - {x: 80, y: 80}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400da5c38c16020449424cb30be2ba28
+      internalID: 415176575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_81
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.828163, y: -2.1880343}
+        - {x: -26.640663, y: 0}
+        - {x: -26.640663, y: 7.6581197}
+        - {x: -18.984413, y: 7.6581197}
+        - {x: -16.796913, y: 9.846154}
+        - {x: -16.796913, y: 17.504274}
+        - {x: -9.140663, y: 17.504274}
+        - {x: -6.953163, y: 19.692308}
+        - {x: -6.953163, y: 27.350428}
+        - {x: 0.70308685, y: 27.350428}
+        - {x: 2.8905869, y: 29.538462}
+        - {x: 2.8905869, y: 48.136753}
+        - {x: 10.546837, y: 48.136753}
+        - {x: 12.734337, y: 50.324787}
+        - {x: 12.734337, y: 80}
+        - {x: -80, y: 80}
+        - {x: -80, y: -12.034188}
+        - {x: -49.609413, y: -12.034188}
+        - {x: -47.421913, y: -9.846154}
+        - {x: -47.421913, y: -2.1880343}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 4a0cc9f992f94b9449897b194fb7b065
+      internalID: 2072101540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_82
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.578144, y: 80}
+        - {x: 8.671894, y: 77.67522}
+        - {x: 17.421894, y: 77.67522}
+        - {x: 17.421894, y: 60.17094}
+        - {x: 19.609394, y: 57.982906}
+        - {x: 27.265644, y: 57.982906}
+        - {x: 27.265644, y: 50.324787}
+        - {x: 29.453144, y: 48.136753}
+        - {x: 37.109394, y: 48.136753}
+        - {x: 37.109394, y: 40.478634}
+        - {x: 39.296894, y: 38.2906}
+        - {x: 57.890644, y: 38.2906}
+        - {x: 57.890644, y: 33.91453}
+        - {x: 40.390644, y: 33.91453}
+        - {x: 37.109394, y: 30.632479}
+        - {x: 37.109394, y: 24.068377}
+        - {x: 29.453144, y: 24.068377}
+        - {x: 27.265644, y: 21.880342}
+        - {x: 27.265644, y: 13.128205}
+        - {x: 19.609394, y: 13.128205}
+        - {x: 17.421894, y: 10.940171}
+        - {x: 17.421894, y: -19.692308}
+        - {x: 19.609394, y: -21.880342}
+        - {x: 27.265644, y: -21.880342}
+        - {x: 27.265644, y: -60.17094}
+        - {x: 29.453144, y: -62.358974}
+        - {x: 37.109394, y: -62.358974}
+        - {x: 37.109394, y: -70.0171}
+        - {x: 39.296894, y: -72.20513}
+        - {x: 57.890644, y: -72.20513}
+        - {x: 57.890644, y: -79.86325}
+        - {x: 80, y: -79.86325}
+        - {x: 80, y: 80}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 5e3e5f70251cb03458815295df358c58
+      internalID: 495525448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_83
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 320
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.015549, y: -70.0171}
+        - {x: -26.015549, y: -62.358974}
+        - {x: -18.359299, y: -62.358974}
+        - {x: -16.171799, y: -60.17094}
+        - {x: -16.171799, y: -21.880342}
+        - {x: -8.515549, y: -21.880342}
+        - {x: -6.3280487, y: -19.692308}
+        - {x: -6.3280487, y: 10.940171}
+        - {x: -8.515549, y: 13.128205}
+        - {x: -16.171799, y: 13.128205}
+        - {x: -16.171799, y: 21.880342}
+        - {x: -18.359299, y: 24.068377}
+        - {x: -26.015549, y: 24.068377}
+        - {x: -26.015549, y: 31.726496}
+        - {x: -28.203049, y: 33.91453}
+        - {x: -35.8593, y: 33.91453}
+        - {x: -35.8593, y: 48.136753}
+        - {x: -28.203049, y: 48.136753}
+        - {x: -26.015549, y: 50.324787}
+        - {x: -26.015549, y: 61.264957}
+        - {x: -28.203049, y: 63.45299}
+        - {x: -35.8593, y: 63.45299}
+        - {x: -35.8593, y: 71.111115}
+        - {x: -38.0468, y: 73.29915}
+        - {x: -45.70305, y: 73.29915}
+        - {x: -45.70305, y: 77.67522}
+        - {x: -18.359299, y: 77.67522}
+        - {x: -16.171799, y: 79.86325}
+        - {x: -16.171799, y: 80}
+        - {x: -79.6093, y: 80}
+        - {x: -79.6093, y: -79.86325}
+        - {x: -45.70305, y: -79.86325}
+        - {x: -45.70305, y: -72.20513}
+        - {x: -28.203049, y: -72.20513}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: f29753fb01ba88b458a41b3a38edcf0f
+      internalID: 1962248848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18faf03e0b2b9c54192c82f8db157ac3
+      internalID: -1949349242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94db7ab3f2dc0847a572851109629c6
+      internalID: -943171641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_86
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a89d4fd43f910e44a25c9a6402c1496
+      internalID: 1382536848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_87
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -79.99999, y: 80}
+        - {x: -79.99999, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+      physicsShape: []
+      tessellationDetail: 1
+      bones: []
+      spriteID: 1eb579e6799211c4cb3e582e2dc8aa35
+      internalID: 133265657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_88
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa30014a5e32d241a7b37b2d4749fec
+      internalID: -390441717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_89
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8f5ebd33400ec4cb773473d6e38c17
+      internalID: 896159230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_90
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b678c96bfefaed0488fb9d6311a02119
+      internalID: 333012993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_91
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bc833e2f2e69343a6cc3134f45e2b3
+      internalID: 592346465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_92
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea9ecc75a16b3c44b1f096ef267c578
+      internalID: -1204492447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_93
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939c9896f8458d84e9cd29138714dfa6
+      internalID: -824086987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_94
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcca7b9414e7404e85c6b4b9c0549b5
+      internalID: -331967122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_95
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2042ef5eb6f89f4f9b120ec34b86290
+      internalID: -1589586468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_96
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745ccbb60768e9d43a5d4ef938a6369a
+      internalID: -1858057629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_97
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 160
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c6933bdc9915842bd49e88a9de0ceb
+      internalID: 1409014020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ddd6c8dc534fc46b82b7997e78a59a
+      internalID: -804570835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_99
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a36b55adb4600442bfbbea077453b9b
+      internalID: -447796477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_100
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6ff7a638a77ab479f21feb2359ea3b
+      internalID: -876421643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_101
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91cccde95a9bae4eb8492fb62baa8bc
+      internalID: -633809856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_102
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb5b370a48dc5a4fb3c501e233262d5
+      internalID: -1949310397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_103
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ffe5cebb3731e4f81d4ba66186d68c
+      internalID: -1237041161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_104
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe0c532a1b913b47b7787942bbe18f0
+      internalID: 753331743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_105
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531f09235ef9e544a984176071b2c372
+      internalID: 1990217143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_106
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3426d9dd9089fc418ae8e93911e5c35
+      internalID: -754935504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_107
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074a201a28685bb43bb3b3c4635fd623
+      internalID: 1234418915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_108
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720aadbe014a2ec4a8524e01aa12ad1e
+      internalID: -1521785973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_109
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b56644e8d857c94fa7479508c55aa73
+      internalID: 160748372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office tiles_110
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a33cf1e64fb8949806503223ab11e4
+      internalID: -1131537682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      office tiles_0: -70680313
+      office tiles_1: 2105117375
+      office tiles_10: -704083055
+      office tiles_100: -876421643
+      office tiles_101: -633809856
+      office tiles_102: -1949310397
+      office tiles_103: -1237041161
+      office tiles_104: 753331743
+      office tiles_105: 1990217143
+      office tiles_106: -754935504
+      office tiles_107: 1234418915
+      office tiles_108: -1521785973
+      office tiles_109: 160748372
+      office tiles_11: 820020879
+      office tiles_110: -1131537682
+      office tiles_12: 1879846137
+      office tiles_13: 869778017
+      office tiles_14: -198202014
+      office tiles_15: 216381852
+      office tiles_16: -1970591085
+      office tiles_17: -1773986327
+      office tiles_18: 1572294258
+      office tiles_19: -125547278
+      office tiles_2: 352970734
+      office tiles_20: 554822144
+      office tiles_21: -1301446447
+      office tiles_22: 1519835861
+      office tiles_23: 1045159702
+      office tiles_24: 31477449
+      office tiles_25: -646312006
+      office tiles_26: 205521267
+      office tiles_27: 1910883180
+      office tiles_28: 321312607
+      office tiles_29: -1656963475
+      office tiles_3: -463951747
+      office tiles_30: 1230353635
+      office tiles_31: -781071676
+      office tiles_32: -29713756
+      office tiles_33: 1441431265
+      office tiles_34: 338249491
+      office tiles_35: 351280721
+      office tiles_36: 1294476127
+      office tiles_37: 563918917
+      office tiles_38: -1200081176
+      office tiles_39: -1013872419
+      office tiles_4: -1332082667
+      office tiles_40: 763869560
+      office tiles_41: -1552574884
+      office tiles_42: -666339181
+      office tiles_43: 992943087
+      office tiles_44: 1601967834
+      office tiles_45: -1414047662
+      office tiles_46: 153446543
+      office tiles_47: -949302483
+      office tiles_48: -998152152
+      office tiles_49: -1408592856
+      office tiles_5: 1341824033
+      office tiles_50: 416145276
+      office tiles_51: 1579638833
+      office tiles_52: 756355679
+      office tiles_53: -1727213481
+      office tiles_54: 853168596
+      office tiles_55: -744361116
+      office tiles_56: -1197128312
+      office tiles_57: -2005838496
+      office tiles_58: 451835587
+      office tiles_59: 1432088116
+      office tiles_6: 636417838
+      office tiles_60: -360912889
+      office tiles_61: 551027036
+      office tiles_62: -1671767438
+      office tiles_63: 1624168930
+      office tiles_64: -1861885894
+      office tiles_65: -342262532
+      office tiles_66: 42124309
+      office tiles_67: 1610148122
+      office tiles_68: 587763182
+      office tiles_69: -1044986187
+      office tiles_7: 1178357636
+      office tiles_70: 1617027764
+      office tiles_71: -1485379241
+      office tiles_72: 1193458094
+      office tiles_73: -1124479243
+      office tiles_74: -1360914203
+      office tiles_75: -460740871
+      office tiles_76: 553268233
+      office tiles_77: 328641251
+      office tiles_78: 214058697
+      office tiles_79: 1787568219
+      office tiles_8: 1828844987
+      office tiles_80: 415176575
+      office tiles_81: 2072101540
+      office tiles_82: 495525448
+      office tiles_83: 1962248848
+      office tiles_84: -1949349242
+      office tiles_85: -943171641
+      office tiles_86: 1382536848
+      office tiles_87: 133265657
+      office tiles_88: -390441717
+      office tiles_89: 896159230
+      office tiles_9: 452841593
+      office tiles_90: 333012993
+      office tiles_91: 592346465
+      office tiles_92: -1204492447
+      office tiles_93: -824086987
+      office tiles_94: -331967122
+      office tiles_95: -1589586468
+      office tiles_96: -1858057629
+      office tiles_97: 1409014020
+      office tiles_98: -804570835
+      office tiles_99: -447796477
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
