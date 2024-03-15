@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -227,10 +227,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 73
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 6
     m_MaxSize: 111
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -246,6 +246,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304408049}
+  m_CullTransparentMesh: 1
+--- !u!1 &380687357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 380687358}
+  - component: {fileID: 380687360}
+  - component: {fileID: 380687359}
+  m_Layer: 5
+  m_Name: StrikeoutLine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &380687358
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380687357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1626949299}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 569.3, y: 10}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &380687359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380687357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &380687360
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380687357}
   m_CullTransparentMesh: 1
 --- !u!1 &519420028
 GameObject:
@@ -418,6 +493,7 @@ GameObject:
   - component: {fileID: 561988652}
   - component: {fileID: 561988654}
   - component: {fileID: 561988653}
+  - component: {fileID: 561988655}
   m_Layer: 5
   m_Name: Strike (2)
   m_TagString: Untagged
@@ -483,6 +559,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561988651}
   m_CullTransparentMesh: 1
+--- !u!114 &561988655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561988651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f02530eeff0ad3458848dbe63a64730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  cross: {fileID: 2143241836}
 --- !u!1 &643572006
 GameObject:
   m_ObjectHideFlags: 0
@@ -4220,6 +4310,7 @@ GameObject:
   - component: {fileID: 772734720}
   - component: {fileID: 772734722}
   - component: {fileID: 772734721}
+  - component: {fileID: 772734723}
   m_Layer: 5
   m_Name: TaskDescriptionPanel
   m_TagString: Untagged
@@ -4286,6 +4377,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772734719}
   m_CullTransparentMesh: 1
+--- !u!114 &772734723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772734719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944e579a2ae29c544ad2a81afdfed8de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskHeader: {fileID: 1741105975}
+  taskName: {fileID: 304408051}
 --- !u!1 &890208747
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,9 +4450,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 135
+    m_FontSize: 96
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 135
     m_Alignment: 4
@@ -4356,7 +4461,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5.00
+  m_Text: 99.99
 --- !u!222 &890208750
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4376,6 +4481,7 @@ GameObject:
   - component: {fileID: 1003545946}
   - component: {fileID: 1003545948}
   - component: {fileID: 1003545947}
+  - component: {fileID: 1003545949}
   m_Layer: 5
   m_Name: Strike (1)
   m_TagString: Untagged
@@ -4441,6 +4547,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003545945}
   m_CullTransparentMesh: 1
+--- !u!114 &1003545949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003545945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f02530eeff0ad3458848dbe63a64730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  cross: {fileID: 2019536895}
 --- !u!1 &1046046815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4864,6 +4984,7 @@ GameObject:
   - component: {fileID: 1432760738}
   - component: {fileID: 1432760740}
   - component: {fileID: 1432760739}
+  - component: {fileID: 1432760741}
   m_Layer: 5
   m_Name: TimerPanel
   m_TagString: Untagged
@@ -4929,6 +5050,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432760737}
   m_CullTransparentMesh: 1
+--- !u!114 &1432760741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432760737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aeaa5c84b0faed498fba1bfe6a1e3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 890208749}
 --- !u!1 &1626949298
 GameObject:
   m_ObjectHideFlags: 0
@@ -4940,6 +5074,7 @@ GameObject:
   - component: {fileID: 1626949299}
   - component: {fileID: 1626949301}
   - component: {fileID: 1626949300}
+  - component: {fileID: 1626949302}
   m_Layer: 5
   m_Name: StrikesDisplay
   m_TagString: Untagged
@@ -4962,6 +5097,7 @@ RectTransform:
   - {fileID: 1700543908}
   - {fileID: 1003545946}
   - {fileID: 561988652}
+  - {fileID: 380687358}
   m_Father: {fileID: 1908443870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -5007,6 +5143,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626949298}
   m_CullTransparentMesh: 1
+--- !u!114 &1626949302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626949298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87adccffbcf942440846dddc33c1dc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strikeOne: {fileID: 1700543911}
+  strikeTwo: {fileID: 1003545949}
+  strikeThree: {fileID: 561988655}
+  strikeoutLine: {fileID: 380687357}
+  activeStrikes: 0
 --- !u!1 &1700543907
 GameObject:
   m_ObjectHideFlags: 0
@@ -5018,6 +5171,7 @@ GameObject:
   - component: {fileID: 1700543908}
   - component: {fileID: 1700543910}
   - component: {fileID: 1700543909}
+  - component: {fileID: 1700543911}
   m_Layer: 5
   m_Name: Strike
   m_TagString: Untagged
@@ -5083,6 +5237,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700543907}
   m_CullTransparentMesh: 1
+--- !u!114 &1700543911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700543907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f02530eeff0ad3458848dbe63a64730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  cross: {fileID: 1046046817}
 --- !u!1 &1741105973
 GameObject:
   m_ObjectHideFlags: 0
