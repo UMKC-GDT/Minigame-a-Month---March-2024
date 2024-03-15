@@ -12,6 +12,7 @@ public class Task
 
     public Vector2 location;
 
+
     //constructor
     public Task(string n, float t, Vector2 l)
     {
@@ -20,9 +21,9 @@ public class Task
         location = l;
     }
 
-    
+
     //Coroutine for time
-    bool isRuningTimer { get { return runningTimer != null; } }
+    public bool isRuningTimer { get { return runningTimer != null; } }
     Coroutine runningTimer = null;
 
     //functions
@@ -39,6 +40,8 @@ public class Task
 
         StopRunningTimer();
         runningTimer = TaskManager.instance.StartCoroutine(RunTimer(timeLimit));
+
+
     }
 
     void StopRunningTimer()
@@ -59,6 +62,9 @@ public class Task
             yield return new WaitForSecondsRealtime(1);
             timer--;
             Debug.Log("Count Down: " + timer);
+            TimerDisplay.instance.setTime(timer);
+            TaskDescription.instance.taskName.text = taskName;
+
         }
         StopRunningTimer();
     }

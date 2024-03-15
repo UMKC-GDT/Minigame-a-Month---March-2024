@@ -5,6 +5,16 @@ using UnityEngine;
 
 public class StrikesDisplay : MonoBehaviour
 {
+    
+    //I added this to access in my Task Class -Cameron
+    public static StrikesDisplay instance;
+
+    void Awake()
+    {
+        instance = this;
+    }
+
+
     [Header("Strike Markers")]
     public Strike strikeOne;
     public Strike strikeTwo;
