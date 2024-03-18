@@ -4332,7 +4332,7 @@ RectTransform:
   m_Children:
   - {fileID: 1741105974}
   - {fileID: 304408050}
-  m_Father: {fileID: 1249982887}
+  m_Father: {fileID: 1908443870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4789,7 +4789,7 @@ GameObject:
   - component: {fileID: 1299870769}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5019,7 +5019,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 890208748}
-  m_Father: {fileID: 1249982887}
+  m_Father: {fileID: 1908443870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
