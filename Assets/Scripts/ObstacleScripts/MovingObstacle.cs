@@ -70,4 +70,8 @@ public class MovingObstacle : MonoBehaviour
         isMovingToggle = !isMovingToggle;                           // toggle flag
         obstacleSpeed = (isMovingToggle) ? originalSpeed : 0.0f;    // update speed based on flag
     }
+
+    // methods for activating and deactivating movement
+    public void ActivateMovement() { obstacleSpeed = 0; }
+    public void DeactivateMovement() { obstacleSpeed = originalSpeed; }
 }
