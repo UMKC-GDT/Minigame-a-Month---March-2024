@@ -29,6 +29,8 @@ public class Task
     //functions
     public void OnAssigned()
     {
+
+        TaskManager.instance.pin.transform.position = location;
         //update ui
         Debug.Log(location.x + ", " + location.y);
         Debug.DrawLine(location, new Vector2(location.x + 3, location.y), Color.red, timeLimit);
