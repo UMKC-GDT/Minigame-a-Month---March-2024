@@ -45,11 +45,16 @@ public class TaskManager : MonoBehaviour
     void Update()
     {
 
+        
         if(!currentTask.isRuningTimer){
             currentTask = tasks[ UnityEngine.Random.Range(0, tasks.Count)];
             
-            currentTask.OnAssigned();
+            if(StrikesDisplay.instance.activeStrikes < 2)
+                currentTask.OnAssigned();
+            StrikesDisplay.instance.addStrike();
         }
+        
+        
         //pick a random task from the list 
 
         //assign task
