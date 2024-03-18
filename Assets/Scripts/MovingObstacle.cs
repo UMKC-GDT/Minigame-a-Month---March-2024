@@ -22,17 +22,22 @@ public class MovingObstacle : MonoBehaviour
         currentWaypoint = (waypoints.Count > 0) ? waypoints[0] : null;
         currentWaypointDirection = GetDirection(currentWaypoint);
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+
         // if the obstacle collides with the player
         if (other.CompareTag("Player"))
+        {
             obstacleHit.Invoke();                                     // execute all methods assigned to obstacleHit
+            Debug.Log("Hit Player");
+        }
 
         // if the obstacle collides with a waypoint
         else if (other.CompareTag("Waypoint"))
         {
             currentWaypoint = GetNextWaypoint(currentWaypoint);       // get the next waypoint
             currentWaypointDirection = GetDirection(currentWaypoint); // get normalized vector of obstacle -> waypoint
+            Debug.Log("Hit waypoint");
         }
     }
 
@@ -55,7 +60,7 @@ public class MovingObstacle : MonoBehaviour
     private void MoveObstacle()
     {
         Vector2 currentPosition = new Vector2(this.transform.position.x, this.transform.position.y);
-        currentPosition += currentWaypointDirection * Time.deltaTime;
+        currentPosition += currentWaypointDirection * Time.deltaTime * obstacleSpeed;
         this.transform.position = currentPosition;
     }
 
