@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Locations : MonoBehaviour
 {
-    public List<Vector3> locations;
+    public List<GameObject> locations;
 
     public void Repopulate() {
         locations = new();
         foreach(Transform child in transform) {
-            locations.Add(child.transform.position);
+            locations.Add(child.transform.gameObject);
         }
     }
 }
