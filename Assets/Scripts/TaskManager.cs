@@ -10,6 +10,8 @@ public class TaskManager : MonoBehaviour
     public List<Task> tasks = new List<Task>();
 
     Task currentTask;
+    public GameObject pin;
+    
 
     void Awake()
     {
@@ -21,18 +23,21 @@ public class TaskManager : MonoBehaviour
     void Start()
     {
         //theres probabably a better way to do this
-        Task task1 = new Task("Deliver Coffee", 5f, new Vector2(42.5f, 32.5f));
+        Task task1 = new Task("Deliver Coffee", 5f, new Vector2(42.5f, 35f));
         tasks.Add(task1);
 
-        Task task2 = new Task("Write Email", 4f, new Vector2(-12.5f, 13.5f));
+        Task task2 = new Task("Write Email", 4f, new Vector2(-12.5f, 15f));
         tasks.Add(task2);
 
         
-        Task task3 = new Task("Pick up the Phone", 7f,new Vector2(67.5f, 13.5f));
+        Task task3 = new Task("Pick up the Phone", 7f,new Vector2(52f, 38.5f));
         tasks.Add(task3);
         
-        Task task4 = new Task("Type a Document", 5f,new Vector2(-12.5f, 13.5f));
+        Task task4 = new Task("Type a Document", 5f,new Vector2(6.5f, -20f));
         tasks.Add(task4);
+
+        Task task5 = new Task("Drink Water", 5f,new Vector2(-21.5f, 38.5f));
+        tasks.Add(task5);
 
         
         currentTask = tasks[0];
@@ -44,11 +49,16 @@ public class TaskManager : MonoBehaviour
     void Update()
     {
 
+        
         if(!currentTask.isRuningTimer){
             currentTask = tasks[ UnityEngine.Random.Range(0, tasks.Count)];
             
-            currentTask.OnAssigned();
+            if(StrikesDisplay.instance.activeStrikes < 2)
+                currentTask.OnAssigned();
+            StrikesDisplay.instance.addStrike();
         }
+        
+        
         //pick a random task from the list 
 
         //assign task
