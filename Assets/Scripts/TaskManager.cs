@@ -11,7 +11,6 @@ public class TaskManager : MonoBehaviour
 
     Task currentTask;
     public GameObject pin;
-    
 
     void Awake()
     {
@@ -35,9 +34,6 @@ public class TaskManager : MonoBehaviour
         
         Task task4 = new Task("Type a Document", 5f,new Vector2(6.5f, -20f));
         tasks.Add(task4);
-
-        Task task5 = new Task("Drink Water", 5f,new Vector2(-21.5f, 38.5f));
-        tasks.Add(task5);
 
         
         currentTask = tasks[0];

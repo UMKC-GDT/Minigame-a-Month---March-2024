@@ -29,11 +29,17 @@ public class Task
     //functions
     public void OnAssigned()
     {
-        //update ui
+
         TaskManager.instance.pin.transform.position = location;
-        
+        //update ui
+        Debug.Log(location.x + ", " + location.y);
+        Debug.DrawLine(location, new Vector2(location.x + 3, location.y), Color.red, timeLimit);
+        Debug.DrawLine(location, new Vector2(location.x - 3, location.y), Color.red, timeLimit);
+        Debug.DrawLine(location, new Vector2(location.x, location.y - 3), Color.red, timeLimit);
+        Debug.DrawLine(location, new Vector2(location.x, location.y + 3), Color.red, timeLimit);
         //start time 
         //start corroutine to time out 
+
         StopRunningTimer();
         runningTimer = TaskManager.instance.StartCoroutine(RunTimer(timeLimit));
 
@@ -57,8 +63,7 @@ public class Task
             //waiting 1 second in real time and increasing the timer value
             yield return new WaitForSecondsRealtime(1);
             timer--;
-            //Debug.Log("Count Down: " + timer);
-            
+            Debug.Log("Count Down: " + timer);
             TimerDisplay.instance.setTime(timer);
             TaskDescription.instance.taskName.text = taskName;
 
