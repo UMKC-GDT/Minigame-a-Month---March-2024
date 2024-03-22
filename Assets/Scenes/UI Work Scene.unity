@@ -172,11 +172,7 @@ MonoBehaviour:
   currentTask:
     taskName: 
     timeLimit: 0
-<<<<<<< Updated upstream
     type: 481
-=======
-    type: 67
->>>>>>> Stashed changes
     location: {x: 0, y: 0}
     deliverLocation: {x: 0, y: 0}
     deliverCheck: 0
