@@ -32,9 +32,27 @@ public class Interactable : MonoBehaviour
 
     }
 
-    public void Interact()
+    public void Interact(char taskType)
     {
-        Debug.Log("interacted");
+        switch (taskType)
+        {
+            case 'A':
+
+                Debug.Log("Task- arrive");
+                break;
+            case 'D':
+
+                Debug.Log("Task- deliver");
+                break;
+            case 'P':
+
+                Debug.Log("Task- popup");
+                break;
+            default:
+                break;
+        }
+
+
 
         //arrival tasks 
         //start animation 

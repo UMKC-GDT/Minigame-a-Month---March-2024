@@ -33,7 +33,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            CheckInteraction();
+            CheckInteraction(TaskManager.instance.currentTask.type);
+
         }
         
 
@@ -54,7 +55,7 @@ public class PlayerController : MonoBehaviour
         selectButton.SetActive(false);
     }
 
-    public void CheckInteraction()
+    public void CheckInteraction(char taskType)
     {
         RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
         
@@ -66,7 +67,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (rc.transform.GetComponent<Interactable>())
                 {
-                    rc.transform.GetComponent<Interactable>().Interact();
+                    rc.transform.GetComponent<Interactable>().Interact(taskType);
                 }
             }
         }

@@ -10,14 +10,17 @@ public class Task
     public string taskName;
     public float timeLimit;
 
+    public char type;
+
     public Vector2 location;
 
 
     //constructor
-    public Task(string n, float t, Vector2 l)
+    public Task(string n, float t, char c, Vector2 l)
     {
         taskName = n;
         timeLimit = t;
+        type = c;
         location = l;
     }
 
