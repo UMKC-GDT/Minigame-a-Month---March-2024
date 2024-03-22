@@ -172,7 +172,7 @@ MonoBehaviour:
   currentTask:
     taskName: 
     timeLimit: 0
-    type: 0
+    type: 481
     location: {x: 0, y: 0}
   previousIndex: 0
   pin: {fileID: 251810268}
@@ -186,6 +186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 251810270}
   - component: {fileID: 251810269}
+  - component: {fileID: 251810271}
   m_Layer: 0
   m_Name: Task Pin
   m_TagString: Untagged
@@ -261,6 +262,27 @@ Transform:
   - {fileID: 797410325}
   m_Father: {fileID: 108622387}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &251810271
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251810268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5ffa3f3162ec7f49bf6e39e6f09aabd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &304408049
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,6 +4788,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc91b52815eea44fb65022d576b7dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &797410327
 BoxCollider2D:
   m_ObjectHideFlags: 0

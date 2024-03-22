@@ -52,11 +52,14 @@ public class TaskManager : MonoBehaviour
         //Debug.Log(currentTask.taskName);
         if (!currentTask.isRuningTimer){
 
-            setNewTask(previousIndex);
+            setNewTask();
 
-             StrikesDisplay.instance.addStrike();
+            StrikesDisplay.instance.addStrike();
+            
+            if (StrikesDisplay.instance.activeStrikes == 3)
+                StopAllCoroutines();
+            
         }
-
 
             //pick a random task from the list 
 
@@ -66,7 +69,7 @@ public class TaskManager : MonoBehaviour
         
     }
 
-    public void setNewTask(int previousIndex)
+    public void setNewTask()
     {
         int randomIndex = UnityEngine.Random.Range(0, tasks.Count);
         while(randomIndex == previousIndex)
@@ -74,15 +77,22 @@ public class TaskManager : MonoBehaviour
             randomIndex = UnityEngine.Random.Range(0, tasks.Count);
         }
 
+        
+        Debug.Log("previous: "+previousIndex);
+        Debug.Log("curret: "+randomIndex);
+
         currentTask = tasks[randomIndex];
         previousIndex = randomIndex;
+
+
+        Debug.Log("strikes: "+StrikesDisplay.instance.activeStrikes);
 
         if (StrikesDisplay.instance.activeStrikes < 3)
         {
             StopAllCoroutines();
             currentTask.Assign();
         }
-
+        
 
     }
 }

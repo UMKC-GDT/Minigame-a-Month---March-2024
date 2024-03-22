@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
+    public UnityEvent onReset;
     private void Reset()
     {
         GetComponent<BoxCollider2D>().isTrigger = true;
+        onReset.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -75,7 +78,9 @@ public class Interactable : MonoBehaviour
         }
 
         //pick a new task
-        TaskManager.instance.setNewTask(TaskManager.instance.previousIndex);
+        //TaskManager.instance.setNewTask(TaskManager.instance.previousIndex);
+        
+        TaskManager.instance.setNewTask();
     }
 }
 

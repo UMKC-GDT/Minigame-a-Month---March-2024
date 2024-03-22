@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
                 if (rc.transform.GetComponent<Interactable>())
                 {
                     rc.transform.GetComponent<Interactable>().Interact(taskType);
+                    
                 }
             }
         }
