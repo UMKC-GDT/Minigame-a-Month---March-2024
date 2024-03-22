@@ -73,7 +73,8 @@ public class StrikesDisplay : MonoBehaviour
 
     public void addStrike()
     {
-        activeStrikes++;
+        if(activeStrikes<3)
+            activeStrikes++;
     }
 
     public void aemoveStrike()

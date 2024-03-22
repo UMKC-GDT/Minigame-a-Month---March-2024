@@ -13,15 +13,19 @@ public class Task
     public char type;
 
     public Vector2 location;
+    public Vector2 deliverLocation;
+
+    public bool deliverCheck;
 
 
     //constructor
-    public Task(string n, float t, char c, Vector2 l)
+    public Task(string n, float t, char c, Vector2 l, Vector2 v)
     {
         taskName = n;
         timeLimit = t;
         type = c;
         location = l;
+        deliverCheck = false;
     }
 
 
