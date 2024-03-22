@@ -11,7 +11,10 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
-    
+    public GameObject selectButton;
+
+    private Vector2 boxSize = new Vector2(1f, 1f);
+
 
     // Update is called once per frame
     void Update()
@@ -27,10 +30,47 @@ public class PlayerController : MonoBehaviour
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            CheckInteraction();
+        }
+        
+
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    public void OpenInteractableIcon()
+    {
+        selectButton.SetActive(true);
+    }
+
+    public void CloseInteractableIcon()
+    {
+        selectButton.SetActive(false);
+    }
+
+    public void CheckInteraction()
+    {
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, boxSize, 0, Vector2.zero);
+        
+
+        if (hits.Length > 0)
+        {
+            
+            foreach(RaycastHit2D rc in hits)
+            {
+                if (rc.transform.GetComponent<Interactable>())
+                {
+                    rc.transform.GetComponent<Interactable>().Interact();
+                }
+            }
+        }
+
+    }
+
 }

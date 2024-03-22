@@ -27,7 +27,7 @@ public class Task
     Coroutine runningTimer = null;
 
     //functions
-    public void OnAssigned()
+    public void Assign()
     {
 
         TaskManager.instance.pin.transform.position = location;
@@ -37,7 +37,7 @@ public class Task
 
         StopRunningTimer();
         runningTimer = TaskManager.instance.StartCoroutine(RunTimer(timeLimit));
-
+        
 
     }
 
@@ -45,10 +45,9 @@ public class Task
     {
         if (isRuningTimer)
             TaskManager.instance.StopCoroutine(runningTimer);
-
+        
         runningTimer = null;
     }
-
 
     IEnumerator RunTimer(float limit)
     {
@@ -58,9 +57,9 @@ public class Task
             //waiting 1 second in real time and increasing the timer value
             yield return new WaitForSecondsRealtime(1);
             timer--;
-            //Debug.Log("Count Down: " + timer);
             TimerDisplay.instance.setTime(timer);
             TaskDescription.instance.taskName.text = taskName;
+
 
         }
         StopRunningTimer();

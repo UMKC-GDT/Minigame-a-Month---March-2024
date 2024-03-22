@@ -9,7 +9,10 @@ public class TaskManager : MonoBehaviour
 
     public List<Task> tasks = new List<Task>();
 
-    Task currentTask;
+    public Task currentTask;
+    public int previousIndex;
+
+    [SerializeField]
     public GameObject pin;
 
     void Awake()
@@ -18,9 +21,11 @@ public class TaskManager : MonoBehaviour
     }
 
 
+
     // Start is called before the first frame update
     void Start()
     {
+
         //theres probabably a better way to do this
         Task task1 = new Task("Deliver Coffee", 5f, new Vector2(42.5f, 35f));
         tasks.Add(task1);
@@ -35,32 +40,48 @@ public class TaskManager : MonoBehaviour
         Task task4 = new Task("Type a Document", 5f,new Vector2(6.5f, -20f));
         tasks.Add(task4);
 
-        
-        currentTask = tasks[0];
+        previousIndex = UnityEngine.Random.Range(0, tasks.Count);
+        currentTask = tasks[previousIndex];
 
-        currentTask.OnAssigned();
+        currentTask.Assign();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(currentTask.taskName);
+        if (!currentTask.isRuningTimer){
 
-        
-        if(!currentTask.isRuningTimer){
-            currentTask = tasks[ UnityEngine.Random.Range(0, tasks.Count)];
-            
-            if(StrikesDisplay.instance.activeStrikes < 2)
-                currentTask.OnAssigned();
-            StrikesDisplay.instance.addStrike();
+            setNewTask(previousIndex);
+
+             StrikesDisplay.instance.addStrike();
         }
-        
-        
-        //pick a random task from the list 
 
-        //assign task
 
-        //when completed, pick a new task
-       
+            //pick a random task from the list 
+
+            //assign task
+
+            //when completed, pick a new task
+        
+    }
+
+    public void setNewTask(int previousIndex)
+    {
+        int randomIndex = UnityEngine.Random.Range(0, tasks.Count);
+        while(randomIndex == previousIndex)
+        {
+            randomIndex = UnityEngine.Random.Range(0, tasks.Count);
+        }
+
+        currentTask = tasks[randomIndex];
+        previousIndex = randomIndex;
+
+        if (StrikesDisplay.instance.activeStrikes < 2)
+        {
+            StopAllCoroutines();
+            currentTask.Assign();
+        }
 
 
     }

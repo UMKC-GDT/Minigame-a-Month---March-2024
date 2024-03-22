@@ -132,28 +132,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 108622387}
-  - component: {fileID: 108622386}
+  - component: {fileID: 108622388}
   m_Layer: 0
   m_Name: Task Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &108622386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108622385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2d640454152a83469619d590a3adc8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tasks: []
-  pin: {fileID: 251810268}
+  m_IsActive: 1
 --- !u!4 &108622387
 Transform:
   m_ObjectHideFlags: 0
@@ -170,6 +156,25 @@ Transform:
   - {fileID: 251810270}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &108622388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108622385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2d640454152a83469619d590a3adc8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tasks: []
+  currentTask:
+    taskName: 
+    timeLimit: 0
+    location: {x: 0, y: 0}
+  previousIndex: 0
+  pin: {fileID: 251810268}
 --- !u!1 &251810268
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,9 +254,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -51.8, y: 38.5, z: 10.279917}
-  m_LocalScale: {x: 32.03272, y: 32.03272, z: 32.03272}
+  m_LocalScale: {x: 23.538921, y: 23.538921, z: 23.538921}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 797410325}
   m_Father: {fileID: 108622387}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &304408049
@@ -4477,6 +4483,149 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskHeader: {fileID: 1741105975}
   taskName: {fileID: 304408051}
+--- !u!1 &797410324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797410325}
+  - component: {fileID: 797410328}
+  - component: {fileID: 797410327}
+  - component: {fileID: 797410326}
+  m_Layer: 0
+  m_Name: Interactable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &797410325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797410324}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.39012, y: 0.39012, z: 0.39012}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 251810270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &797410326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797410324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc91b52815eea44fb65022d576b7dd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &797410327
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797410324}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &797410328
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797410324}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &890208747
 GameObject:
   m_ObjectHideFlags: 0
@@ -4738,6 +4887,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046046815}
   m_CullTransparentMesh: 1
+--- !u!1 &1076575617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076575618}
+  - component: {fileID: 1076575619}
+  m_Layer: 0
+  m_Name: Select button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1076575618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076575617}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8399, y: 0.8703, z: 0}
+  m_LocalScale: {x: 1.2535996, y: 1.2162445, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1299870763}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1076575619
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076575617}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1379253631
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 447238548, guid: 2596c3a4870350c439393cde3c542ba9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1188531006
 GameObject:
   m_ObjectHideFlags: 0
@@ -4875,7 +5108,7 @@ GameObject:
   - component: {fileID: 1299870769}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4944,7 +5177,8 @@ Transform:
   m_LocalPosition: {x: -2, y: 7.0000787, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 105}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1076575618}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1299870764
@@ -5010,6 +5244,7 @@ MonoBehaviour:
   moveSpeed: 25
   rb: {fileID: 1299870764}
   animator: {fileID: 1299870766}
+  selectButton: {fileID: 1076575617}
 --- !u!60 &1299870769
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5569,7 +5804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1908443867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8584,17 +8819,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 7642009922445981594}
-  adjacentNodes:
-  - {fileID: 3320169909101754271}
-  - {fileID: 1145777094986475455}
-  - {fileID: 5724920570659418791}
-  - {fileID: 6297394752683630399}
-  - {fileID: 768405861524909724}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &45350904432474890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8727,11 +8957,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f96a56b0905fb49a03af13b0017e66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: {fileID: 3030157105254065835}
-  adjacencyRadius: 50
+  nodes: {fileID: 0}
+  adjacencyRadius: 0
   searchTag: AmbientWaypoint
-  start: {fileID: 2438057658063174603}
-  end: {fileID: 8117949378248458131}
+  start: {fileID: 0}
+  end: {fileID: 0}
 --- !u!4 &657930579684815520
 Transform:
   m_ObjectHideFlags: 0
@@ -8777,16 +9007,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 7999878511849730463}
-  adjacentNodes:
-  - {fileID: 842891785671045046}
-  - {fileID: 7714831525732752721}
-  - {fileID: 2173045378762763296}
-  - {fileID: 3017643195009719476}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &842891785671045046
 GameObject:
   m_ObjectHideFlags: 0
@@ -8817,16 +9043,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 4540885912892233301}
-  adjacentNodes:
-  - {fileID: 842891785671045046}
-  - {fileID: 7123751210063803355}
-  - {fileID: 7714831525732752721}
-  - {fileID: 2173045378762763296}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &1057170848146870489
 GameObject:
   m_ObjectHideFlags: 0
@@ -8911,12 +9133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 3184729548247795073}
+  boxCollider: {fileID: 0}
   adjacentNodes: []
-  radius: 100
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!4 &1354293955438311925
 Transform:
   m_ObjectHideFlags: 0
@@ -9022,18 +9244,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 9123530769994743955}
-  adjacentNodes:
-  - {fileID: 5984322924933975726}
-  - {fileID: 7395180947032292927}
-  - {fileID: 3320169909101754271}
-  - {fileID: 8749886719563596853}
-  - {fileID: 3523349825729077911}
-  - {fileID: 3962313477574843673}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!4 &1763476690777338219
 Transform:
   m_ObjectHideFlags: 0
@@ -9156,20 +9372,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 4414124642589946125}
-  adjacentNodes:
-  - {fileID: 3320169909101754271}
-  - {fileID: 1525372065584709789}
-  - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
-  - {fileID: 8956259195713479435}
-  - {fileID: 8749886719563596853}
-  - {fileID: 3523349825729077911}
-  - {fileID: 768405861524909724}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &2438057658063174603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9182,16 +9390,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 7963043059576740152}
-  adjacentNodes:
-  - {fileID: 7395180947032292927}
-  - {fileID: 2050480457300267495}
-  - {fileID: 8956259195713479435}
-  - {fileID: 3007395139291451308}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &2576927407323128362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9450,36 +9654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c5bf147f61f604695eafeb4d9d0db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locations:
-  - {fileID: 1057170848146870489}
-  - {fileID: 6794518956872500486}
-  - {fileID: 6404159066674465706}
-  - {fileID: 842891785671045046}
-  - {fileID: 7714831525732752721}
-  - {fileID: 1152940059965316792}
-  - {fileID: 5984322924933975726}
-  - {fileID: 7395180947032292927}
-  - {fileID: 7922786401554665656}
-  - {fileID: 4880282624964039869}
-  - {fileID: 5724920570659418791}
-  - {fileID: 1145777094986475455}
-  - {fileID: 5483076806763574868}
-  - {fileID: 3320169909101754271}
-  - {fileID: 1525372065584709789}
-  - {fileID: 3962313477574843673}
-  - {fileID: 8749886719563596853}
-  - {fileID: 3523349825729077911}
-  - {fileID: 6029987580951955817}
-  - {fileID: 8229473959558530999}
-  - {fileID: 1073350100372442277}
-  - {fileID: 6297394752683630399}
-  - {fileID: 2050480457300267495}
-  - {fileID: 8956259195713479435}
-  - {fileID: 3007395139291451308}
-  - {fileID: 2173045378762763296}
-  - {fileID: 3017643195009719476}
-  - {fileID: 7123751210063803355}
-  - {fileID: 768405861524909724}
+  locations: []
 --- !u!61 &3057380301287268339
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9537,15 +9712,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 8691943171819864808}
-  adjacentNodes:
-  - {fileID: 6794518956872500486}
-  - {fileID: 2050480457300267495}
-  - {fileID: 4880282624964039869}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &3184729548247795073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9618,16 +9790,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 4127092124042622603}
-  adjacentNodes:
-  - {fileID: 1145777094986475455}
-  - {fileID: 5724920570659418791}
-  - {fileID: 5483076806763574868}
-  - {fileID: 768405861524909724}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &3301581763785934397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9726,7 +9894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3630434876513225908
 Transform:
   m_ObjectHideFlags: 0
@@ -9754,16 +9922,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 3912274244464150066}
-  adjacentNodes:
-  - {fileID: 3320169909101754271}
-  - {fileID: 1525372065584709789}
-  - {fileID: 3523349825729077911}
-  - {fileID: 3962313477574843673}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &3669695783559652338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9776,17 +9940,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 4287846911221922748}
-  adjacentNodes:
-  - {fileID: 1525372065584709789}
-  - {fileID: 5483076806763574868}
-  - {fileID: 8749886719563596853}
-  - {fileID: 3523349825729077911}
-  - {fileID: 3962313477574843673}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!4 &3822196757112165954
 Transform:
   m_ObjectHideFlags: 0
@@ -9814,16 +9973,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 5527826479471203139}
-  adjacentNodes:
-  - {fileID: 5724920570659418791}
-  - {fileID: 5483076806763574868}
-  - {fileID: 6297394752683630399}
-  - {fileID: 768405861524909724}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!4 &3903396203451100109
 Transform:
   m_ObjectHideFlags: 0
@@ -10034,20 +10189,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 5344140628158779471}
-  adjacentNodes:
-  - {fileID: 842891785671045046}
-  - {fileID: 7123751210063803355}
-  - {fileID: 7714831525732752721}
-  - {fileID: 1073350100372442277}
-  - {fileID: 3017643195009719476}
-  - {fileID: 8956259195713479435}
-  - {fileID: 768405861524909724}
-  - {fileID: 3962313477574843673}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &4287846911221922748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10105,17 +10252,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 629908237789431607}
-  adjacentNodes:
-  - {fileID: 842891785671045046}
-  - {fileID: 7123751210063803355}
-  - {fileID: 1152940059965316792}
-  - {fileID: 2173045378762763296}
-  - {fileID: 3017643195009719476}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &4414124642589946125
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10188,18 +10330,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 3009450540618073721}
-  adjacentNodes:
-  - {fileID: 7395180947032292927}
-  - {fileID: 1057170848146870489}
-  - {fileID: 2050480457300267495}
-  - {fileID: 6029987580951955817}
-  - {fileID: 8956259195713479435}
-  - {fileID: 3523349825729077911}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &4540885912892233301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10424,20 +10560,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 2915205184817419461}
-  adjacentNodes:
-  - {fileID: 7395180947032292927}
-  - {fileID: 1057170848146870489}
-  - {fileID: 2050480457300267495}
-  - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
-  - {fileID: 3007395139291451308}
-  - {fileID: 768405861524909724}
-  - {fileID: 3962313477574843673}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &5277619338123518797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10557,74 +10685,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
-  bossesDoorNode: {fileID: 2438057658063174603}
-  lineRenderer: {fileID: 4729183801627027574}
-  ambientWaypoints: {fileID: 3030157105254065835}
+    m_Bits: 0
+  bossesDoorNode: {fileID: 0}
+  lineRenderer: {fileID: 0}
+  ambientWaypoints: {fileID: 0}
   onBossCaughtYou:
     m_PersistentCalls:
       m_Calls: []
-  navigationalGraph: {fileID: 639137466265119530}
-  nodes:
-  - {fileID: 2438057658063174603}
-  - {fileID: 6283031726410596493}
-  - {fileID: 1216564020181647231}
-  - {fileID: 6575628227535192045}
-  - {fileID: 4396044612325858797}
-  - {fileID: 6760903665838370592}
-  - {fileID: 6182891247109028760}
-  - {fileID: 6451029604993463726}
-  - {fileID: 3060785408200180621}
-  - {fileID: 8117949378248458131}
-  - {fileID: 7103316507664015210}
-  - {fileID: 3861052120398882570}
-  - {fileID: 19356222593356320}
-  - {fileID: 3669695783559652338}
-  - {fileID: 1588300223251899996}
-  - {fileID: 2340860797729473455}
-  - {fileID: 3664813584346266503}
-  - {fileID: 7296682864050177274}
-  - {fileID: 6553544401242815570}
-  - {fileID: 5714537572872836141}
-  - {fileID: 5900315310210357336}
-  - {fileID: 3268969178849318682}
-  - {fileID: 6290057810717918391}
-  - {fileID: 5103630244559098539}
-  - {fileID: 4533749869421876201}
-  - {fileID: 4137342693555952817}
-  - {fileID: 962645002708656404}
-  - {fileID: 804394626552777671}
-  - {fileID: 8579094637329268927}
-  - {fileID: 2438057658063174603}
-  - {fileID: 6283031726410596493}
-  - {fileID: 1216564020181647231}
-  - {fileID: 6575628227535192045}
-  - {fileID: 4396044612325858797}
-  - {fileID: 6760903665838370592}
-  - {fileID: 6182891247109028760}
-  - {fileID: 6451029604993463726}
-  - {fileID: 3060785408200180621}
-  - {fileID: 8117949378248458131}
-  - {fileID: 7103316507664015210}
-  - {fileID: 3861052120398882570}
-  - {fileID: 19356222593356320}
-  - {fileID: 3669695783559652338}
-  - {fileID: 1588300223251899996}
-  - {fileID: 2340860797729473455}
-  - {fileID: 3664813584346266503}
-  - {fileID: 7296682864050177274}
-  - {fileID: 6553544401242815570}
-  - {fileID: 5714537572872836141}
-  - {fileID: 5900315310210357336}
-  - {fileID: 3268969178849318682}
-  - {fileID: 6290057810717918391}
-  - {fileID: 5103630244559098539}
-  - {fileID: 4533749869421876201}
-  - {fileID: 4137342693555952817}
-  - {fileID: 962645002708656404}
-  - {fileID: 804394626552777671}
-  - {fileID: 8579094637329268927}
-  player: {fileID: 1299870761}
+  navigationalGraph: {fileID: 0}
+  nodes: []
+  player: {fileID: 0}
 --- !u!1 &5483076806763574868
 GameObject:
   m_ObjectHideFlags: 0
@@ -10700,14 +10770,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 3301581763785934397}
-  adjacentNodes:
-  - {fileID: 1073350100372442277}
-  - {fileID: 6029987580951955817}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &5724920570659418791
 GameObject:
   m_ObjectHideFlags: 0
@@ -10738,18 +10806,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 2886592015060942388}
-  adjacentNodes:
-  - {fileID: 2173045378762763296}
-  - {fileID: 6029987580951955817}
-  - {fileID: 8956259195713479435}
-  - {fileID: 8229473959558530999}
-  - {fileID: 768405861524909724}
-  - {fileID: 3962313477574843673}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &5984322924933975726
 GameObject:
   m_ObjectHideFlags: 0
@@ -10798,15 +10860,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 2576927407323128362}
-  adjacentNodes:
-  - {fileID: 1152940059965316792}
-  - {fileID: 7395180947032292927}
-  - {fileID: 1525372065584709789}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &6223518843020188927
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10864,14 +10923,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 1543107410583027277}
-  adjacentNodes:
-  - {fileID: 2050480457300267495}
-  - {fileID: 7922786401554665656}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &6290057810717918391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10884,18 +10941,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 6223518843020188927}
-  adjacentNodes:
-  - {fileID: 6794518956872500486}
-  - {fileID: 7395180947032292927}
-  - {fileID: 1057170848146870489}
-  - {fileID: 7922786401554665656}
-  - {fileID: 8956259195713479435}
-  - {fileID: 3007395139291451308}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &6297394752683630399
 GameObject:
   m_ObjectHideFlags: 0
@@ -10944,18 +10995,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 3968598798965780703}
-  adjacentNodes:
-  - {fileID: 5984322924933975726}
-  - {fileID: 1057170848146870489}
-  - {fileID: 2050480457300267495}
-  - {fileID: 1525372065584709789}
-  - {fileID: 8956259195713479435}
-  - {fileID: 3007395139291451308}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!4 &6462697595884010577
 Transform:
   m_ObjectHideFlags: 0
@@ -10983,16 +11028,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 8037356565748027583}
-  adjacentNodes:
-  - {fileID: 1073350100372442277}
-  - {fileID: 8229473959558530999}
-  - {fileID: 3007395139291451308}
-  - {fileID: 3523349825729077911}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!4 &6559070521605241141
 Transform:
   m_ObjectHideFlags: 0
@@ -11020,17 +11061,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 5277619338123518797}
-  adjacentNodes:
-  - {fileID: 7123751210063803355}
-  - {fileID: 7714831525732752721}
-  - {fileID: 6404159066674465706}
-  - {fileID: 2173045378762763296}
-  - {fileID: 3017643195009719476}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &6664469446212982187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11088,14 +11124,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 45350904432474890}
-  adjacentNodes:
-  - {fileID: 7714831525732752721}
-  - {fileID: 5984322924933975726}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &6794518956872500486
 GameObject:
   m_ObjectHideFlags: 0
@@ -11131,7 +11165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7092521377294482731
 Transform:
   m_ObjectHideFlags: 0
@@ -11159,17 +11193,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 7413441274093305646}
-  adjacentNodes:
-  - {fileID: 1145777094986475455}
-  - {fileID: 4880282624964039869}
-  - {fileID: 5483076806763574868}
-  - {fileID: 6297394752683630399}
-  - {fileID: 768405861524909724}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &7123751210063803355
 GameObject:
   m_ObjectHideFlags: 0
@@ -11200,18 +11229,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 4852623314605554566}
-  adjacentNodes:
-  - {fileID: 3320169909101754271}
-  - {fileID: 1525372065584709789}
-  - {fileID: 6029987580951955817}
-  - {fileID: 3007395139291451308}
-  - {fileID: 8749886719563596853}
-  - {fileID: 3962313477574843673}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &7395180947032292927
 GameObject:
   m_ObjectHideFlags: 0
@@ -11593,14 +11616,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 3057380301287268339}
-  adjacentNodes:
-  - {fileID: 7922786401554665656}
-  - {fileID: 5724920570659418791}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &8229473959558530999
 GameObject:
   m_ObjectHideFlags: 0
@@ -11631,20 +11652,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 6664469446212982187}
-  adjacentNodes:
-  - {fileID: 1145777094986475455}
-  - {fileID: 5724920570659418791}
-  - {fileID: 5483076806763574868}
-  - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
-  - {fileID: 8956259195713479435}
-  - {fileID: 6297394752683630399}
-  - {fileID: 3962313477574843673}
-  radius: 100
+  boxCollider: {fileID: 0}
+  adjacentNodes: []
+  radius: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &8691943171819864808
 BoxCollider2D:
   m_ObjectHideFlags: 0
