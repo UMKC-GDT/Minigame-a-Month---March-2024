@@ -19,7 +19,6 @@ public class Task
 
 
     //constructor
-    public Task(string n, float t, char c, Vector2 l)
     public Task(string n, float t, char c, Vector2 l, Vector2 v)
     {
         taskName = n;

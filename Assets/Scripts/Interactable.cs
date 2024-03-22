@@ -5,21 +5,19 @@ using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
-<<<<<<< Updated upstream
     public UnityEvent onReset;
     public GameObject player;
     private void Reset()
     {
         GetComponent<BoxCollider2D>().isTrigger = true;
         onReset.Invoke();
+    }
 
     private void Start()
     {
         player = GameObject.Find("Player");
     }
 
-    {
-        GetComponent<BoxCollider2D>().isTrigger = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

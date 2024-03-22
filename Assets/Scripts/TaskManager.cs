@@ -27,20 +27,16 @@ public class TaskManager : MonoBehaviour
     {
 
         //theres probabably a better way to do this
-        Task task1 = new Task("Deliver Coffee", 5f,'D', new Vector2(42.5f, 35f));
         Task task1 = new Task("Deliver Coffee", 10f,'D', new Vector2(42.5f, 35f), new Vector2(42.5f, 5f));
         tasks.Add(task1);
 
-        Task task2 = new Task("Write Email", 4f,'P', new Vector2(-12.5f, 15f));
         Task task2 = new Task("Write Email", 4f,'P', new Vector2(-12.5f, 15f), Vector2.zero);
         tasks.Add(task2);
 
         
-        Task task3 = new Task("Pick up the Phone", 7f, 'A',new Vector2(52f, 38.5f));
         Task task3 = new Task("Pick up the Phone", 7f, 'A',new Vector2(52f, 38.5f), Vector2.zero);
         tasks.Add(task3);
         
-        Task task4 = new Task("Type a Document", 5f,'P',new Vector2(6.5f, -20f));
         Task task4 = new Task("Type a Document", 5f,'P',new Vector2(6.5f, -20f), Vector2.zero);
         tasks.Add(task4);
 
@@ -55,13 +51,10 @@ public class TaskManager : MonoBehaviour
     {
         //Debug.Log(currentTask.taskName);
         if (!currentTask.isRuningTimer){
-<<<<<<< Updated upstream
 
             setNewTask();
-=======
             currentTask.deliverCheck = false;
-            setNewTask(previousIndex);
->>>>>>> Stashed changes
+            setNewTask();
 
             StrikesDisplay.instance.addStrike();
             
