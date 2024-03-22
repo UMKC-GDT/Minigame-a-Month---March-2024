@@ -36,31 +36,44 @@ public class Interactable : MonoBehaviour
     {
         switch (taskType)
         {
-            case 'A':
+            case 'A': //arrival tasks 
 
                 Debug.Log("Task- arrive");
+
+                //start animation 
+                //when animation finishes
+                    //success
+                    //add time
                 break;
-            case 'D':
+            case 'D'://delivery tasks 
 
                 Debug.Log("Task- deliver");
+
+                //add object sprite to player 
+                //set new pin location  
+                //if player reaches new location 
+                    //success   
+                    //add time
+                //remove object sprite from player
                 break;
-            case 'P':
+            case 'P'://pop-up tasks 
 
                 Debug.Log("Task- popup");
+
+
+                //disable character movement 
+                //open popup
+                //run minigame 
+                //if player wins game 
+                    //success
+                    //add time 
+                //close popup
+                //enable player movement 
                 break;
             default:
                 break;
         }
 
-
-
-        //arrival tasks 
-        //start animation 
-        //when animation finishes
-        //success
-        //add time
-        //pick a new task 
-        //fails if time hits 0
         //pick a new task
         TaskManager.instance.setNewTask(TaskManager.instance.previousIndex);
     }
@@ -68,36 +81,3 @@ public class Interactable : MonoBehaviour
 
 
 
-
-//arrival tasks 
-//start animation 
-//when animation finishes
-//success
-//add time
-//pick a new task 
-//fails if time hits 0
-//pick a new task
-
-//delivery tasks 
-//add object sprite to player 
-//set new pin location  
-//if player reaches new location 
-//success   
-//add time
-//remove object sprite from player 
-//pick a new task
-//fails if time hits 0
-//pick a new task
-
-//pop-up tasks 
-//diable character movement 
-//open popup
-//run minigame 
-//if player wins game 
-//success
-//add time 
-//close popup
-//enable player movement 
-//pick a new task
-//fails if minigame is lost
-//pick a new task
