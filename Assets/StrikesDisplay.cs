@@ -21,6 +21,7 @@ public class StrikesDisplay : MonoBehaviour
     public Strike strikeThree;
     public GameObject strikeoutLine;
     private Strike[] strikeMarkers;
+    private Animator animator;
 
     public int activeStrikes;
     
@@ -49,6 +50,8 @@ public class StrikesDisplay : MonoBehaviour
             if (i < activeStrikes)
             {
                 strikeMarkers[i].activate();
+                Debug.Log("trying to start the animation!");
+                strikeMarkers[i].GetComponent<Animator>().Play("AddStrike");
             }
             else
             {
@@ -68,6 +71,7 @@ public class StrikesDisplay : MonoBehaviour
 
             // Then activate the strikeoutLine
             strikeoutLine.SetActive(true);
+            strikeoutLine.GetComponent<Animator>().Play("AddStrikeLine");
         }
     }
 
