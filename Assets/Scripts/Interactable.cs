@@ -7,39 +7,32 @@ public class Interactable : MonoBehaviour
 {
 <<<<<<< Updated upstream
     public UnityEvent onReset;
+    public GameObject player;
     private void Reset()
     {
         GetComponent<BoxCollider2D>().isTrigger = true;
         onReset.Invoke();
-=======
-    GameObject player;
 
     private void Start()
     {
         player = GameObject.Find("Player");
     }
 
-    private void Reset()
     {
         GetComponent<BoxCollider2D>().isTrigger = true;
-        
->>>>>>> Stashed changes
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         // if the obstacle collides with the player
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerController>().OpenInteractableIcon();
-
             if(TaskManager.instance.currentTask.deliverCheck == true)
             {
                 //code for finalizing the delivery
                 //TaskManager.instance.currentTask.location = new Vector2(42.5f, 35f);
                 TaskManager.instance.currentTask.deliverCheck = false;
                 player.transform.GetChild(1).gameObject.SetActive(false);
-                TaskManager.instance.setNewTask(TaskManager.instance.previousIndex);
+                TaskManager.instance.setNewTask();
 
             }
             else
@@ -47,7 +40,6 @@ public class Interactable : MonoBehaviour
                 other.GetComponent<PlayerController>().OpenInteractableIcon();
             }
         }
-       
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -72,8 +64,6 @@ public class Interactable : MonoBehaviour
 
                 //start animation 
                 //when animation finishes
-                    //success
-                    //add time
                 //success
                 //add time
                 break;
@@ -82,7 +72,6 @@ public class Interactable : MonoBehaviour
                 Debug.Log("Task- deliver");
 
                 //add object sprite to player 
-                //set new pin location  
                 //set new pin location
                 //
                 //TaskManager.instance.currentTask.location = new Vector2(42.5f, 20f);
@@ -90,8 +79,6 @@ public class Interactable : MonoBehaviour
                 TaskManager.instance.pin.transform.position = TaskManager.instance.currentTask.deliverLocation;
                 TaskManager.instance.currentTask.deliverCheck = true;
                 //if player reaches new location 
-                    //success   
-                    //add time
                 //success   
                 //add time
                 //remove object sprite from player
@@ -115,16 +102,11 @@ public class Interactable : MonoBehaviour
         }
 
         //pick a new task
-<<<<<<< Updated upstream
         //TaskManager.instance.setNewTask(TaskManager.instance.previousIndex);
-        
-        TaskManager.instance.setNewTask();
-=======
         if(taskType != 'D')
         {
-            TaskManager.instance.setNewTask(TaskManager.instance.previousIndex);
+            TaskManager.instance.setNewTask();
         }
->>>>>>> Stashed changes
     }
 }
 
