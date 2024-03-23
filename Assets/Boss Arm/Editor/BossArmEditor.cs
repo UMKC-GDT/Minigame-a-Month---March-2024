@@ -12,7 +12,6 @@ public class BossArmEditor : Editor
 
         if(GUILayout.Button("Grab Employee"))
         {
-            bossArmController.GrabEmployee();
         }
     }
 }

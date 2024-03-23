@@ -1,5 +1,6 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class Graph : MonoBehaviour
 {
     public Locations nodes;
     public float adjacencyRadius;
+    public LayerMask nodeLayerMask;
     public string searchTag = "AmbientWaypoint";
     public Dictionary<Node, List<Node>> adjacencyMap;
     public Dictionary<(Node, Node), float> edges;
@@ -19,7 +21,6 @@ public class Graph : MonoBehaviour
         {
             nodes = GetComponent<Locations>();
         }
-        ContstructGraph();
     }
 
 
@@ -32,11 +33,13 @@ public class Graph : MonoBehaviour
         foreach(var node in nodes.locations)
         {
             Node newNode = node.GetComponent<Node>();
+            newNode.radius = adjacencyRadius;
+            newNode.layerMask = nodeLayerMask;
             newNode.FindAdjacentNodes();
             List<Node> newAdjacentNodes = new();
             foreach(GameObject adjacentNode in newNode.adjacentNodes)
             {
-                Debug.Log("Adjecent to: " + adjacentNode.name);
+                // Debug.Log("Adjecent to: " + adjacentNode.name);
                 newAdjacentNodes.Add(adjacentNode.GetComponent<Node>());
             }
             adjacencyMap[newNode] = newAdjacentNodes;
@@ -59,7 +62,7 @@ public class Graph : MonoBehaviour
     {
         if(adjacencyMap == null)
         {
-            Debug.Log("No Graph");
+            // Debug.Log("No Graph");
             return;
         }
         string line = "";
@@ -70,12 +73,16 @@ public class Graph : MonoBehaviour
             {
                 line += "\t" + "Adjacent to: " + adjacentNode.gameObject.name + " distace: " + edges[OrderNodes(node, adjacentNode)];
             }
-            Debug.Log(line);
+            // Debug.Log(line);
         }
     }
 
     public List<Node> FindPath(Node startNode, Node targetNode)
     {
+        if(startNode == null)
+        { return new List<Node>(); }
+        if(targetNode == null)
+        { return new List<Node>(); }
         List<Node> openSet = new();
         HashSet<Node> closedSet = new();
         openSet.Add(startNode);
@@ -132,6 +139,13 @@ public class Graph : MonoBehaviour
         return new List<Node>();
     }
 
+    public List<Vector3> NodesListToVector3List(List<Node> nodes)
+    {
+        if (nodes == null)
+            nodes = new List<Node>();
+        return nodes.Select(node => node.transform.position).ToList();
+    }
+
     private List<Node> ReconstructPath(Dictionary<Node, Node> cameFrom, Node currentNode)
     {
         List<Node> totalPath = new List<Node> { currentNode };
@@ -147,6 +161,8 @@ public class Graph : MonoBehaviour
 
     private float HeuristicCostEstimate(Node start, Node end)
     {
+        if(start == null || end == null) 
+            return float.MaxValue;
         return Vector3.Distance(start.transform.position, end.transform.position);
     }
 
@@ -172,7 +188,7 @@ public class Graph : MonoBehaviour
 
         // Circle cast to see all nearby nodes
         RaycastHit2D[] hits = Physics2D.CircleCastAll(position, radius, Vector2.right);
-        Debug.Log(hits.Length);
+        // Debug.Log(hits.Length);
         foreach (var hit in hits)
         {
             // Check if the hit has the same tag and is not this gameObject
@@ -185,7 +201,7 @@ public class Graph : MonoBehaviour
                 {
                     if (hit2.transform.CompareTag("Walls"))
                     {
-                        Debug.Log("Hit a wall");
+                        // Debug.Log("Hit a wall");
                         break;
                     }
 
@@ -206,7 +222,7 @@ public class Graph : MonoBehaviour
                 float newDistance = Vector3.Distance(position, go.transform.position);
                 if (newDistance < distance)
                 {
-                    Debug.Log("Past closest: " + distance + " new closest: " + newDistance);
+                    // Debug.Log("Past closest: " + distance + " new closest: " + newDistance);
                     closestNode = go;
                     distance = newDistance;
                 }
