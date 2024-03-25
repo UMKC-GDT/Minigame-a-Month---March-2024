@@ -49,6 +49,7 @@ public class TaskManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //Debug.Log(currentTask.taskName);
         if (!currentTask.isRuningTimer){
 
@@ -80,14 +81,14 @@ public class TaskManager : MonoBehaviour
         }
 
         
-        Debug.Log("previous: "+previousIndex);
-        Debug.Log("curret: "+randomIndex);
+        //Debug.Log("previous: "+previousIndex);
+        //Debug.Log("curret: "+randomIndex);
 
         currentTask = tasks[randomIndex];
         previousIndex = randomIndex;
 
 
-        Debug.Log("strikes: "+StrikesDisplay.instance.activeStrikes);
+        //Debug.Log("strikes: "+StrikesDisplay.instance.activeStrikes);
 
         if (StrikesDisplay.instance.activeStrikes < 3)
         {

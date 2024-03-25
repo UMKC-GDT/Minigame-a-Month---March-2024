@@ -37,6 +37,8 @@ public class Task
     public void Assign()
     {
 
+        Debug.Log(location.x + ", " + location.y);
+
         TaskManager.instance.pin.transform.position = location;
         //update ui
         //start time 
