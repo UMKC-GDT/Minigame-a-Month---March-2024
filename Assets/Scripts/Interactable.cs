@@ -29,7 +29,11 @@ public class Interactable : MonoBehaviour
                 //code for finalizing the delivery
                 //TaskManager.instance.currentTask.location = new Vector2(42.5f, 35f);
                 TaskManager.instance.currentTask.deliverCheck = false;
-                player.transform.GetChild(1).gameObject.SetActive(false);
+
+                int spriteIndex = TaskManager.instance.currentTask.dilverySprite;
+                if (spriteIndex > 0)
+                    player.transform.GetChild(spriteIndex).gameObject.SetActive(false);
+               
                 TaskManager.instance.setNewTask();
 
             }
@@ -73,7 +77,11 @@ public class Interactable : MonoBehaviour
                 //set new pin location
                 //
                 //TaskManager.instance.currentTask.location = new Vector2(42.5f, 20f);
-                player.transform.GetChild(1).gameObject.SetActive(true);
+
+                
+                int spriteIndex = TaskManager.instance.currentTask.dilverySprite;
+                if (spriteIndex > 0)
+                    player.transform.GetChild(spriteIndex).gameObject.SetActive(true);
                 TaskManager.instance.pin.transform.position = TaskManager.instance.currentTask.deliverLocation;
                 TaskManager.instance.currentTask.deliverCheck = true;
                 //if player reaches new location 

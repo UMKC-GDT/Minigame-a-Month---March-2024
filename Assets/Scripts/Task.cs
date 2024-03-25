@@ -16,15 +16,18 @@ public class Task
     public Vector2 deliverLocation;
 
     public bool deliverCheck;
+    public int dilverySprite;
 
 
     //constructor
-    public Task(string n, float t, char c, Vector2 l, Vector2 v)
+    public Task(string n, float t, char c, Vector2 l, Vector2 v,  int d = 0)
     {
         taskName = n;
         timeLimit = t;
         type = c;
         location = l;
+        deliverLocation = v;
+        dilverySprite = d;
         deliverCheck = false;
     }
 
