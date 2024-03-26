@@ -16,6 +16,8 @@ public class MovingObstacle : MonoBehaviour
     private GameObject currentWaypoint;       // the waypoint towards which the obstacle will move
     private Vector2 currentWaypointDirection; // the direction of the obstacle -> waypoint
 
+
+    public Animator animator;
     private void Awake() 
     {
         originalSpeed = obstacleSpeed;
@@ -29,6 +31,7 @@ public class MovingObstacle : MonoBehaviour
         {
             obstacleHit.Invoke();                                     // execute all methods assigned to obstacleHit
             Debug.Log("Hit Player");
+
         }
 
         // if the obstacle collides with a waypoint
@@ -38,6 +41,12 @@ public class MovingObstacle : MonoBehaviour
             currentWaypointDirection = GetDirection(currentWaypoint); // get normalized vector of obstacle -> waypoint
             Debug.Log("Hit waypoint");
         }
+
+        animator.SetFloat("Horizontal", currentWaypointDirection.x);
+
+        animator.SetFloat("Vertical", currentWaypointDirection.y);
+
+        animator.SetFloat("Speed", currentWaypointDirection.sqrMagnitude);
     }
 
     private void Update()

@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 boxSize = new Vector2(1f, 1f);
 
+    public bool isPaused = false;
+
 
     // Update is called once per frame
     void Update()
@@ -42,7 +44,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if(!isPaused)
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
     public void OpenInteractableIcon()
@@ -73,6 +76,18 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+    }
+
+    public void pauseControls()
+    {
+
+        isPaused = true;
+    }
+
+    public void playControls()
+    {
+
+        isPaused = false;
     }
 
 }
