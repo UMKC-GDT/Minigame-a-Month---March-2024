@@ -44,11 +44,11 @@ public class EmailMinigame : MonoBehaviour
         }
     }
 
-    public void startEmail() 
+    public void startEmail(string word) 
     {
         minigameAnimator.Play("StartMinigame");
         input = "";
-        goalText.text = "STAR";
+        goalText.text = word;
         inputField.GetComponent<InputField>().interactable = true;
         inputFieldText.color = Color.black;
         inputField.GetComponent<InputField>().text = "";
@@ -73,7 +73,7 @@ public class EmailMinigame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            startEmail();
+            startEmail("STAR");
         }
         else if (Input.GetKeyDown(KeyCode.P))
         {
@@ -122,8 +122,9 @@ public class EmailMinigame : MonoBehaviour
             sendButton.interactable = false;
 
             minigameAnimator.Play("SuddenEndMinigame");
-
+            
             //allows player to move agian, even  if they lose -camerron
+            TaskManager.instance.setNewTask();
             PlayerController.instance.playControls();
         }
         

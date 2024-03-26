@@ -58,6 +58,10 @@ public class Interactable : MonoBehaviour
 
     public void Interact(char taskType)
     {
+        player.transform.GetChild(1).gameObject.SetActive(false);
+        player.transform.GetChild(2).gameObject.SetActive(false);
+        player.transform.GetChild(3).gameObject.SetActive(false);
+
         switch (taskType)
         {
             case 'A': //arrival tasks 
@@ -80,7 +84,6 @@ public class Interactable : MonoBehaviour
                 //
                 //TaskManager.instance.currentTask.location = new Vector2(42.5f, 20f);
 
-                
                 int spriteIndex = TaskManager.instance.currentTask.dilverySprite;
                 if (spriteIndex > 0)
                     player.transform.GetChild(spriteIndex).gameObject.SetActive(true);
@@ -96,7 +99,7 @@ public class Interactable : MonoBehaviour
                 Debug.Log("Task- popup");
 
                 PlayerController.instance.pauseControls();
-                EmailMinigame.instance.startEmail();
+                EmailMinigame.instance.startEmail(TaskManager.instance.currentTask.miniGameWord);
 
 
                 //disable character movement 

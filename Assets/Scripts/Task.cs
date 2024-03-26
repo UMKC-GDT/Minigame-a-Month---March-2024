@@ -18,9 +18,11 @@ public class Task
     public bool deliverCheck;
     public int dilverySprite;
 
+    public string miniGameWord;
+
 
     //constructor
-    public Task(string n, float t, char c, Vector2 l, Vector2 v,  int d = 0)
+    public Task(string n, float t, char c, Vector2 l, Vector2 v,  int d = 0, string w = "")
     {
         taskName = n;
         timeLimit = t;
@@ -28,6 +30,7 @@ public class Task
         location = l;
         deliverLocation = v;
         dilverySprite = d;
+        miniGameWord = w;
         deliverCheck = false;
     }
 
