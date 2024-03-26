@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
 
     public float moveSpeed = 25f;
     public Rigidbody2D rb;
@@ -17,6 +18,10 @@ public class PlayerController : MonoBehaviour
 
     public bool isPaused = false;
 
+    void Awake()
+    {
+        instance = this;
+    }
 
     // Update is called once per frame
     void Update()

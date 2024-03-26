@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class EmailMinigame : MonoBehaviour
 {
+    public static EmailMinigame instance;
+    
+    
     [Header("Text Fields")]
     public Text goalText;
     public InputField inputField;
@@ -16,6 +19,11 @@ public class EmailMinigame : MonoBehaviour
     public Button sendButton;
 
     private string input;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     private void incorrectInput()
     {
@@ -86,10 +94,13 @@ public class EmailMinigame : MonoBehaviour
 
             //TODO: Create and run email sending animation here
 
-            //This is where we would tell the TaskManager that the task is completed
-
             //Close Task
             StartCoroutine(EndMinigame());
+
+            //This is where we would tell the TaskManager that the task is completed
+                //nah, im just gonna call the next task right here -cameron
+            TaskManager.instance.setNewTask();
+            PlayerController.instance.playControls(); //allows player to move again
         }
 
         IEnumerator EndMinigame()
@@ -105,9 +116,16 @@ public class EmailMinigame : MonoBehaviour
 
     public void suddenEnd()
     {
-        inputField.GetComponent<InputField>().interactable = false;
-        sendButton.interactable = false;
+        if (inputField.GetComponent<InputField>().interactable == true)
+        {
+            inputField.GetComponent<InputField>().interactable = false;
+            sendButton.interactable = false;
 
-        minigameAnimator.Play("SuddenEndMinigame");
+            minigameAnimator.Play("SuddenEndMinigame");
+
+            //allows player to move agian, even  if they lose -camerron
+            PlayerController.instance.playControls();
+        }
+        
     }
 }

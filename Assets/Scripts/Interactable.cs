@@ -64,6 +64,8 @@ public class Interactable : MonoBehaviour
 
                 Debug.Log("Task- arrive");
 
+                TaskManager.instance.setNewTask();
+
                 //start animation 
                 //when animation finishes
                 //success
@@ -93,13 +95,16 @@ public class Interactable : MonoBehaviour
 
                 Debug.Log("Task- popup");
 
+                PlayerController.instance.pauseControls();
+                EmailMinigame.instance.startEmail();
+
 
                 //disable character movement 
                 //open popup
                 //run minigame 
                 //if player wins game 
-                    //success
-                    //add time 
+                //success
+                //add time 
                 //close popup
                 //enable player movement 
                 break;
@@ -109,10 +114,7 @@ public class Interactable : MonoBehaviour
 
         //pick a new task
         //TaskManager.instance.setNewTask(TaskManager.instance.previousIndex);
-        if(taskType != 'D')
-        {
-            TaskManager.instance.setNewTask();
-        }
+        
     }
 }
 
