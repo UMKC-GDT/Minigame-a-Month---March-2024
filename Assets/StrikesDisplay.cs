@@ -63,7 +63,7 @@ public class StrikesDisplay : MonoBehaviour
         
         if (activeStrikes == 3 && struckout == true)
         {
-            // Debug.Log("StrikesDisplay is trying to call the Active Strikout Line again...");
+            //Debug.Log("StrikesDisplay is trying to call the Active Strikout Line again...");
         }
         else if (activeStrikes == 3)
         {

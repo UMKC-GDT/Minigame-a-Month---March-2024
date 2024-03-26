@@ -37,7 +37,6 @@ public class TimerDisplay : MonoBehaviour
     
     public void setTime(float time)
     {
-        Debug.Log("calling set time!");
         //animator.StopPlayback();
         
 
