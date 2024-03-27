@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class TimerDisplay : MonoBehaviour
 {
 
+    private Animator animator;
+
     //I added this to access in my Task Class -Cameron
     public static TimerDisplay instance;
 
@@ -22,6 +24,8 @@ public class TimerDisplay : MonoBehaviour
     void Start()
     {
         timerText.text = "99.99";
+
+        animator = GetComponent<Animator>();
         
     }
 
@@ -33,7 +37,12 @@ public class TimerDisplay : MonoBehaviour
     
     public void setTime(float time)
     {
+        //animator.StopPlayback();
+        
+
         if (time < 10) timerText.text = "0" + Math.Round(time, 2).ToString("F2");
         else timerText.text = Math.Round(time, 2).ToString("F2");
+
+        animator.Play("Ticking", -1, 0f);
     }
 }

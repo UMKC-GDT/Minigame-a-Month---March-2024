@@ -10,15 +10,28 @@ public class Task
     public string taskName;
     public float timeLimit;
 
+    public char type;
+
     public Vector2 location;
+    public Vector2 deliverLocation;
+
+    public bool deliverCheck;
+    public int dilverySprite;
+
+    public string miniGameWord;
 
 
     //constructor
-    public Task(string n, float t, Vector2 l)
+    public Task(string n, float t, char c, Vector2 l, Vector2 v,  int d = 0, string w = "")
     {
         taskName = n;
         timeLimit = t;
+        type = c;
         location = l;
+        deliverLocation = v;
+        dilverySprite = d;
+        miniGameWord = w;
+        deliverCheck = false;
     }
 
 
@@ -27,20 +40,19 @@ public class Task
     Coroutine runningTimer = null;
 
     //functions
-    public void OnAssigned()
+    public void Assign()
     {
-        //update ui
+
         Debug.Log(location.x + ", " + location.y);
-        Debug.DrawLine(location, new Vector2(location.x + 3, location.y), Color.red, timeLimit);
-        Debug.DrawLine(location, new Vector2(location.x - 3, location.y), Color.red, timeLimit);
-        Debug.DrawLine(location, new Vector2(location.x, location.y - 3), Color.red, timeLimit);
-        Debug.DrawLine(location, new Vector2(location.x, location.y + 3), Color.red, timeLimit);
+
+        TaskManager.instance.pin.transform.position = location;
+        //update ui
         //start time 
         //start corroutine to time out 
 
         StopRunningTimer();
         runningTimer = TaskManager.instance.StartCoroutine(RunTimer(timeLimit));
-
+        
 
     }
 
@@ -48,10 +60,9 @@ public class Task
     {
         if (isRuningTimer)
             TaskManager.instance.StopCoroutine(runningTimer);
-
+        
         runningTimer = null;
     }
-
 
     IEnumerator RunTimer(float limit)
     {
@@ -61,9 +72,9 @@ public class Task
             //waiting 1 second in real time and increasing the timer value
             yield return new WaitForSecondsRealtime(1);
             timer--;
-            Debug.Log("Count Down: " + timer);
             TimerDisplay.instance.setTime(timer);
             TaskDescription.instance.taskName.text = taskName;
+
 
         }
         StopRunningTimer();

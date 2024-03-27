@@ -20,10 +20,12 @@ public class StrikesDisplay : MonoBehaviour
     public Strike strikeTwo;
     public Strike strikeThree;
     public GameObject strikeoutLine;
+    public bool struckout = false;
     private Strike[] strikeMarkers;
+    private Animator animator;
 
     public int activeStrikes;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -49,16 +51,24 @@ public class StrikesDisplay : MonoBehaviour
             if (i < activeStrikes)
             {
                 strikeMarkers[i].activate();
+                //Debug.Log("trying to start the animation!");
+                strikeMarkers[i].GetComponent<Animator>().Play("AddStrike");
             }
             else
             {
                 strikeMarkers[i].deactivate();
             }
         }
-
-        if (activeStrikes == 3)
+        
+        
+        if (activeStrikes == 3 && struckout == true)
+        {
+            //Debug.Log("StrikesDisplay is trying to call the Active Strikout Line again...");
+        }
+        else if (activeStrikes == 3)
         {
             StartCoroutine(ActivateStrikeoutLine());
+            struckout = true;
         }
 
         IEnumerator ActivateStrikeoutLine()
@@ -68,12 +78,16 @@ public class StrikesDisplay : MonoBehaviour
 
             // Then activate the strikeoutLine
             strikeoutLine.SetActive(true);
+            strikeoutLine.GetComponent<Animator>().Play("AddStrikeLine");
+            
         }
     }
 
     public void addStrike()
     {
-        activeStrikes++;
+        if (activeStrikes < 3) {
+            activeStrikes++;
+        }
     }
 
     public void aemoveStrike()
