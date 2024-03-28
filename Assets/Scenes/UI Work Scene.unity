@@ -7365,6 +7365,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87adccffbcf942440846dddc33c1dc87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onStrikeOut:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5425377905565059516}
+        m_TargetAssemblyTypeName: BossArmController, Assembly-CSharp
+        m_MethodName: StartChaseUnderling
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   strikeOne: {fileID: 1700543911}
   strikeTwo: {fileID: 1003545949}
   strikeThree: {fileID: 561988655}
@@ -11034,7 +11049,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11109,7 +11124,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11194,8 +11209,8 @@ MonoBehaviour:
   adjacentNodes:
   - {fileID: 3017643195009719476}
   - {fileID: 2173045378762763296}
-  - {fileID: 842891785671045046}
   - {fileID: 7714831525732752721}
+  - {fileID: 842891785671045046}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -11233,9 +11248,9 @@ MonoBehaviour:
   boxCollider: {fileID: 4540885912892233301}
   adjacentNodes:
   - {fileID: 2173045378762763296}
+  - {fileID: 7714831525732752721}
   - {fileID: 7123751210063803355}
   - {fileID: 842891785671045046}
-  - {fileID: 7714831525732752721}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -11409,7 +11424,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11439,12 +11454,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 9123530769994743955}
   adjacentNodes:
-  - {fileID: 3320169909101754271}
-  - {fileID: 7395180947032292927}
-  - {fileID: 3962313477574843673}
   - {fileID: 5984322924933975726}
-  - {fileID: 3523349825729077911}
+  - {fileID: 7395180947032292927}
+  - {fileID: 3320169909101754271}
+  - {fileID: 3962313477574843673}
   - {fileID: 8749886719563596853}
+  - {fileID: 3523349825729077911}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -11579,8 +11594,8 @@ MonoBehaviour:
   - {fileID: 8956259195713479435}
   - {fileID: 1073350100372442277}
   - {fileID: 2173045378762763296}
-  - {fileID: 3523349825729077911}
   - {fileID: 8749886719563596853}
+  - {fileID: 3523349825729077911}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -11636,7 +11651,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11696,7 +11711,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11741,7 +11756,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11804,7 +11819,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11924,7 +11939,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11990,7 +12005,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12072,7 +12087,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12196,8 +12211,8 @@ MonoBehaviour:
   - {fileID: 1525372065584709789}
   - {fileID: 3962313477574843673}
   - {fileID: 5483076806763574868}
-  - {fileID: 3523349825729077911}
   - {fileID: 8749886719563596853}
+  - {fileID: 3523349825729077911}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -12283,7 +12298,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12361,7 +12376,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12422,7 +12437,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12457,9 +12472,9 @@ MonoBehaviour:
   - {fileID: 8956259195713479435}
   - {fileID: 1073350100372442277}
   - {fileID: 3017643195009719476}
+  - {fileID: 7714831525732752721}
   - {fileID: 7123751210063803355}
   - {fileID: 842891785671045046}
-  - {fileID: 7714831525732752721}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -12493,7 +12508,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12561,7 +12576,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12645,7 +12660,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12756,7 +12771,7 @@ LineRenderer:
       m_NumAlphaKeys: 2
     numCornerVertices: 9
     numCapVertices: 7
-    alignment: 0
+    alignment: 1
     textureMode: 1
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
@@ -12794,7 +12809,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12883,7 +12898,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12928,7 +12943,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12982,8 +12997,9 @@ MonoBehaviour:
   onBossCaughtYou:
     m_PersistentCalls:
       m_Calls: []
+  isLerping: 0
   bossesDoorNode: {fileID: 2438057658063174603}
-  bossesSpeed: 1
+  bossesSpeed: 10
   bossesAttackRadge: 10
 --- !u!1 &5483076806763574868
 GameObject:
@@ -13032,7 +13048,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13062,9 +13078,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 3301581763785934397}
   adjacentNodes:
-  - {fileID: 1073350100372442277}
-  - {fileID: 1152940059965316792}
   - {fileID: 5984322924933975726}
+  - {fileID: 1152940059965316792}
+  - {fileID: 1073350100372442277}
   - {fileID: 6029987580951955817}
   radius: 100
   layerMask:
@@ -13102,14 +13118,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 2886592015060942388}
   adjacentNodes:
+  - {fileID: 5984322924933975726}
+  - {fileID: 1152940059965316792}
   - {fileID: 768405861524909724}
   - {fileID: 3962313477574843673}
   - {fileID: 8956259195713479435}
-  - {fileID: 1152940059965316792}
-  - {fileID: 5984322924933975726}
   - {fileID: 6029987580951955817}
-  - {fileID: 2173045378762763296}
   - {fileID: 8229473959558530999}
+  - {fileID: 2173045378762763296}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -13164,10 +13180,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 2576927407323128362}
   adjacentNodes:
-  - {fileID: 1525372065584709789}
-  - {fileID: 7395180947032292927}
-  - {fileID: 1073350100372442277}
   - {fileID: 1152940059965316792}
+  - {fileID: 7395180947032292927}
+  - {fileID: 1525372065584709789}
+  - {fileID: 1073350100372442277}
   - {fileID: 6029987580951955817}
   - {fileID: 8229473959558530999}
   radius: 100
@@ -13203,7 +13219,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13234,8 +13250,8 @@ MonoBehaviour:
   boxCollider: {fileID: 1543107410583027277}
   adjacentNodes:
   - {fileID: 6404159066674465706}
-  - {fileID: 2050480457300267495}
   - {fileID: 7922786401554665656}
+  - {fileID: 2050480457300267495}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -13314,10 +13330,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 3968598798965780703}
   adjacentNodes:
+  - {fileID: 5984322924933975726}
   - {fileID: 1525372065584709789}
   - {fileID: 2050480457300267495}
   - {fileID: 8956259195713479435}
-  - {fileID: 5984322924933975726}
   - {fileID: 1057170848146870489}
   - {fileID: 3007395139291451308}
   radius: 100
@@ -13353,9 +13369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 8037356565748027583}
   adjacentNodes:
-  - {fileID: 1073350100372442277}
-  - {fileID: 1152940059965316792}
   - {fileID: 5984322924933975726}
+  - {fileID: 1152940059965316792}
+  - {fileID: 1073350100372442277}
   - {fileID: 8229473959558530999}
   - {fileID: 3523349825729077911}
   - {fileID: 3007395139291451308}
@@ -13395,8 +13411,8 @@ MonoBehaviour:
   - {fileID: 6404159066674465706}
   - {fileID: 3017643195009719476}
   - {fileID: 2173045378762763296}
-  - {fileID: 7123751210063803355}
   - {fileID: 7714831525732752721}
+  - {fileID: 7123751210063803355}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -13430,7 +13446,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13460,8 +13476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 45350904432474890}
   adjacentNodes:
-  - {fileID: 1073350100372442277}
   - {fileID: 5984322924933975726}
+  - {fileID: 1073350100372442277}
   - {fileID: 6029987580951955817}
   - {fileID: 8229473959558530999}
   - {fileID: 7714831525732752721}
@@ -13579,8 +13595,8 @@ MonoBehaviour:
   - {fileID: 1525372065584709789}
   - {fileID: 3962313477574843673}
   - {fileID: 6029987580951955817}
-  - {fileID: 3007395139291451308}
   - {fileID: 8749886719563596853}
+  - {fileID: 3007395139291451308}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -13632,7 +13648,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13722,7 +13738,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13833,7 +13849,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13878,7 +13894,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13938,7 +13954,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -14047,7 +14063,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -14158,7 +14174,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

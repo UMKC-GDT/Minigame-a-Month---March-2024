@@ -31,15 +31,16 @@ public class BossArmController : MonoBehaviour {
     public Node bossesDoorNode;
     public float bossesSpeed = 1.0f;
     public float bossesAttackRadge = 10.0f;
-
+    List<Vector3> armPositions;
 
 
     // Initialization on Start
     private void Start() {
+        armPositions = new();
         ClearLineRenderer();
         navigationalGraph.nodes.Repopulate();
         navigationalGraph.ContstructGraph();
-        StartChaseUnderling();
+        // StartChaseUnderling();
     }
 
     // Resets everything and begins the chase from the boss's door
@@ -82,9 +83,6 @@ public class BossArmController : MonoBehaviour {
             {
                 Debug.Log("Path found");
                 nextNode = currentPath[1];
-                // For debugging
-                lineRenderer.positionCount = 0;
-                lineRenderer.SetPositions(navigationalGraph.NodesListToVector3List(currentPath).ToArray());
                 // Movebetween hand currentNode and nextNode
                 if (isLerping == false && previousNode != null && nextNode != null)
                 {
@@ -114,14 +112,19 @@ public class BossArmController : MonoBehaviour {
             {
                 return;
             }
-            Debug.Log("Lerping: " + (Time.time - startTime) / travelTime);
+            // Debug.Log("Lerping: " + (Time.time - startTime) / travelTime);
             // Lerp hand to next destination
-            bossesHand.transform.position = Vector3.Lerp(previousNode.transform.position, nextNode.transform.position, (Time.time - startTime) / travelTime);
-
+            bossesHand.transform.position = Vector3.Lerp(previousNode.transform.position, nextNode.transform.position, Mathf.Min(1, (Time.time - startTime) / travelTime));
+            lineRenderer.positionCount = 0;
+            armPositions = navigationalGraph.NodesListToVector3List(pathTraveled);
+            armPositions.Add(bossesHand.transform.position);
+            lineRenderer.positionCount = armPositions.Count;
+            lineRenderer.SetPositions(armPositions.ToArray());
             // If we reached the destination
             if (Vector3.Distance(bossesHand.transform.position, nextNode.transform.position) < 0.001f) {
                 Debug.Log("Reached the nextNode");
                 isLerping = false;
+                pathTraveled.Add(nextNode);
                 SetNextPositions();
             }
         }
