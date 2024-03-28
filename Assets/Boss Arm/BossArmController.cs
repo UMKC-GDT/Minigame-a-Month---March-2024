@@ -42,6 +42,7 @@ public class BossArmController : MonoBehaviour {
         StartChaseUnderling();
     }
 
+    // Resets everything and begins the chase from the boss's door
     public void StartChaseUnderling() {
         ResetPathTraveled();
         pathTraveled.Add(bossesDoorNode);
@@ -59,65 +60,70 @@ public class BossArmController : MonoBehaviour {
     private void SetNextPositions()
     {
         LogPrevAndNextNode();
-        if(grabbedPlayer == false)
+        if(grabbedPlayer)
         {
-            Debug.Log("Chasing player");
-            // Either get a new path and move to the second node in it, or just go straight for the player
-            if(Vector3.Distance(player.transform.position, bossesHand.transform.position) < bossesAttackRadge) {
-                // Attack the player
-                Debug.Log("Within bonking distance");
-            }
-            else { // Find a path and go to the next spot in it
-                Debug.Log("Finding path to player's last nearby node");
-                UpdateClosestNodeToPlayer();
-                // Begin from the next node
-                previousNode = pathTraveled.Last();
-                // Find a path to the player
-                currentPath = navigationalGraph.FindPath(previousNode, lastNearbyNodeToPlayer);
-                // If there is a path and it is longer than 1
-                if (currentPath != null && currentPath.Count > 1)
-                {
-                    Debug.Log("Path found");
-                    nextNode = currentPath[1];
-                    // For debugging
-                    DrawPathToEmployee();
-                    // Movebetween hand currentNode and nextNode
-                    StartMovingBetweenPoints(previousNode.transform.position, nextNode.transform.position);
-                }
-                else
-                {
-                    // Attack the player
-                    Debug.Log("Path too short, begin bonking");
-
-                }
-                LogPrevAndNextNode();
-            }
+            PullPlayerBackToDoor();
+            return;
         }
+        Debug.Log("Chasing player");
+        // Either get a new path and move to the second node in it, or just go straight for the player
+        if(Vector3.Distance(player.transform.position, bossesHand.transform.position) < bossesAttackRadge) {
+            // Attack the player
+            Debug.Log("Within bonking distance");
+        }
+        else { // Find a path and go to the next spot in it
+            //Debug.Log("Finding path to player's last nearby node");
+            UpdateClosestNodeToPlayer();
+            // Begin from the next node
+            previousNode = pathTraveled.Last();
+            // Find a path to the player
+            currentPath = navigationalGraph.FindPath(previousNode, lastNearbyNodeToPlayer);
+            // If there is a path and it is longer than 1
+            if (currentPath != null && currentPath.Count > 1)
+            {
+                Debug.Log("Path found");
+                nextNode = currentPath[1];
+                // For debugging
+                lineRenderer.positionCount = 0;
+                lineRenderer.SetPositions(navigationalGraph.NodesListToVector3List(currentPath).ToArray());
+                // Movebetween hand currentNode and nextNode
+                Vector3 alpha = previousNode.transform.position, beta = nextNode.transform.position;
+                if (alpha != null && beta != null)
+                {
+                    startTime = Time.time;
+                    float dist = Vector3.Distance(previousNode.transform.position, nextNode.transform.position);
+                    travelTime = dist / bossesSpeed;
+                    isLerping = true;
+                }
+            }
+            else if(currentPath != null)
+            {
+                // Attack the player
+                Debug.Log("Path too short, begin bonking");
+
+            }
+            LogPrevAndNextNode();
+        }
+    }
+
+    private void PullPlayerBackToDoor()
+    {
+
     }
 
     private void FixedUpdate() {
         if(isLerping) {
-            LerpHandTowardNextLocation();
+            Debug.Log("Trying to move");
+            // Lerp hand to next destination
+            bossesHand.transform.position = Vector3.Lerp(currentLastPos, currentNextPos, (Time.time - startTime) / travelTime);
 
-            if (ReachedNodeDestination()) {
+            // If we reached the destination
+            if (Vector3.Distance(bossesHand.transform.position, currentNextPos) < 0.001f) {
                 isLerping = false;
                 SetNextPositions();
             }
         }
     }
-
-
-    public void StartMovingBetweenPoints(Vector3 A, Vector3 B) {
-        if(A == null || B == null) {
-            Debug.Log("A or B is null.");
-            return;
-        }
-        startTime = Time.time;
-        float dist = Vector3.Distance(previousNode.transform.position, nextNode.transform.position);
-        travelTime = dist / bossesSpeed;
-        isLerping = true;
-    }
-
 
     // Utility Functions
     private void UpdateClosestNodeToPlayer()
@@ -125,21 +131,11 @@ public class BossArmController : MonoBehaviour {
         Node closestNodeToPlayer = FindClosestNodeToPlayer();
         if (closestNodeToPlayer != null) // If we found a node nearby the player, update the last closest node we've logged
             lastNearbyNodeToPlayer = closestNodeToPlayer;
-        else // Assume no end Node exists within sight of the player
-            Debug.Log("No nearby node to the player. #BlameRobert");
-    }
-    private bool ReachedNodeDestination() {
-        return (Vector3.Distance(bossesHand.transform.position, currentNextPos) < 0.001f);
-    }
-    private void LerpHandTowardNextLocation() {
-        bossesHand.transform.position = Vector3.Lerp(currentLastPos, currentNextPos, (Time.time - startTime) / travelTime);
+        // else // Assume no end Node exists within sight of the player
+            //Debug.Log("No nearby node to the player. #BlameRobert");
     }
     private Node FindClosestNodeToPlayer() {
         return navigationalGraph.FindAdjacentNodes(player.transform.position, "AmbientWaypoint", 100, layerMask);
-    }
-    public void DrawPathToEmployee() {
-        lineRenderer.positionCount = 0;
-        lineRenderer.SetPositions(navigationalGraph.NodesListToVector3List(currentPath).ToArray());
     }
     private void ClearLineRenderer() {
         if (lineRenderer == null)

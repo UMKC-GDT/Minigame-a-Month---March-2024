@@ -436,6 +436,7 @@ MonoBehaviour:
     deliverLocation: {x: 0, y: 0}
     deliverCheck: 0
     dilverySprite: 0
+    miniGameWord: 
   previousIndex: 0
   pin: {fileID: 251810268}
 --- !u!4 &332734099
@@ -6631,7 +6632,7 @@ Transform:
   m_GameObject: {fileID: 1299870761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 7.0000787, z: 0}
+  m_LocalPosition: {x: 43, y: 32.00008, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 105}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6842,7 +6843,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6882,12 +6883,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309023261}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.7312, y: 3.7312, z: 3.7312}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 3969145319662662122}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1399823859
 GameObject:
@@ -10993,12 +10994,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 7642009922445981594}
+  adjacentNodes:
+  - {fileID: 3320169909101754271}
+  - {fileID: 768405861524909724}
+  - {fileID: 5724920570659418791}
+  - {fileID: 1145777094986475455}
+  - {fileID: 6297394752683630399}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &45350904432474890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11131,14 +11137,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f96a56b0905fb49a03af13b0017e66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodes: {fileID: 0}
-  adjacencyRadius: 0
+  nodes: {fileID: 3030157105254065835}
+  adjacencyRadius: 100
   nodeLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   searchTag: AmbientWaypoint
-  start: {fileID: 0}
-  end: {fileID: 0}
+  start: {fileID: 2438057658063174603}
+  end: {fileID: 6283031726410596493}
 --- !u!4 &657930579684815520
 Transform:
   m_ObjectHideFlags: 0
@@ -11165,7 +11171,7 @@ GameObject:
   - component: {fileID: 9193113510962301329}
   - component: {fileID: 6664469446212982187}
   - component: {fileID: 8579094637329268927}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (7)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11184,12 +11190,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 7999878511849730463}
+  adjacentNodes:
+  - {fileID: 3017643195009719476}
+  - {fileID: 2173045378762763296}
+  - {fileID: 842891785671045046}
+  - {fileID: 7714831525732752721}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1 &842891785671045046
 GameObject:
   m_ObjectHideFlags: 0
@@ -11201,7 +11211,7 @@ GameObject:
   - component: {fileID: 1444059018489514607}
   - component: {fileID: 5277619338123518797}
   - component: {fileID: 6575628227535192045}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (10)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11220,12 +11230,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 4540885912892233301}
+  adjacentNodes:
+  - {fileID: 2173045378762763296}
+  - {fileID: 7123751210063803355}
+  - {fileID: 842891785671045046}
+  - {fileID: 7714831525732752721}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1 &1057170848146870489
 GameObject:
   m_ObjectHideFlags: 0
@@ -11237,7 +11251,7 @@ GameObject:
   - component: {fileID: 1354293955438311925}
   - component: {fileID: 7963043059576740152}
   - component: {fileID: 2438057658063174603}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (0)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11255,7 +11269,7 @@ GameObject:
   - component: {fileID: 7705937183517379221}
   - component: {fileID: 2886592015060942388}
   - component: {fileID: 5900315310210357336}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (27)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11273,7 +11287,7 @@ GameObject:
   - component: {fileID: 3024635690414699176}
   - component: {fileID: 5527826479471203139}
   - component: {fileID: 3861052120398882570}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (18)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11291,7 +11305,7 @@ GameObject:
   - component: {fileID: 1881764501008590364}
   - component: {fileID: 45350904432474890}
   - component: {fileID: 6760903665838370592}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (12)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11310,12 +11324,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 3184729548247795073}
+  adjacentNodes:
+  - {fileID: 6794518956872500486}
+  - {fileID: 842891785671045046}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!4 &1354293955438311925
 Transform:
   m_ObjectHideFlags: 0
@@ -11357,7 +11373,7 @@ GameObject:
   - component: {fileID: 7453837268246899135}
   - component: {fileID: 9123530769994743955}
   - component: {fileID: 1588300223251899996}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (21)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11421,12 +11437,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 9123530769994743955}
+  adjacentNodes:
+  - {fileID: 3320169909101754271}
+  - {fileID: 7395180947032292927}
+  - {fileID: 3962313477574843673}
+  - {fileID: 5984322924933975726}
+  - {fileID: 3523349825729077911}
+  - {fileID: 8749886719563596853}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!4 &1763476690777338219
 Transform:
   m_ObjectHideFlags: 0
@@ -11495,7 +11517,7 @@ Transform:
   m_GameObject: {fileID: 1152940059965316792}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18, y: 15, z: 0}
+  m_LocalPosition: {x: 18, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11512,7 +11534,7 @@ GameObject:
   - component: {fileID: 420812103956310102}
   - component: {fileID: 6223518843020188927}
   - component: {fileID: 6290057810717918391}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (1)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11530,7 +11552,7 @@ GameObject:
   - component: {fileID: 3903396203451100109}
   - component: {fileID: 5344140628158779471}
   - component: {fileID: 4137342693555952817}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (4)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11549,12 +11571,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 4414124642589946125}
+  adjacentNodes:
+  - {fileID: 3320169909101754271}
+  - {fileID: 1525372065584709789}
+  - {fileID: 768405861524909724}
+  - {fileID: 8956259195713479435}
+  - {fileID: 1073350100372442277}
+  - {fileID: 2173045378762763296}
+  - {fileID: 3523349825729077911}
+  - {fileID: 8749886719563596853}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!114 &2438057658063174603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11567,12 +11597,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 7963043059576740152}
   adjacentNodes: []
-  radius: 5
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &2576927407323128362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11627,7 +11657,7 @@ Transform:
   m_GameObject: {fileID: 6029987580951955817}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65, y: 15, z: 0}
+  m_LocalPosition: {x: 65, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11734,7 +11764,7 @@ GameObject:
   - component: {fileID: 3630434876513225908}
   - component: {fileID: 3009450540618073721}
   - component: {fileID: 4533749869421876201}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (3)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11797,7 +11827,7 @@ GameObject:
   - component: {fileID: 8037248259546157425}
   - component: {fileID: 4540885912892233301}
   - component: {fileID: 962645002708656404}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (5)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -11831,7 +11861,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c5bf147f61f604695eafeb4d9d0db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locations: []
+  locations:
+  - {fileID: 1057170848146870489}
+  - {fileID: 6794518956872500486}
+  - {fileID: 6404159066674465706}
+  - {fileID: 842891785671045046}
+  - {fileID: 7714831525732752721}
+  - {fileID: 1152940059965316792}
+  - {fileID: 5984322924933975726}
+  - {fileID: 7395180947032292927}
+  - {fileID: 7922786401554665656}
+  - {fileID: 4880282624964039869}
+  - {fileID: 5724920570659418791}
+  - {fileID: 1145777094986475455}
+  - {fileID: 5483076806763574868}
+  - {fileID: 3320169909101754271}
+  - {fileID: 1525372065584709789}
+  - {fileID: 3962313477574843673}
+  - {fileID: 8749886719563596853}
+  - {fileID: 3523349825729077911}
+  - {fileID: 6029987580951955817}
+  - {fileID: 8229473959558530999}
+  - {fileID: 1073350100372442277}
+  - {fileID: 6297394752683630399}
+  - {fileID: 2050480457300267495}
+  - {fileID: 8956259195713479435}
+  - {fileID: 3007395139291451308}
+  - {fileID: 2173045378762763296}
+  - {fileID: 3017643195009719476}
+  - {fileID: 7123751210063803355}
+  - {fileID: 768405861524909724}
 --- !u!61 &3057380301287268339
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11889,12 +11948,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 8691943171819864808}
+  adjacentNodes:
+  - {fileID: 4880282624964039869}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &3184729548247795073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11967,12 +12027,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 4127092124042622603}
+  adjacentNodes:
+  - {fileID: 768405861524909724}
+  - {fileID: 5483076806763574868}
+  - {fileID: 5724920570659418791}
+  - {fileID: 1145777094986475455}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &3301581763785934397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12029,7 +12093,7 @@ GameObject:
   - component: {fileID: 3930221604503534154}
   - component: {fileID: 4287846911221922748}
   - component: {fileID: 3669695783559652338}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (20)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -12047,7 +12111,7 @@ GameObject:
   - component: {fileID: 429773994192678081}
   - component: {fileID: 4852623314605554566}
   - component: {fileID: 7296682864050177274}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (24)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -12071,7 +12135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3630434876513225908
 Transform:
   m_ObjectHideFlags: 0
@@ -12099,12 +12163,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 3912274244464150066}
+  adjacentNodes:
+  - {fileID: 3320169909101754271}
+  - {fileID: 1525372065584709789}
+  - {fileID: 3962313477574843673}
+  - {fileID: 3523349825729077911}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!114 &3669695783559652338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12117,12 +12185,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 4287846911221922748}
+  adjacentNodes:
+  - {fileID: 1525372065584709789}
+  - {fileID: 3962313477574843673}
+  - {fileID: 5483076806763574868}
+  - {fileID: 3523349825729077911}
+  - {fileID: 8749886719563596853}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!4 &3822196757112165954
 Transform:
   m_ObjectHideFlags: 0
@@ -12150,12 +12223,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 5527826479471203139}
+  adjacentNodes:
+  - {fileID: 768405861524909724}
+  - {fileID: 5483076806763574868}
+  - {fileID: 5724920570659418791}
+  - {fileID: 6297394752683630399}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!4 &3903396203451100109
 Transform:
   m_ObjectHideFlags: 0
@@ -12242,7 +12319,7 @@ GameObject:
   - component: {fileID: 9137951131063772659}
   - component: {fileID: 4414124642589946125}
   - component: {fileID: 2340860797729473455}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (22)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -12306,7 +12383,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1309023264}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4127092124042622603
@@ -12366,12 +12444,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 5344140628158779471}
+  adjacentNodes:
+  - {fileID: 768405861524909724}
+  - {fileID: 3962313477574843673}
+  - {fileID: 8956259195713479435}
+  - {fileID: 1073350100372442277}
+  - {fileID: 3017643195009719476}
+  - {fileID: 7123751210063803355}
+  - {fileID: 842891785671045046}
+  - {fileID: 7714831525732752721}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &4287846911221922748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12429,12 +12515,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 629908237789431607}
+  adjacentNodes:
+  - {fileID: 1152940059965316792}
+  - {fileID: 3017643195009719476}
+  - {fileID: 2173045378762763296}
+  - {fileID: 7123751210063803355}
+  - {fileID: 842891785671045046}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &4414124642589946125
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12489,7 +12580,7 @@ Transform:
   m_GameObject: {fileID: 6404159066674465706}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12, y: 15, z: 0}
+  m_LocalPosition: {x: -12, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12507,12 +12598,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 3009450540618073721}
+  adjacentNodes:
+  - {fileID: 7395180947032292927}
+  - {fileID: 8956259195713479435}
+  - {fileID: 6029987580951955817}
+  - {fileID: 3523349825729077911}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &4540885912892233301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12718,7 +12813,7 @@ GameObject:
   - component: {fileID: 6559070521605241141}
   - component: {fileID: 3057380301287268339}
   - component: {fileID: 8117949378248458131}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (16)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -12737,12 +12832,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 2915205184817419461}
+  adjacentNodes:
+  - {fileID: 7395180947032292927}
+  - {fileID: 768405861524909724}
+  - {fileID: 3962313477574843673}
+  - {fileID: 1073350100372442277}
+  - {fileID: 2173045378762763296}
+  - {fileID: 3007395139291451308}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &5277619338123518797
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12842,7 +12943,7 @@ Transform:
   m_GameObject: {fileID: 8229473959558530999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55, y: 15, z: 0}
+  m_LocalPosition: {x: 55, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12860,18 +12961,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb2eb7e99ffc5845ba73c5add966091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  bossesHand: {fileID: 0}
-  navigationalGraph: {fileID: 0}
-  lineRenderer: {fileID: 0}
-  ambientWaypoints: {fileID: 0}
+  player: {fileID: 1299870761}
+  bossesHand: {fileID: 1309023261}
+  navigationalGraph: {fileID: 639137466265119530}
+  lineRenderer: {fileID: 4729183801627027574}
+  ambientWaypoints: {fileID: 3030157105254065835}
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   onBossCaughtYou:
     m_PersistentCalls:
       m_Calls: []
-  bossesDoorNode: {fileID: 0}
+  bossesDoorNode: {fileID: 2438057658063174603}
   bossesSpeed: 1
   bossesAttackRadge: 10
 --- !u!1 &5483076806763574868
@@ -12885,7 +12986,7 @@ GameObject:
   - component: {fileID: 7697150803768390120}
   - component: {fileID: 7642009922445981594}
   - component: {fileID: 19356222593356320}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (19)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -12949,12 +13050,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 3301581763785934397}
+  adjacentNodes:
+  - {fileID: 5984322924933975726}
+  - {fileID: 1152940059965316792}
+  - {fileID: 1073350100372442277}
+  - {fileID: 6029987580951955817}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1 &5724920570659418791
 GameObject:
   m_ObjectHideFlags: 0
@@ -12966,7 +13071,7 @@ GameObject:
   - component: {fileID: 657930579684815520}
   - component: {fileID: 7413441274093305646}
   - component: {fileID: 7103316507664015210}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (17)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -12985,12 +13090,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 2886592015060942388}
+  adjacentNodes:
+  - {fileID: 768405861524909724}
+  - {fileID: 3962313477574843673}
+  - {fileID: 8956259195713479435}
+  - {fileID: 6029987580951955817}
+  - {fileID: 2173045378762763296}
+  - {fileID: 8229473959558530999}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1 &5984322924933975726
 GameObject:
   m_ObjectHideFlags: 0
@@ -13002,7 +13113,7 @@ GameObject:
   - component: {fileID: 6462697595884010577}
   - component: {fileID: 2576927407323128362}
   - component: {fileID: 6182891247109028760}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (13)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13020,7 +13131,7 @@ GameObject:
   - component: {fileID: 2746599633982042349}
   - component: {fileID: 8037356565748027583}
   - component: {fileID: 6553544401242815570}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (25)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13039,12 +13150,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 2576927407323128362}
+  adjacentNodes:
+  - {fileID: 1525372065584709789}
+  - {fileID: 7395180947032292927}
+  - {fileID: 6794518956872500486}
+  - {fileID: 1152940059965316792}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &6223518843020188927
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13102,12 +13217,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 1543107410583027277}
+  adjacentNodes:
+  - {fileID: 1152940059965316792}
+  - {fileID: 5984322924933975726}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!114 &6290057810717918391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13120,12 +13237,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
+  boxCollider: {fileID: 6223518843020188927}
   adjacentNodes: []
-  radius: 5
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1 &6297394752683630399
 GameObject:
   m_ObjectHideFlags: 0
@@ -13137,7 +13254,7 @@ GameObject:
   - component: {fileID: 3822196757112165954}
   - component: {fileID: 4127092124042622603}
   - component: {fileID: 3268969178849318682}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (28)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13155,7 +13272,7 @@ GameObject:
   - component: {fileID: 4533519093736031472}
   - component: {fileID: 3184729548247795073}
   - component: {fileID: 1216564020181647231}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (9)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13174,12 +13291,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 3968598798965780703}
+  adjacentNodes:
+  - {fileID: 1525372065584709789}
+  - {fileID: 8956259195713479435}
+  - {fileID: 5984322924933975726}
+  - {fileID: 3007395139291451308}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!4 &6462697595884010577
 Transform:
   m_ObjectHideFlags: 0
@@ -13189,7 +13310,7 @@ Transform:
   m_GameObject: {fileID: 5984322924933975726}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28, y: 15, z: 0}
+  m_LocalPosition: {x: 28, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13207,12 +13328,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 8037356565748027583}
+  adjacentNodes:
+  - {fileID: 1073350100372442277}
+  - {fileID: 8229473959558530999}
+  - {fileID: 3523349825729077911}
+  - {fileID: 3007395139291451308}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!4 &6559070521605241141
 Transform:
   m_ObjectHideFlags: 0
@@ -13240,12 +13365,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 5277619338123518797}
+  adjacentNodes:
+  - {fileID: 6404159066674465706}
+  - {fileID: 3017643195009719476}
+  - {fileID: 2173045378762763296}
+  - {fileID: 7123751210063803355}
+  - {fileID: 7714831525732752721}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &6664469446212982187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13303,12 +13433,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 45350904432474890}
+  adjacentNodes:
+  - {fileID: 6794518956872500486}
+  - {fileID: 5984322924933975726}
+  - {fileID: 7714831525732752721}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1 &6794518956872500486
 GameObject:
   m_ObjectHideFlags: 0
@@ -13320,7 +13453,7 @@ GameObject:
   - component: {fileID: 7579194406142902778}
   - component: {fileID: 1543107410583027277}
   - component: {fileID: 6283031726410596493}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (8)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13344,7 +13477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7092521377294482731
 Transform:
   m_ObjectHideFlags: 0
@@ -13372,12 +13505,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 7413441274093305646}
+  adjacentNodes:
+  - {fileID: 4880282624964039869}
+  - {fileID: 768405861524909724}
+  - {fileID: 5483076806763574868}
+  - {fileID: 1145777094986475455}
+  - {fileID: 6297394752683630399}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1 &7123751210063803355
 GameObject:
   m_ObjectHideFlags: 0
@@ -13389,7 +13527,7 @@ GameObject:
   - component: {fileID: 8976215919035021573}
   - component: {fileID: 7999878511849730463}
   - component: {fileID: 804394626552777671}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (6)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13408,12 +13546,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 4852623314605554566}
+  adjacentNodes:
+  - {fileID: 3320169909101754271}
+  - {fileID: 1525372065584709789}
+  - {fileID: 3962313477574843673}
+  - {fileID: 6029987580951955817}
+  - {fileID: 3007395139291451308}
+  - {fileID: 8749886719563596853}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1 &7395180947032292927
 GameObject:
   m_ObjectHideFlags: 0
@@ -13425,7 +13569,7 @@ GameObject:
   - component: {fileID: 1845814249373667015}
   - component: {fileID: 3968598798965780703}
   - component: {fileID: 6451029604993463726}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (14)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13501,7 +13645,7 @@ Transform:
   m_GameObject: {fileID: 6794518956872500486}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 15, z: 0}
+  m_LocalPosition: {x: 0, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13591,7 +13735,7 @@ Transform:
   m_GameObject: {fileID: 1073350100372442277}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45, y: 15, z: 0}
+  m_LocalPosition: {x: 45, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13608,7 +13752,7 @@ GameObject:
   - component: {fileID: 7600384944116457107}
   - component: {fileID: 629908237789431607}
   - component: {fileID: 4396044612325858797}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (11)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13626,7 +13770,7 @@ GameObject:
   - component: {fileID: 7092521377294482731}
   - component: {fileID: 8691943171819864808}
   - component: {fileID: 3060785408200180621}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (15)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13795,12 +13939,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 3057380301287268339}
+  adjacentNodes:
+  - {fileID: 7922786401554665656}
+  - {fileID: 5724920570659418791}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!1 &8229473959558530999
 GameObject:
   m_ObjectHideFlags: 0
@@ -13812,7 +13958,7 @@ GameObject:
   - component: {fileID: 5384583886351066173}
   - component: {fileID: 3301581763785934397}
   - component: {fileID: 5714537572872836141}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (26)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13831,12 +13977,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f27dc4c9d5f6d2648acc0663323bb34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
-  adjacentNodes: []
-  radius: 5
+  boxCollider: {fileID: 6664469446212982187}
+  adjacentNodes:
+  - {fileID: 3962313477574843673}
+  - {fileID: 5483076806763574868}
+  - {fileID: 8956259195713479435}
+  - {fileID: 1073350100372442277}
+  - {fileID: 5724920570659418791}
+  - {fileID: 1145777094986475455}
+  - {fileID: 2173045378762763296}
+  - {fileID: 6297394752683630399}
+  radius: 100
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!61 &8691943171819864808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13893,7 +14047,7 @@ GameObject:
   - component: {fileID: 8843813378556555194}
   - component: {fileID: 3912274244464150066}
   - component: {fileID: 3664813584346266503}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (23)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -13926,7 +14080,7 @@ GameObject:
   - component: {fileID: 3211741234579241131}
   - component: {fileID: 2915205184817419461}
   - component: {fileID: 5103630244559098539}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Location (2)
   m_TagString: AmbientWaypoint
   m_Icon: {fileID: 0}
@@ -14034,7 +14188,6 @@ SceneRoots:
   - {fileID: 1299870763}
   - {fileID: 3969145319662662122}
   - {fileID: 1763476690777338219}
-  - {fileID: 1309023264}
   - {fileID: 332734099}
   - {fileID: 2125705828}
   - {fileID: 934098071}

@@ -13,6 +13,7 @@ public class GraphEditor : Editor
 
         if (GUILayout.Button("Construct Graph"))
         {
+            graph.nodes.Repopulate();
             graph.ContstructGraph();
         }
         if (GUILayout.Button("Print Graph"))

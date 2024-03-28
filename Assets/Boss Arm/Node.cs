@@ -19,7 +19,7 @@ public class Node : MonoBehaviour
         }
         // Circle cast to see all nearby nodes
         RaycastHit2D[] hits = Physics2D.CircleCastAll(gameObject.transform.position, radius, Vector2.right);
-        Debug.Log(hits.Length);
+        //Debug.Log(hits.Length);
         foreach (var hit in hits)
         {
             // Check if the hit has the same tag and is not this gameObject
@@ -31,7 +31,7 @@ public class Node : MonoBehaviour
                 foreach(var hit2 in sightTest) {
                     if(hit2.transform.CompareTag("Walls"))
                     {
-                        Debug.Log("Hit a wall");
+                        // Debug.Log("Hit a wall");
                         break;
                     }
 

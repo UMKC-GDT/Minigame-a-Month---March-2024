@@ -30,7 +30,7 @@ public class MovingObstacle : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             obstacleHit.Invoke();                                     // execute all methods assigned to obstacleHit
-            Debug.Log("Hit Player");
+            //Debug.Log("Hit Player");
 
         }
 
@@ -39,7 +39,7 @@ public class MovingObstacle : MonoBehaviour
         {
             currentWaypoint = GetNextWaypoint(currentWaypoint);       // get the next waypoint
             currentWaypointDirection = GetDirection(currentWaypoint); // get normalized vector of obstacle -> waypoint
-            Debug.Log("Hit waypoint");
+            //Debug.Log("Hit waypoint");
         }
 
         animator.SetFloat("Horizontal", currentWaypointDirection.x);
