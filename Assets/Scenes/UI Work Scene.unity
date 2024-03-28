@@ -12999,7 +12999,7 @@ MonoBehaviour:
       m_Calls: []
   isLerping: 0
   bossesDoorNode: {fileID: 2438057658063174603}
-  bossesSpeed: 10
+  bossesSpeed: 70
   bossesAttackRadge: 10
 --- !u!1 &5483076806763574868
 GameObject:
