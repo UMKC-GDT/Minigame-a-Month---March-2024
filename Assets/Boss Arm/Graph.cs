@@ -62,7 +62,7 @@ public class Graph : MonoBehaviour
     {
         if(adjacencyMap == null)
         {
-            // Debug.Log("No Graph");
+            Debug.Log("No Graph");
             return;
         }
         string line = "";
@@ -73,16 +73,33 @@ public class Graph : MonoBehaviour
             {
                 line += "\t" + "Adjacent to: " + adjacentNode.gameObject.name + " distace: " + edges[OrderNodes(node, adjacentNode)];
             }
-            // Debug.Log(line);
+            Debug.Log(line);
         }
     }
 
     public List<Node> FindPath(Node startNode, Node targetNode)
     {
-        if(startNode == null)
-        { return new List<Node>(); }
-        if(targetNode == null)
-        { return new List<Node>(); }
+        // If either are null
+        if(startNode == null || targetNode == null)
+        {
+            Debug.Log("Tried to find a path beginning or ending at a null node");
+            return new List<Node>();
+        }
+        bool targetAdjacentToStart = false;
+        foreach(var node in adjacencyMap[startNode])
+        {
+            if(node.transform.position == targetNode.transform.position)
+            {
+                targetAdjacentToStart = true;
+            }
+        }
+        if(targetAdjacentToStart)
+        {
+            List<Node> path = new List<Node>();
+            path.Add(startNode);
+            path.Add(targetNode);
+            return path;
+        }
         List<Node> openSet = new();
         HashSet<Node> closedSet = new();
         openSet.Add(startNode);

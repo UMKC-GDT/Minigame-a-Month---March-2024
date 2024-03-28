@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StrikesDisplay : MonoBehaviour
 {
     
     //I added this to access in my Task Class -Cameron
     public static StrikesDisplay instance;
+    public UnityEvent onStrikeOut;
 
     void Awake()
     {
@@ -69,6 +71,7 @@ public class StrikesDisplay : MonoBehaviour
         {
             StartCoroutine(ActivateStrikeoutLine());
             struckout = true;
+            onStrikeOut.Invoke();
         }
 
         IEnumerator ActivateStrikeoutLine()
