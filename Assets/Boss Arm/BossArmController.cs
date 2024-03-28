@@ -16,13 +16,13 @@ public class BossArmController : MonoBehaviour {
 
     // Pathfinding
     private Node previousNode, nextNode, lastNearbyNodeToPlayer;
-    private Vector3 currentLastPos, currentNextPos;
     private List<Node> pathTraveled, currentPath;
     
     // Event System
     public UnityEvent onBossCaughtYou;
 
     // State variables
+    [SerializeField]
     private bool isLerping = false;
     private float startTime = 0, travelTime = 0;
     private bool grabbedPlayer = false;
@@ -66,12 +66,11 @@ public class BossArmController : MonoBehaviour {
             return;
         }
         Debug.Log("Chasing player");
-        // Either get a new path and move to the second node in it, or just go straight for the player
+        // If player is close enough to the hand to be grabbed
         if(Vector3.Distance(player.transform.position, bossesHand.transform.position) < bossesAttackRadge) {
             // Attack the player
             Debug.Log("Within bonking distance");
-        }
-        else { // Find a path and go to the next spot in it
+        } else { // Find a path and go to the next spot in it
             //Debug.Log("Finding path to player's last nearby node");
             UpdateClosestNodeToPlayer();
             // Begin from the next node
@@ -87,12 +86,10 @@ public class BossArmController : MonoBehaviour {
                 lineRenderer.positionCount = 0;
                 lineRenderer.SetPositions(navigationalGraph.NodesListToVector3List(currentPath).ToArray());
                 // Movebetween hand currentNode and nextNode
-                Vector3 alpha = previousNode.transform.position, beta = nextNode.transform.position;
-                if (alpha != null && beta != null)
+                if (isLerping == false && previousNode != null && nextNode != null)
                 {
                     startTime = Time.time;
-                    float dist = Vector3.Distance(previousNode.transform.position, nextNode.transform.position);
-                    travelTime = dist / bossesSpeed;
+                    travelTime = Vector3.Distance(previousNode.transform.position, nextNode.transform.position) / bossesSpeed;
                     isLerping = true;
                 }
             }
@@ -113,12 +110,17 @@ public class BossArmController : MonoBehaviour {
 
     private void FixedUpdate() {
         if(isLerping) {
-            Debug.Log("Trying to move");
+            if(nextNode == null || previousNode == null)
+            {
+                return;
+            }
+            Debug.Log("Lerping: " + (Time.time - startTime) / travelTime);
             // Lerp hand to next destination
-            bossesHand.transform.position = Vector3.Lerp(currentLastPos, currentNextPos, (Time.time - startTime) / travelTime);
+            bossesHand.transform.position = Vector3.Lerp(previousNode.transform.position, nextNode.transform.position, (Time.time - startTime) / travelTime);
 
             // If we reached the destination
-            if (Vector3.Distance(bossesHand.transform.position, currentNextPos) < 0.001f) {
+            if (Vector3.Distance(bossesHand.transform.position, nextNode.transform.position) < 0.001f) {
+                Debug.Log("Reached the nextNode");
                 isLerping = false;
                 SetNextPositions();
             }
