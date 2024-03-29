@@ -5,12 +5,11 @@ using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
-    public UnityEvent onReset;
     public GameObject player;
     private void Reset()
     {
         GetComponent<BoxCollider2D>().isTrigger = true;
-        onReset.Invoke();
+        
     }
 
     private void Start()
@@ -49,7 +48,6 @@ public class Interactable : MonoBehaviour
         // if the obstacle collides with the player
         if (other.CompareTag("Player"))
         {
-
             other.GetComponent<PlayerController>().CloseInteractableIcon();
 
         }
@@ -89,6 +87,8 @@ public class Interactable : MonoBehaviour
                     player.transform.GetChild(spriteIndex).gameObject.SetActive(true);
                 TaskManager.instance.pin.transform.position = TaskManager.instance.currentTask.deliverLocation;
                 TaskManager.instance.currentTask.deliverCheck = true;
+
+
                 //if player reaches new location 
                 //success   
                 //add time

@@ -806,7 +806,7 @@ Transform:
   m_GameObject: {fileID: 251810268}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -25, y: -1, z: 0}
   m_LocalScale: {x: 23.538921, y: 23.538921, z: 23.538921}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4922,9 +4922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc91b52815eea44fb65022d576b7dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onReset:
-    m_PersistentCalls:
-      m_Calls: []
   player: {fileID: 1299870761}
 --- !u!61 &797410327
 BoxCollider2D:
@@ -6069,8 +6066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 626137451}
   dialogueText: {fileID: 1193405203}
-  dialogue: []
-  wordSpeed: 0.1
+  wordSpeed: 0.01
   playerIsClose: 0
 --- !u!1 &976145109
 GameObject:
