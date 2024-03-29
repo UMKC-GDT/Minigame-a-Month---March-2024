@@ -5939,11 +5939,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4059989307264076973, guid: 67baa3ecf3f2d4c45b46cbe9247b0b7d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4059989307264076973, guid: 67baa3ecf3f2d4c45b46cbe9247b0b7d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4059989307264076973, guid: 67baa3ecf3f2d4c45b46cbe9247b0b7d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5989,6 +5989,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 4387c2a221c9747baaf6b71b89f770c2, type: 2}
+    - target: {fileID: 4085457343826378513, guid: 67baa3ecf3f2d4c45b46cbe9247b0b7d, type: 3}
+      propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6370763066640569714, guid: 67baa3ecf3f2d4c45b46cbe9247b0b7d, type: 3}
       propertyPath: m_LinearDrag
       value: 0
@@ -5996,6 +6000,10 @@ PrefabInstance:
     - target: {fileID: 6370763066640569714, guid: 67baa3ecf3f2d4c45b46cbe9247b0b7d, type: 3}
       propertyPath: m_AngularDrag
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370763066640569714, guid: 67baa3ecf3f2d4c45b46cbe9247b0b7d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6370763066640569714, guid: 67baa3ecf3f2d4c45b46cbe9247b0b7d, type: 3}
       propertyPath: m_CollisionDetection
@@ -6061,11 +6069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 626137451}
   dialogueText: {fileID: 1193405203}
-  dialogue:
-  - Example text 1
-  - Hey intern this is example test
-  - Final example test ending bye bye intern.
-  wordSpeed: 0.05
+  dialogue: []
+  wordSpeed: 0.1
   playerIsClose: 0
 --- !u!1 &976145109
 GameObject:
