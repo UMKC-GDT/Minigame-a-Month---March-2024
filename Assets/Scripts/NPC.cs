@@ -13,48 +13,70 @@ public class NPC : MonoBehaviour
 
     public float wordSpeed;
     public bool playerIsClose;
+    private bool interacted;
 
 
     void Start()
     {
+        interacted = false;
         dialogueText.text = "";
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (playerIsClose)
         {
-            if (!dialoguePanel.activeInHierarchy)
+            //Stop the player and npc when they collide
+            MovingObstacle.instance.ActivateMovement();
+            PlayerController.instance.pauseControls();
+            //Dont bring up the textbox again if you've exhausted the dialogue
+            if (interacted == true)
             {
-                dialoguePanel.SetActive(true);
-                StartCoroutine(Typing());
+                RemoveText();
             }
-            if (Input.GetMouseButtonDown(0))
             {
-                if (dialogueText.text == dialogue[index])
+                //For first time dialogue
+                if (!dialoguePanel.activeInHierarchy)
                 {
-                    NextLine();
+                    dialoguePanel.SetActive(true);
+                    StartCoroutine(Typing());
                 }
-                else
+                //M1 to skip to next dialogue
+                if (Input.GetMouseButtonDown(0))
                 {
-                    StopAllCoroutines();
-                    dialogueText.text = dialogue[index];
+                    if (dialogueText.text == dialogue[index])
+                    {
+                        NextLine();
+                    }
+                    else
+                    {
+                        StopAllCoroutines();
+                        dialogueText.text = dialogue[index];
+                    }
                 }
-            }
 
-        }
-        if (Input.GetKeyDown(KeyCode.Q) && dialoguePanel.activeInHierarchy)
-        {
-            RemoveText();
+            }
+            //Checks if you've exhausted the dialogue. Index is at 2 because i have only 3 test lines right now
+            if (index >= 3 && dialoguePanel.activeInHierarchy)
+            {
+                interacted = true;
+                RemoveText();
+            }
+            //Starts back player and NPC movement
+            if(!playerIsClose)
+            {
+                PlayerController.instance.playControls();
+            }
         }
     }
 
     public void RemoveText()
     {
         dialogueText.text = "";
-        index = 0;
+        PlayerController.instance.playControls();
+        MovingObstacle.instance.DeactivateMovement();
         dialoguePanel.SetActive(false);
+
     }
 
     IEnumerator Typing()
@@ -68,7 +90,7 @@ public class NPC : MonoBehaviour
 
     public void NextLine()
     {
-        if (index < dialogue.Length - 1)
+        if (index < dialogue.Length)
         {
             index++;
             dialogueText.text = "";

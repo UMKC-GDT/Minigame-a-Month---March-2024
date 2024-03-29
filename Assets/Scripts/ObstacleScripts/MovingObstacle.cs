@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class MovingObstacle : MonoBehaviour
 {
     // public variables
+    public static MovingObstacle instance;
     public UnityEvent obstacleHit;            // event to attach other functions to; functions will be called when player collides with obstacle
     public List<GameObject> waypoints;        // waypoints for the obstacle to move between; use the waypoint prefabs
     public float obstacleSpeed = 1.0f;        // the movement speed of the obstacle in units / second
@@ -20,6 +21,7 @@ public class MovingObstacle : MonoBehaviour
     public Animator animator;
     private void Awake() 
     {
+        instance = this;
         originalSpeed = obstacleSpeed;
         currentWaypoint = (waypoints.Count > 0) ? waypoints[0] : null;
         currentWaypointDirection = GetDirection(currentWaypoint);
