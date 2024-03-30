@@ -56,7 +56,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NPC
+  m_Name: NPC 2
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Horizontal
@@ -138,7 +138,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cc05aaf6597db47a681517869447d098, type: 2}
+  m_Motion: {fileID: 7400000, guid: e75a2e80edac74535b5e2b8d0c11d72c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -178,7 +178,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 7fd20fd8b128a4046aad305b426062c0, type: 2}
+    m_Motion: {fileID: 7400000, guid: d2c7b783dbd6540a892c754ba50b5baf, type: 2}
     m_Threshold: -1
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -186,7 +186,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d969ba34b20594211bb98516c345bd68, type: 2}
+    m_Motion: {fileID: 7400000, guid: 17638da275a69472d98d694ffb11f367, type: 2}
     m_Threshold: 1
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -194,7 +194,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 6d5450fe7bdfe4b9583d24e1300874d1, type: 2}
+    m_Motion: {fileID: 7400000, guid: e86da89cadd6a449395c173b5db14e02, type: 2}
     m_Threshold: 3
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -202,7 +202,7 @@ BlendTree:
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: fd527fdbec5ad4f038e4bbc2ae1d2832, type: 2}
+    m_Motion: {fileID: 7400000, guid: 378fee63cb43346789a9156a4814b2fa, type: 2}
     m_Threshold: 5
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
