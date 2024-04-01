@@ -31,7 +31,7 @@ public class TimerDisplay : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y)) setTime((float)random.NextDouble() * 100);
+        //if (Input.GetKeyDown(KeyCode.Y)) setTime((float)random.NextDouble() * 100);
     }
 
     

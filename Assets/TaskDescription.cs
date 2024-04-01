@@ -48,6 +48,8 @@ public class TaskDescription : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        /*
         if (Input.GetKeyDown(KeyCode.T))
         {
             int randomNumber = UnityEngine.Random.Range(1, 6); // Generates a random number between 1 and 5
@@ -71,6 +73,7 @@ public class TaskDescription : MonoBehaviour
                     break;
             }
         }
+        */
 
         //setTask("deliver", "mail", false);
         //setTask("type", "email", true);

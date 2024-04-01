@@ -71,6 +71,7 @@ public class EmailMinigame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.O))
         {
             startEmail("STAR");
@@ -79,6 +80,7 @@ public class EmailMinigame : MonoBehaviour
         {
             suddenEnd();
         }
+        */
     }
 
     public void sendButtonClicked() {

@@ -46,8 +46,8 @@ public class StrikesDisplay : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            addStrike();
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //    addStrike();
         for (int i = 0; i < strikeMarkers.Length; i++)
         {
             if (i < activeStrikes)
