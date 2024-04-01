@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TaskManager : MonoBehaviour
 {
@@ -74,8 +75,11 @@ public class TaskManager : MonoBehaviour
             StrikesDisplay.instance.addStrike();
             
             if (StrikesDisplay.instance.activeStrikes == 3)
+            {
                 StopAllCoroutines();
-            
+                SceneManager.LoadScene(2); //loads roll credit scene
+            }
+
         }
 
             //pick a random task from the list 

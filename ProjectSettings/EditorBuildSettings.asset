@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New Sprites Scene.unity
     guid: c5b21e4f8de35486293ee83dff401bbd
+  - enabled: 1
+    path: Assets/Scenes/RollCredits.unity
+    guid: 58f0be3d51f32cd4fb380cd97ba4de48
   m_configObjects: {}
