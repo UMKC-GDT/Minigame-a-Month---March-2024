@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class EndGame : MonoBehaviour
 {
     
-
+    public int time = 50;
+    public int scene = 3;
      int counter = 0;
     void Start()
     {
@@ -16,11 +17,11 @@ public class EndGame : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(counter < 50){
+        if(counter < time){
             counter++;
         }
         else{
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(scene);
         }
         
     }
