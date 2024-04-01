@@ -127,7 +127,7 @@ public class NPC : MonoBehaviour
                 }
 
             }
-            //Checks if you've exhausted the dialogue. Index is at 2 because i have only 3 test lines right now
+            //Checks if you've exhausted the dialogue. And if talked to before will not talk again.
             if (index >= dialogue.Length - 1 && dialoguePanel.activeInHierarchy)
             {
                 

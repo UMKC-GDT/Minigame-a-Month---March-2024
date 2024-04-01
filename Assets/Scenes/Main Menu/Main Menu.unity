@@ -1390,7 +1390,7 @@ GameObject:
   - component: {fileID: 607957834}
   - component: {fileID: 607957833}
   m_Layer: 5
-  m_Name: Sprite Designers Names
+  m_Name: Gameplay Designers Names
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1439,7 +1439,9 @@ MonoBehaviour:
 
     Tomie
 
-    Ethan Miller'
+    Ethan Miller
+
+    Temuulen Munkhjargal'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 27ef34a464f074de38fae7a0ccad819a, type: 2}
   m_sharedMaterial: {fileID: -2751580814391585648, guid: 27ef34a464f074de38fae7a0ccad819a, type: 2}
