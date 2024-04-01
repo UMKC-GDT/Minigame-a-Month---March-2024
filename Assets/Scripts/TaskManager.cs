@@ -77,7 +77,6 @@ public class TaskManager : MonoBehaviour
             if (StrikesDisplay.instance.activeStrikes == 3)
             {
                 StopAllCoroutines();
-                SceneManager.LoadScene(2); //loads roll credit scene
             }
 
         }
