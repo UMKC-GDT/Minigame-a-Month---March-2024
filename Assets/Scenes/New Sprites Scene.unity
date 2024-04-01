@@ -8810,6 +8810,7 @@ GameObject:
   - component: {fileID: 1389126955}
   - component: {fileID: 1389126957}
   - component: {fileID: 1389126958}
+  - component: {fileID: 1389126959}
   m_Layer: 0
   m_Name: Door (1)
   m_TagString: Untagged
@@ -8929,6 +8930,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.16, y: 3.34}
   m_EdgeRadius: 0
+--- !u!114 &1389126959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389126954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea6838efa963224cb8d94f4724a7f36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1389126957}
+  doorOpen: {fileID: -430089276, guid: 17b9c977386054a2789a4442153748f5, type: 3}
+  doorClosed: {fileID: -1001247149, guid: 17b9c977386054a2789a4442153748f5, type: 3}
 --- !u!1 &1399823859
 GameObject:
   m_ObjectHideFlags: 0
@@ -11150,7 +11166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1908443867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19077,6 +19093,7 @@ GameObject:
   - component: {fileID: 3969145319662662122}
   - component: {fileID: 4729183801627027574}
   - component: {fileID: 5425377905565059516}
+  - component: {fileID: 5425377905565059517}
   m_Layer: 5
   m_Name: BossArm
   m_TagString: Untagged
@@ -19921,13 +19938,90 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  onBossBeginsChasing:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1389126959}
+        m_TargetAssemblyTypeName: DoorSpriteController, Assembly-CSharp
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onBossCaughtYou:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1299870768}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: pauseControls
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onBossPulledYouBack:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1389126959}
+        m_TargetAssemblyTypeName: DoorSpriteController, Assembly-CSharp
+        m_MethodName: CloseDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   isLerping: 0
   bossesDoorNode: {fileID: 6553544401242815570}
   bossesSpeed: 55
   bossesAttackRadge: 10
+--- !u!58 &5425377905565059517
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619318644648152177}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -12.5, y: 0}
+  serializedVersion: 2
+  m_Radius: 13.5
 --- !u!1 &5483076806763574868
 GameObject:
   m_ObjectHideFlags: 0

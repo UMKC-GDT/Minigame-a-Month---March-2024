@@ -5413,9 +5413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cc91b52815eea44fb65022d576b7dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onReset:
-    m_PersistentCalls:
-      m_Calls: []
   player: {fileID: 1299870761}
 --- !u!61 &797410327
 BoxCollider2D:
@@ -12996,7 +12993,19 @@ MonoBehaviour:
     m_Bits: 4294967295
   onBossCaughtYou:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1299870768}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: pauseControls
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   isLerping: 0
   bossesDoorNode: {fileID: 2438057658063174603}
   bossesSpeed: 70
