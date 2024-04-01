@@ -20170,7 +20170,7 @@ MonoBehaviour:
   isLerping: 0
   bossesDoorNode: {fileID: 6553544401242815570}
   bossesSpeed: 55
-  bossesAttackRadge: 10
+  bossesAttackRadge: 40
 --- !u!58 &5425377905565059517
 CircleCollider2D:
   m_ObjectHideFlags: 0

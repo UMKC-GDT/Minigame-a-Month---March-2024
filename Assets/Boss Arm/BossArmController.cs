@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine.Events;
 using System.Linq;
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(LineRenderer))]
 public class BossArmController : MonoBehaviour {
@@ -97,8 +98,18 @@ public class BossArmController : MonoBehaviour {
                 // Attack the player
                 Debug.Log("Path too short, begin bonking");
             }
+            if(currentPath == null && lastNearbyNodeToPlayer == null && grabbingPlayer == false && grabbedPlayer == false)
+            {
+                StartCoroutine(KeepTryingToFindPath());
+            }
             LogPrevAndNextNode();
         }
+    }
+
+    private IEnumerator KeepTryingToFindPath()
+    {
+        yield return new WaitForSeconds(1.0f);
+        SetNextPositions();
     }
 
     private void GrabPlayer()
