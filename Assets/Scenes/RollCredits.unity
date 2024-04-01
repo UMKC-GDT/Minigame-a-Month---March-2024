@@ -467,6 +467,63 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &956026453
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102257142924955320, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328705996398548728, guid: a89a822611aac184797b360758a897cb, type: 3}
+      propertyPath: m_Name
+      value: EscapeController
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a89a822611aac184797b360758a897cb, type: 3}
 --- !u!1 &985307129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,3 +1412,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 1373155204}
   - {fileID: 1797420256}
+  - {fileID: 956026453}
