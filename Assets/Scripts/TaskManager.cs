@@ -1,8 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class TaskManager : MonoBehaviour
 {
@@ -21,48 +18,53 @@ public class TaskManager : MonoBehaviour
         instance = this;
     }
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
-
-        //theres probabably a better way to do this
-        Task task1 = new Task("Deliver Coffee", 10f, 'D', new Vector2(38f, 40f), new Vector2(15.5f, 0f), 1);
-        tasks.Add(task1);
-
-        Task task2 = new Task("Write Email", 7f,'P', new Vector2(5.5f, 20f), Vector2.zero,0,"GAME");
-        tasks.Add(task2);
-
-        
-        Task task3 = new Task("Pick up the Phone", 5f, 'A',new Vector2(54f, 41.5f), Vector2.zero);
-        tasks.Add(task3);
-        
-        Task task4 = new Task("Take Notes", 7f,'P',new Vector2(-25f, -1f), Vector2.zero,0,"NOTE");
-        tasks.Add(task4);
-
-        Task task5 = new Task("Change Printer Paper", 10f, 'D', new Vector2(12.5f, 38.5f), new Vector2(-23f, -19.5f), 2);
-        tasks.Add(task5);
-
-        Task task6 = new Task("Deliver Papers", 10f, 'D', new Vector2(66f, -20f), new Vector2(-17.5f, -5.5f), 2);
-        tasks.Add(task6);
-
-        Task task7 = new Task("Drink Water", 5f, 'A', new Vector2(-25f, 37.5f), Vector2.zero);
-        tasks.Add(task7);
-        
-        Task task8 = new Task("Fix Clock", 5f, 'A', new Vector2(-4.5f, 43f), Vector2.zero);
-        tasks.Add(task8);
+        taskAssignment();
 
         previousIndex = UnityEngine.Random.Range(0, tasks.Count);
         currentTask = tasks[previousIndex];
         
         currentTask.Assign();
     }
+    public void taskAssignment()
+    {
+        Dictionary<string, (float taskLimit,
+                            char type,
+                            Vector2 initialLocation,
+                            Vector2 deliveryLocation,
+                            int sprite,
+                            string word)> taskParams =
+            new Dictionary<string, (float, char, Vector2, Vector2, int, string)>
+        {
+            {"Deliver Coffee",          (10f, 'D', new Vector2(38f, 40f), new Vector2(15.5f, 0f), 1, "") },
+            {"Write Email",             (7f,'P', new Vector2(5.5f, 20f), Vector2.zero, 0, "GAME") },
+            {"Pick up the Phone",       (5f, 'A', new Vector2(54f, 41.5f), Vector2.zero, 0, "") },
+            {"Take Notes",              (7f,'P', new Vector2(-25f, -1f), Vector2.zero,0,"NOTE") },
+            {"Change Printer Paper",    (10f, 'D', new Vector2(12.5f, 38.5f), new Vector2(-23f, -19.5f), 2, "") },
+            {"Deliver Papers",          (10f, 'D', new Vector2(66f, -20f), new Vector2(-17.5f, -5.5f), 2, "")},
+            {"Drink Water",             (5f, 'A', new Vector2(-25f, 37.5f), Vector2.zero, 0, "")},
+            {"Fix Clock",               (5f, 'A', new Vector2(-4.5f, 43f), Vector2.zero, 0, "")}
+        };
+
+        foreach (var entry in taskParams)
+        {
+            Task task = new Task(
+                entry.Key,
+                entry.Value.taskLimit,
+                entry.Value.type,
+                entry.Value.initialLocation,
+                entry.Value.deliveryLocation,
+                entry.Value.sprite,
+                entry.Value.word
+                );
+            tasks.Add(task);
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-
         //Debug.Log(currentTask.taskName);
         if (!currentTask.isRuningTimer){
             //end the minigame
@@ -78,15 +80,10 @@ public class TaskManager : MonoBehaviour
             {
                 StopAllCoroutines();
             }
-
         }
-
-            //pick a random task from the list 
-
-            //assign task
-
-            //when completed, pick a new task
-        
+        //pick a random task from the list 
+        //assign task
+        //when completed, pick a new task
     }
 
     public void setNewTask()
@@ -96,14 +93,12 @@ public class TaskManager : MonoBehaviour
         {
             randomIndex = UnityEngine.Random.Range(0, tasks.Count);
         }
-
         
         //Debug.Log("previous: "+previousIndex);
         //Debug.Log("curret: "+randomIndex);
 
         currentTask = tasks[randomIndex];
         previousIndex = randomIndex;
-
 
         //Debug.Log("strikes: "+StrikesDisplay.instance.activeStrikes);
 
@@ -112,9 +107,5 @@ public class TaskManager : MonoBehaviour
             StopAllCoroutines();
             currentTask.Assign();
         }
-        
-
     }
-
-    
 }

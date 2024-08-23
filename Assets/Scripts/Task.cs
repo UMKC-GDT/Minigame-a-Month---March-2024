@@ -16,7 +16,7 @@ public class Task
     public Vector2 deliverLocation;
 
     public bool deliverCheck;
-    public int dilverySprite;
+    public int deliverySprite;
 
     public string miniGameWord;
 
@@ -29,7 +29,7 @@ public class Task
         type = c;
         location = l;
         deliverLocation = v;
-        dilverySprite = d;
+        deliverySprite = d;
         miniGameWord = w;
         deliverCheck = false;
     }

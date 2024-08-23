@@ -29,7 +29,7 @@ public class Interactable : MonoBehaviour
                 //TaskManager.instance.currentTask.location = new Vector2(42.5f, 35f);
                 TaskManager.instance.currentTask.deliverCheck = false;
 
-                int spriteIndex = TaskManager.instance.currentTask.dilverySprite;
+                int spriteIndex = TaskManager.instance.currentTask.deliverySprite;
                 if (spriteIndex > 0)
                     player.transform.GetChild(spriteIndex).gameObject.SetActive(false);
                
@@ -82,7 +82,7 @@ public class Interactable : MonoBehaviour
                 //
                 //TaskManager.instance.currentTask.location = new Vector2(42.5f, 20f);
 
-                int spriteIndex = TaskManager.instance.currentTask.dilverySprite;
+                int spriteIndex = TaskManager.instance.currentTask.deliverySprite;
                 if (spriteIndex > 0)
                     player.transform.GetChild(spriteIndex).gameObject.SetActive(true);
                 TaskManager.instance.pin.transform.position = TaskManager.instance.currentTask.deliverLocation;
