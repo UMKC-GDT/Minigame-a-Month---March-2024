@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObsticleSpawner : MonoBehaviour
+public class ObstacleSpawner : MonoBehaviour
 {
     public GameObject spawnerPrefab;
     public List<GameObject> spawnLocation = new List<GameObject>();
