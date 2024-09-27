@@ -67,9 +67,9 @@ public class TaskManager : MonoBehaviour
             //end the minigame
             EmailMinigame.instance.suddenEnd();
 
-            setNewTask();
+            SetNewTask();
             currentTask.deliverCheck = false;
-            setNewTask();
+            SetNewTask();
 
             StrikesDisplay.instance.addStrike();
             
@@ -83,7 +83,7 @@ public class TaskManager : MonoBehaviour
         //when completed, pick a new task
     }
 
-    public void setNewTask()
+    public void SetNewTask()
     {
         int randomIndex = UnityEngine.Random.Range(0, tasksList.Count);
         while(randomIndex == previousIndex)

@@ -101,7 +101,7 @@ public class EmailMinigame : MonoBehaviour
 
             //This is where we would tell the TaskManager that the task is completed
                 //nah, im just gonna call the next task right here -cameron
-            TaskManager.instance.setNewTask();
+            TaskManager.instance.SetNewTask();
             PlayerController.instance.playControls(); //allows player to move again
         }
 
@@ -126,7 +126,7 @@ public class EmailMinigame : MonoBehaviour
             minigameAnimator.Play("SuddenEndMinigame");
             
             //allows player to move agian, even  if they lose -camerron
-            TaskManager.instance.setNewTask();
+            TaskManager.instance.SetNewTask();
             PlayerController.instance.playControls();
         }
         

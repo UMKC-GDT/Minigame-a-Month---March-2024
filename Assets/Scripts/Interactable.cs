@@ -33,7 +33,7 @@ public class Interactable : MonoBehaviour
                 if (spriteIndex > 0)
                     player.transform.GetChild(spriteIndex).gameObject.SetActive(false);
                
-                TaskManager.instance.setNewTask();
+                TaskManager.instance.SetNewTask();
 
             }
             else
@@ -66,7 +66,7 @@ public class Interactable : MonoBehaviour
 
                 Debug.Log("Task- arrive");
 
-                TaskManager.instance.setNewTask();
+                TaskManager.instance.SetNewTask();
 
                 //start animation 
                 //when animation finishes
