@@ -5,8 +5,11 @@ public class TaskManager : MonoBehaviour
 {
     public static TaskManager instance;
 
-    public List<Task> tasks = new List<Task>();
-
+    public List<Task> tasksList = new List<Task>();
+   
+    ///<summary>
+    ///Parameter specifying what task the player is currently attempting to complete
+    ///</summary>
     public Task currentTask;
     public int previousIndex;
 
@@ -20,46 +23,40 @@ public class TaskManager : MonoBehaviour
 
     void Start()
     {
-        taskAssignment();
+        TaskAssignment();
 
-        previousIndex = UnityEngine.Random.Range(0, tasks.Count);
-        currentTask = tasks[previousIndex];
-        
+        previousIndex = UnityEngine.Random.Range(0, tasksList.Count);
+
+
+        currentTask = tasksList[previousIndex];
+
         currentTask.Assign();
     }
-    public void taskAssignment()
+    /// <summary>
+    /// Responsible for two behaviors:
+    /// <list type="number">
+    /// <item><param name="taskParams">Creating the tuple dictionary <em>taskParams</em></param></item>
+    /// <item><param name="taskList">Transcribing the tuple dictionary into a list <em>tasksList</em></param></item>
+    /// </list>
+    /// </summary>
+    /// <returns>A task <strong>list</strong> with a valid index</returns>
+    public void TaskAssignment()
     {
-        Dictionary<string, (float taskLimit,
-                            char type,
-                            Vector2 initialLocation,
-                            Vector2 deliveryLocation,
-                            int sprite,
-                            string word)> taskParams =
-            new Dictionary<string, (float, char, Vector2, Vector2, int, string)>
+        var taskParams = new (string name, float taskLimit, char type, Vector2 initialLocation, Vector2 deliveryLocation, int sprite, string word)[]
         {
-            {"Deliver Coffee",          (10f, 'D', new Vector2(38f, 40f), new Vector2(15.5f, 0f), 1, "") },
-            {"Write Email",             (7f,'P', new Vector2(5.5f, 20f), Vector2.zero, 0, "GAME") },
-            {"Pick up the Phone",       (5f, 'A', new Vector2(54f, 41.5f), Vector2.zero, 0, "") },
-            {"Take Notes",              (7f,'P', new Vector2(-25f, -1f), Vector2.zero,0,"NOTE") },
-            {"Change Printer Paper",    (10f, 'D', new Vector2(12.5f, 38.5f), new Vector2(-23f, -19.5f), 2, "") },
-            {"Deliver Papers",          (10f, 'D', new Vector2(66f, -20f), new Vector2(-17.5f, -5.5f), 2, "")},
-            {"Drink Water",             (5f, 'A', new Vector2(-25f, 37.5f), Vector2.zero, 0, "")},
-            {"Fix Clock",               (5f, 'A', new Vector2(-4.5f, 43f), Vector2.zero, 0, "")}
+            ("Deliver Coffee",          10f, 'D', new Vector2(38f, 40f), new Vector2(15.5f, 0f), 1, ""),
+            ("Write Email",             7f,'P', new Vector2(5.5f, 20f), Vector2.zero, 0, "GAME"),
+            ("Pick up the Phone",       5f, 'A', new Vector2(54f, 41.5f), Vector2.zero, 0, ""),
+            ("Take Notes",              7f,'P', new Vector2(-25f, -1f), Vector2.zero,0,"NOTE"),
+            ("Change Printer Paper",    10f, 'D', new Vector2(12.5f, 38.5f), new Vector2(-23f, -19.5f), 2, ""),
+            ("Deliver Papers",          10f, 'D', new Vector2(66f, -20f), new Vector2(-17.5f, -5.5f), 2, ""),
+            ("Drink Water",             5f, 'A', new Vector2(-25f, 37.5f), Vector2.zero, 0, ""),
+            ("Fix Clock",               5f, 'A', new Vector2(-4.5f, 43f), Vector2.zero, 0, "")
         };
 
-        foreach (var entry in taskParams)
-        {
-            Task task = new Task(
-                entry.Key,
-                entry.Value.taskLimit,
-                entry.Value.type,
-                entry.Value.initialLocation,
-                entry.Value.deliveryLocation,
-                entry.Value.sprite,
-                entry.Value.word
-                );
-            tasks.Add(task);
-        }
+        Task[] tasksList = new Task[taskParams.Length];
+
+
     }
 
     // Update is called once per frame
@@ -88,16 +85,16 @@ public class TaskManager : MonoBehaviour
 
     public void setNewTask()
     {
-        int randomIndex = UnityEngine.Random.Range(0, tasks.Count);
+        int randomIndex = UnityEngine.Random.Range(0, tasksList.Count);
         while(randomIndex == previousIndex)
         {
-            randomIndex = UnityEngine.Random.Range(0, tasks.Count);
+            randomIndex = UnityEngine.Random.Range(0, tasksList.Count);
         }
         
         //Debug.Log("previous: "+previousIndex);
         //Debug.Log("curret: "+randomIndex);
 
-        currentTask = tasks[randomIndex];
+        currentTask = tasksList[randomIndex];
         previousIndex = randomIndex;
 
         //Debug.Log("strikes: "+StrikesDisplay.instance.activeStrikes);
