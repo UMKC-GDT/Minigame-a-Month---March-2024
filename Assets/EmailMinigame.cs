@@ -7,7 +7,6 @@ public class EmailMinigame : MonoBehaviour
 {
     public static EmailMinigame instance;
     
-    
     [Header("Text Fields")]
     public Text goalText;
     public InputField inputField;
@@ -22,7 +21,14 @@ public class EmailMinigame : MonoBehaviour
 
     void Awake()
     {
-        instance = this;
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void incorrectInput()

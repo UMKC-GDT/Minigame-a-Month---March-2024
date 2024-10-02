@@ -1,9 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics; // Add this using directive for Stopwatch
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class TaskManager : MonoBehaviour
 {
@@ -73,6 +70,11 @@ public class TaskManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (StrikesDisplay.instance.activeStrikes == 3)
+        {
+            EmailMinigame.instance.suddenEnd();
+        }
+
         if (!currentTask.isRuningTimer)
         {
             // End the minigame
