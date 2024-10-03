@@ -1,4 +1,4 @@
-Welcome to [NAME PENDING]!
+Welcome to Dungeon Deadline!
 
 This was a minigame made for the Minigame a Month - March 2024 Game Jam, hosted by Screen Smith Studios. 
 
