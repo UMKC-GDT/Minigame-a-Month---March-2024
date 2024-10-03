@@ -8,11 +8,10 @@ public class EndGame : MonoBehaviour
     
     public int time = 50;
     public int scene = 3;
-     int counter = 0;
+    private int counter = 0;
     void Start()
     {
         
-        int counter = 0;
     }
 
     void FixedUpdate()

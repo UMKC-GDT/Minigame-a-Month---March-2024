@@ -5,8 +5,8 @@ public class TaskManager : MonoBehaviour
 {
     public static TaskManager instance;
 
-    public List<Task> tasksList = new List<Task>();
-   
+    public List<Task> tasksList = new();
+
     ///<summary>
     ///Parameter specifying what task the player is currently attempting to complete
     ///</summary>
@@ -24,19 +24,13 @@ public class TaskManager : MonoBehaviour
     void Start()
     {
         TaskAssignment();
-
-        previousIndex = UnityEngine.Random.Range(0, tasksList.Count);
-
-
-        currentTask = tasksList[previousIndex];
-
-        currentTask.Assign();
+        SetNewTask();
     }
     /// <summary>
     /// Responsible for two behaviors:
     /// <list type="number">
-    /// <item><param name="taskParams">Creating the tuple dictionary <em>taskParams</em></param></item>
-    /// <item><param name="taskList">Transcribing the tuple dictionary into a list <em>tasksList</em></param></item>
+    /// <item><param name="taskParams">Creating the tuple array <em>taskParams</em></param></item>
+    /// <item><param name="taskList">Assigning the tuple array into a list <em>tasksList</em></param></item>
     /// </list>
     /// </summary>
     /// <returns>A task <strong>list</strong> with a valid index</returns>
@@ -60,37 +54,44 @@ public class TaskManager : MonoBehaviour
     }
 
     // Update is called once per frame
+    /// <summary>
+    /// 
+    /// </summary>
     void Update()
     {
-        //Debug.Log(currentTask.taskName);
-        if (!currentTask.isRuningTimer){
-            //end the minigame
+        if (StrikesDisplay.instance.activeStrikes == 3)
+        {
+            EmailMinigame.instance.suddenEnd();
+        }
+
+        if (!currentTask.isRuningTimer)
+        {
+            // End the Email/Note minigame
             EmailMinigame.instance.suddenEnd();
 
+            // Why is this setting a new task, defining it as false, and then immediately setting yet another task?
             SetNewTask();
             currentTask.deliverCheck = false;
             SetNewTask();
 
             StrikesDisplay.instance.addStrike();
-            
+
             if (StrikesDisplay.instance.activeStrikes == 3)
             {
                 StopAllCoroutines();
             }
         }
-        //pick a random task from the list 
-        //assign task
-        //when completed, pick a new task
     }
 
     public void SetNewTask()
     {
+        // These lines look like they are defining randomIndex, and then just reassigning the values within the while loop. Looks redundant upon general inspection
         int randomIndex = UnityEngine.Random.Range(0, tasksList.Count);
-        while(randomIndex == previousIndex)
+        while (randomIndex == previousIndex)
         {
             randomIndex = UnityEngine.Random.Range(0, tasksList.Count);
         }
-        
+
         //Debug.Log("previous: "+previousIndex);
         //Debug.Log("curret: "+randomIndex);
 

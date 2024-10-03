@@ -76,7 +76,7 @@ public class DialogueManager : MonoBehaviour
 
 
             messageText.text = message.message.Substring(0, i);
-            yield return new WaitForSeconds(message.textSpeed);
+            yield return new WaitForSeconds(message.textSpeed); // Is this line of code even doing anything?
         }
 
         dialogueDone = true;
