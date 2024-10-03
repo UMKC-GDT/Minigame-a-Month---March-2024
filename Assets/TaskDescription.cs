@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class TaskDescription : MonoBehaviour
 {
-
-    
     //I added this to access in my Task Class -Cameron
     public static TaskDescription instance;
 

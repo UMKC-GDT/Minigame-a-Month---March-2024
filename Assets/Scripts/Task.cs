@@ -6,6 +6,9 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Task 
 {
+    // Refs to canvas popups
+    public EmailMinigame emailController;
+
     //variables 
     public string taskName;
     public float timeLimit;
@@ -56,12 +59,14 @@ public class Task
 
     }
 
+    // Called after a task is completed
     void StopRunningTimer()
     {
         if (isRuningTimer)
             TaskManager.instance.StopCoroutine(runningTimer);
         
         runningTimer = null;
+        CloseAllPopups();
     }
 
     IEnumerator RunTimer(float limit)
@@ -74,8 +79,6 @@ public class Task
             timer--;
             TimerDisplay.instance.setTime(timer);
             TaskDescription.instance.taskName.text = taskName;
-
-
         }
         StopRunningTimer();
     }
@@ -86,5 +89,11 @@ public class Task
         // return true
         //determine if its successs/fail ???
     }
+
+    public void CloseAllPopups()
+    {
+
+    }
+
 }
 
