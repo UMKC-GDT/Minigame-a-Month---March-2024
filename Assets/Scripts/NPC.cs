@@ -1,15 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
+using UnityEngine;
 using TMPro;
 
 public class NPC : MonoBehaviour
 {
     //This looks terrible im sorry
 
-    //i fixed some of the apostraphes that were weird -cameron
-    //also for some reason, adding an empty string at tthe end fixed a bug -cameron
+    //i fixed some of the apostrophes that were weird -cameron
+    //also for some reason, adding an empty string at the end fixed a bug -cameron
     private string[] d1 = new string[]
 {
         "Wanna hear about my cat's new trick?",
@@ -89,15 +89,16 @@ public class NPC : MonoBehaviour
         if (playerIsClose)
         {
             //Stop the player and npc when they collide
-            /*For some reason the moving obstacle ActivateMovement is bugged(?)
-              where I was getting the reverse results with Deactivate Movement where they would
-              only stop after exiting the collision box instead of when it was triggered.
-              But it works properly when ActivateMovement is called as in it stops when the player
-              is detected on the collision box.
-             */
+            /*
+                For some reason the moving obstacle ActivateMovement is bugged(?)
+                where I was getting the reverse results with Deactivate Movement where they would
+                only stop after exiting the collision box instead of when it was triggered.
+                But it works properly when ActivateMovement is called as in it stops when the player
+                is detected on the collision box.
+            */
 
 
-            GetComponent<MovingObstacle>().ActivateMovement();  //this component already exists in this object -cameron
+            GetComponent<MovingObstacle>().ActivateMovement(); //this component already exists in this object -cameron
             PlayerController.instance.pauseControls();
             //Dont bring up the textbox again if you've exhausted the dialogue
             if (interacted == true)

@@ -20,4 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RollCredits.unity
     guid: 58f0be3d51f32cd4fb380cd97ba4de48
+  - enabled: 1
+    path: Assets/Scenes/Main Menu/Main Menu Credits.unity
+    guid: 2586aa0cdc172c449b8980f34f8fb49e
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
