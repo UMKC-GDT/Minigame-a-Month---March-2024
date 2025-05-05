@@ -17,7 +17,7 @@ namespace BehaviorTree {
                 return NodeState.Failure;
 
             var agentPos = blackboard.agent.position;
-            var targetPos = blackboard.enemy.transform.position;
+            var targetPos = blackboard.currentTarget.transform.position;
 
             float distance = Vector3.Distance(agentPos, targetPos);
             Debug.Log($"[MoveToTarget] Distance to enemy: {distance}, ArrivalRange: {blackboard.arrivalRange}");

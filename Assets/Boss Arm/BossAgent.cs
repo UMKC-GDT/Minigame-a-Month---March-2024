@@ -3,6 +3,7 @@ using BehaviorTree;
 using UnityEngine;
 using System.Linq;
 using System;
+using UnityEditor.IMGUI.Controls;
 
 public class BossAgent : MonoBehaviour {
     public BehaviorTreeAsset treeAsset;
@@ -21,6 +22,7 @@ public class BossAgent : MonoBehaviour {
             agent = this.transform,
             enemy = player,
             hand = hand,
+            currentTarget = player,
             door = doorNode,
             grabRange = 2.1f,
             arrivalRange = 2.0f,

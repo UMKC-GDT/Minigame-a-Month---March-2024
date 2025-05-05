@@ -51,8 +51,8 @@ public class BTEditorWindow : EditorWindow {
 
             // Type-based coloring
             string typeName = node.GetType().Name;
-            if (typeName == "IsEnemyWithinRange" || typeName == "IsEnemyVisible" || typeName == "HasEnemyBeenGrabbed" || typeName == "IsNextNodeCloserThanEnemy") color = new Color(0.2f, 0.4f, 1f);
-            else if (typeName.Contains("Action") || typeName == "Grab" || typeName == "MoveToTarget" || typeName == "FindPathToEnemy" || typeName == "ReturnToOffice" || typeName == "MoveAlongPath") color = new Color(1f, 0.3f, 0.3f);
+            if (typeName == "IsEnemyWithinRange" || typeName == "IsTargetVisible" || typeName == "HasEnemyBeenGrabbed" || typeName == "IsNextnodeCloserThanTarget") color = new Color(0.2f, 0.4f, 1f);
+            else if (typeName.Contains("Action") || typeName == "Grab" || typeName == "MoveToTarget" || typeName == "FindPathToTarget" || typeName == "ReturnToOffice" || typeName == "MoveAlongPath" || typeName == "ToggleTarget") color = new Color(1f, 0.3f, 0.3f);
             else if (typeName.Contains("Selector") || typeName.Contains("Sequence") || typeName.Contains("Invert")) color = new Color(1f, 0.5f, 0.2f);
 
             if (node == selectedParentNode)

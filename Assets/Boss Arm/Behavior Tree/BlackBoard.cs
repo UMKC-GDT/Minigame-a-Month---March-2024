@@ -6,8 +6,9 @@ public class Blackboard {
     // References
     public Transform agent;
     public GameObject enemy;
-    public GameObject hand;
+    public GameObject currentTarget;
     public Node door;
+    public GameObject hand;
 
     // Pathfinding
     public Graph graph;

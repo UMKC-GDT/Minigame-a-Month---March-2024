@@ -1,14 +1,15 @@
 using UnityEngine;
 
 namespace BehaviorTree {
-    public class IsNextNodeCloserThanEnemy : BTNode {
+    public class IsNextnodeCloserThanTarget : BTNode {
+
         private Blackboard bb;
 
-        public IsNextNodeCloserThanEnemy(Vector2 position, Blackboard blackboard) : base(position) {
+        public IsNextnodeCloserThanTarget(Vector2 position, Blackboard blackboard) : base(position) {
             bb = blackboard;
         }
 
-        public IsNextNodeCloserThanEnemy(Vector2 position) : base(position) {
+        public IsNextnodeCloserThanTarget(Vector2 position) : base(position) {
             // Will be assigned later
         }
 
@@ -18,9 +19,11 @@ namespace BehaviorTree {
 
         protected override NodeState OnTick() {
             if (bb.currentPath == null || bb.currentPath.Count == 0) return NodeState.Failure;
-
+            if(bb.currentPath[0].gameObject == bb.currentTarget.gameObject) {
+                return NodeState.Failure;
+            }
             Vector3 handPos = bb.hand.transform.position;
-            float distToEnemy = Vector3.Distance(handPos, bb.enemy.transform.position);
+            float distToEnemy = Vector3.Distance(handPos, bb.currentTarget.transform.position);
             float distToNextNode = Vector3.Distance(handPos, bb.currentPath[0].transform.position);
 
             return distToNextNode < distToEnemy ? NodeState.Success : NodeState.Failure;

@@ -23,7 +23,6 @@ public class Graph : MonoBehaviour
         }
     }
 
-
     public void ContstructGraph()
     {
         if(adjacencyMap == null)
@@ -80,25 +79,16 @@ public class Graph : MonoBehaviour
     public List<Node> FindPath(Node startNode, Node targetNode)
     {
         // If either are null
-        if(startNode == null || targetNode == null)
+        if (startNode == null || targetNode == null)
         {
             Debug.Log("Tried to find a path beginning or ending at a null node");
             return new List<Node>();
         }
-        bool targetAdjacentToStart = false;
-        foreach(var node in adjacencyMap[startNode])
+        if (startNode == targetNode)
         {
-            if(node.transform.position == targetNode.transform.position)
-            {
-                targetAdjacentToStart = true;
-            }
-        }
-        if(targetAdjacentToStart)
-        {
-            List<Node> path = new List<Node>();
-            path.Add(startNode);
-            path.Add(targetNode);
-            return path;
+            Debug.Log("Start and end nodes are the same.");
+            Debug.Log(startNode.name + " to " + targetNode.name);
+            return new List<Node> { startNode };
         }
         List<Node> openSet = new();
         HashSet<Node> closedSet = new();
@@ -123,7 +113,9 @@ public class Graph : MonoBehaviour
 
             if (currentNode == targetNode)
             {
-                return ReconstructPath(cameFrom, currentNode);
+                List<Node> path = ReconstructPath(cameFrom, currentNode);
+                PrintPath(path);
+                return path;
             }
 
             openSet.Remove(currentNode);
@@ -247,5 +239,13 @@ public class Graph : MonoBehaviour
             return closestNode.GetComponent<Node>();
         }
         return null;
+    }
+
+    public void PrintPath(List<Node> path) {
+        string message = "";
+        foreach(Node node in path) {
+            message += node.gameObject.name + " ";
+        }
+        Debug.Log(message);
     }
 }

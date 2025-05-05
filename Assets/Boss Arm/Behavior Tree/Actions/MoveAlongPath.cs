@@ -25,15 +25,15 @@ namespace BehaviorTree {
             }
 
             if (pathIndex >= bb.currentPath.Count) {
-                return Vector3.Distance(bb.hand.transform.position, bb.enemy.transform.position) <= bb.grabRange ? NodeState.Failure : NodeState.Running;
+                return Vector3.Distance(bb.hand.transform.position, bb.currentTarget.transform.position) <= bb.grabRange ? NodeState.Failure : NodeState.Running;
             }
 
             Node targetNode = bb.currentPath[pathIndex];
             float distToNode = Vector3.Distance(bb.hand.transform.position, targetNode.transform.position);
-            float distToEnemy = Vector3.Distance(bb.hand.transform.position, bb.enemy.transform.position);
+            float distToEnemy = Vector3.Distance(bb.hand.transform.position, bb.currentTarget.transform.position);
 
             // Exit early if player is closer than the next node
-            if (distToEnemy < distToNode)
+            if (distToEnemy <= distToNode)
                 return NodeState.Failure;
 
             // Move toward the current node

@@ -14,50 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - typeName: RootNode
-    position: {x: 660, y: 140}
+    position: {x: 700, y: 160}
     childrenIndices: 01000000
   - typeName: SelectorNode
-    position: {x: 660, y: 200}
-    childrenIndices: 040000000200000007000000
+    position: {x: 700, y: 220}
+    childrenIndices: 020000000400000005000000
   - typeName: SequenceNode
-    position: {x: 660, y: 260}
-    childrenIndices: 0300000006000000
+    position: {x: 700, y: 280}
+    childrenIndices: 060000000b0000000c000000
   - typeName: IsEnemyWithinRange
-    position: {x: 580, y: 320}
+    position: {x: 180, y: 340}
     childrenIndices: 
   - typeName: SequenceNode
-    position: {x: 320, y: 260}
-    childrenIndices: 050000000d000000
+    position: {x: 320, y: 280}
+    childrenIndices: 0300000007000000090000000a000000
+  - typeName: MoveToTarget
+    position: {x: 860, y: 280}
+    childrenIndices: 
+  - typeName: FindPathToTarget
+    position: {x: 620, y: 340}
+    childrenIndices: 
+  - typeName: InverterNode
+    position: {x: 240, y: 400}
+    childrenIndices: 08000000
   - typeName: HasEnemyBeenGrabbed
-    position: {x: 240, y: 320}
+    position: {x: 240, y: 460}
     childrenIndices: 
   - typeName: Grab
-    position: {x: 740, y: 320}
+    position: {x: 400, y: 400}
     childrenIndices: 
-  - typeName: SelectorNode
-    position: {x: 1060, y: 260}
-    childrenIndices: 0800000009000000
-  - typeName: SequenceNode
-    position: {x: 980, y: 320}
-    childrenIndices: 0a0000000b0000000c000000
-  - typeName: MoveToTarget
-    position: {x: 1140, y: 320}
+  - typeName: ToggleTarget
+    position: {x: 460, y: 340}
     childrenIndices: 
-  - typeName: FindPathToEnemy
-    position: {x: 900, y: 380}
-    childrenIndices: 
-  - typeName: IsNextNodeCloserThanEnemy
-    position: {x: 980, y: 440}
+  - typeName: IsNextnodeCloserThanTarget
+    position: {x: 700, y: 400}
     childrenIndices: 
   - typeName: MoveAlongPath
-    position: {x: 1060, y: 380}
-    childrenIndices: 
-  - typeName: SequenceNode
-    position: {x: 400, y: 320}
-    childrenIndices: 0e0000000f000000
-  - typeName: FindPathToEnemy
-    position: {x: 320, y: 380}
-    childrenIndices: 
-  - typeName: MoveAlongPath
-    position: {x: 480, y: 380}
+    position: {x: 780, y: 340}
     childrenIndices: 

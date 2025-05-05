@@ -789,14 +789,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 227576485}
   adjacentNodes:
-  - {fileID: 1340664999}
-  - {fileID: 551828923}
   - {fileID: 7714831525732752721}
+  - {fileID: 1340664999}
   - {fileID: 7123751210063803355}
   - {fileID: 842891785671045046}
-  - {fileID: 6794518956872500486}
-  - {fileID: 6404159066674465706}
   - {fileID: 1057170848146870489}
+  - {fileID: 6404159066674465706}
+  - {fileID: 6794518956872500486}
+  - {fileID: 551828923}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -2647,14 +2647,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 551828926}
   adjacentNodes:
-  - {fileID: 1340664999}
-  - {fileID: 227576482}
   - {fileID: 7714831525732752721}
+  - {fileID: 1340664999}
+  - {fileID: 2173045378762763296}
+  - {fileID: 964612732}
+  - {fileID: 3017643195009719476}
   - {fileID: 7123751210063803355}
   - {fileID: 842891785671045046}
-  - {fileID: 2173045378762763296}
-  - {fileID: 3017643195009719476}
-  - {fileID: 964612732}
+  - {fileID: 227576482}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -6634,19 +6634,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 964612735}
   adjacentNodes:
-  - {fileID: 1340664999}
-  - {fileID: 551828923}
   - {fileID: 7714831525732752721}
-  - {fileID: 7123751210063803355}
-  - {fileID: 842891785671045046}
+  - {fileID: 1340664999}
   - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
   - {fileID: 6029987580951955817}
   - {fileID: 3017643195009719476}
-  - {fileID: 768405861524909724}
-  - {fileID: 7395180947032292927}
   - {fileID: 8956259195713479435}
+  - {fileID: 1073350100372442277}
+  - {fileID: 768405861524909724}
   - {fileID: 3962313477574843673}
+  - {fileID: 7395180947032292927}
+  - {fileID: 7123751210063803355}
+  - {fileID: 842891785671045046}
+  - {fileID: 551828923}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -9415,15 +9415,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 1333028917}
   adjacentNodes:
+  - {fileID: 1525372065584709789}
+  - {fileID: 3523349825729077911}
+  - {fileID: 3320169909101754271}
   - {fileID: 3962313477574843673}
   - {fileID: 8749886719563596853}
-  - {fileID: 3523349825729077911}
-  - {fileID: 1525372065584709789}
-  - {fileID: 3320169909101754271}
-  - {fileID: 7922786401554665656}
   - {fileID: 4880282624964039869}
-  - {fileID: 2050480457300267495}
   - {fileID: 1145777094986475455}
+  - {fileID: 2050480457300267495}
+  - {fileID: 7922786401554665656}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -9558,15 +9558,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 1340665002}
   adjacentNodes:
-  - {fileID: 551828923}
-  - {fileID: 227576482}
   - {fileID: 7714831525732752721}
-  - {fileID: 7123751210063803355}
-  - {fileID: 842891785671045046}
   - {fileID: 2173045378762763296}
+  - {fileID: 964612732}
   - {fileID: 6029987580951955817}
   - {fileID: 3017643195009719476}
-  - {fileID: 964612732}
+  - {fileID: 7123751210063803355}
+  - {fileID: 842891785671045046}
+  - {fileID: 551828923}
+  - {fileID: 227576482}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -11215,9 +11215,9 @@ MonoBehaviour:
   onStrikeOut:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5425377905565059516}
-        m_TargetAssemblyTypeName: BossArmController, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1389126959}
+        m_TargetAssemblyTypeName: DoorSpriteController, Assembly-CSharp
+        m_MethodName: OpenDoor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11225,7 +11225,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1062388301}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -11244,7 +11244,7 @@ MonoBehaviour:
   strikeThree: {fileID: 561988655}
   strikeoutLine: {fileID: 380687357}
   struckout: 0
-  activeStrikes: 2
+  activeStrikes: 0
 --- !u!1 &1646944600
 GameObject:
   m_ObjectHideFlags: 0
@@ -19198,11 +19198,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 7642009922445981594}
   adjacentNodes:
-  - {fileID: 6297394752683630399}
   - {fileID: 768405861524909724}
+  - {fileID: 6297394752683630399}
   - {fileID: 3320169909101754271}
-  - {fileID: 5724920570659418791}
   - {fileID: 1145777094986475455}
+  - {fileID: 5724920570659418791}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -19442,14 +19442,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 7999878511849730463}
   adjacentNodes:
+  - {fileID: 7714831525732752721}
   - {fileID: 1340664999}
+  - {fileID: 2173045378762763296}
+  - {fileID: 964612732}
+  - {fileID: 3017643195009719476}
+  - {fileID: 842891785671045046}
   - {fileID: 551828923}
   - {fileID: 227576482}
-  - {fileID: 7714831525732752721}
-  - {fileID: 842891785671045046}
-  - {fileID: 2173045378762763296}
-  - {fileID: 3017643195009719476}
-  - {fileID: 964612732}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -19486,14 +19486,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 4540885912892233301}
   adjacentNodes:
-  - {fileID: 1340664999}
-  - {fileID: 551828923}
   - {fileID: 7714831525732752721}
+  - {fileID: 1340664999}
+  - {fileID: 2173045378762763296}
+  - {fileID: 964612732}
+  - {fileID: 6029987580951955817}
   - {fileID: 7123751210063803355}
   - {fileID: 842891785671045046}
-  - {fileID: 2173045378762763296}
-  - {fileID: 6029987580951955817}
-  - {fileID: 964612732}
+  - {fileID: 551828923}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -19584,18 +19584,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 3184729548247795073}
   adjacentNodes:
-  - {fileID: 227576482}
-  - {fileID: 842891785671045046}
-  - {fileID: 6794518956872500486}
   - {fileID: 8956259195713479435}
+  - {fileID: 5984322924933975726}
   - {fileID: 8229473959558530999}
   - {fileID: 3007395139291451308}
-  - {fileID: 5984322924933975726}
+  - {fileID: 842891785671045046}
+  - {fileID: 1057170848146870489}
+  - {fileID: 6794518956872500486}
   - {fileID: 1152940059965316792}
   - {fileID: 4880282624964039869}
-  - {fileID: 2050480457300267495}
-  - {fileID: 1057170848146870489}
   - {fileID: 1145777094986475455}
+  - {fileID: 2050480457300267495}
+  - {fileID: 227576482}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -19709,15 +19709,15 @@ MonoBehaviour:
   boxCollider: {fileID: 9123530769994743955}
   adjacentNodes:
   - {fileID: 768405861524909724}
-  - {fileID: 7395180947032292927}
+  - {fileID: 3523349825729077911}
+  - {fileID: 3320169909101754271}
   - {fileID: 3962313477574843673}
   - {fileID: 8749886719563596853}
   - {fileID: 8229473959558530999}
-  - {fileID: 3523349825729077911}
-  - {fileID: 3320169909101754271}
-  - {fileID: 7922786401554665656}
+  - {fileID: 7395180947032292927}
   - {fileID: 4880282624964039869}
   - {fileID: 1333028914}
+  - {fileID: 7922786401554665656}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -19852,18 +19852,18 @@ MonoBehaviour:
   boxCollider: {fileID: 4414124642589946125}
   adjacentNodes:
   - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
   - {fileID: 964612732}
-  - {fileID: 768405861524909724}
-  - {fileID: 7395180947032292927}
   - {fileID: 8956259195713479435}
-  - {fileID: 8749886719563596853}
+  - {fileID: 1073350100372442277}
+  - {fileID: 768405861524909724}
   - {fileID: 3523349825729077911}
   - {fileID: 1525372065584709789}
   - {fileID: 3320169909101754271}
-  - {fileID: 7922786401554665656}
+  - {fileID: 8749886719563596853}
+  - {fileID: 7395180947032292927}
   - {fileID: 4880282624964039869}
   - {fileID: 1333028914}
+  - {fileID: 7922786401554665656}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -19883,13 +19883,13 @@ MonoBehaviour:
   boxCollider: {fileID: 7963043059576740152}
   adjacentNodes:
   - {fileID: 227576482}
-  - {fileID: 6794518956872500486}
   - {fileID: 8956259195713479435}
+  - {fileID: 5984322924933975726}
   - {fileID: 8229473959558530999}
   - {fileID: 3007395139291451308}
-  - {fileID: 5984322924933975726}
-  - {fileID: 1152940059965316792}
   - {fileID: 6404159066674465706}
+  - {fileID: 6794518956872500486}
+  - {fileID: 1152940059965316792}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -19948,7 +19948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6029987580951955817}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 65.45, y: 40.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20251,14 +20251,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 8691943171819864808}
   adjacentNodes:
-  - {fileID: 3962313477574843673}
-  - {fileID: 8749886719563596853}
   - {fileID: 3523349825729077911}
   - {fileID: 1525372065584709789}
   - {fileID: 3320169909101754271}
+  - {fileID: 3962313477574843673}
+  - {fileID: 8749886719563596853}
   - {fileID: 4880282624964039869}
-  - {fileID: 2050480457300267495}
   - {fileID: 1333028914}
+  - {fileID: 2050480457300267495}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -20340,8 +20340,8 @@ MonoBehaviour:
   adjacentNodes:
   - {fileID: 768405861524909724}
   - {fileID: 5483076806763574868}
-  - {fileID: 5724920570659418791}
   - {fileID: 1145777094986475455}
+  - {fileID: 5724920570659418791}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -20476,16 +20476,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 3912274244464150066}
   adjacentNodes:
-  - {fileID: 768405861524909724}
-  - {fileID: 7395180947032292927}
   - {fileID: 8956259195713479435}
-  - {fileID: 3962313477574843673}
+  - {fileID: 768405861524909724}
   - {fileID: 3523349825729077911}
   - {fileID: 1525372065584709789}
   - {fileID: 3320169909101754271}
-  - {fileID: 7922786401554665656}
+  - {fileID: 3962313477574843673}
+  - {fileID: 7395180947032292927}
   - {fileID: 4880282624964039869}
   - {fileID: 1333028914}
+  - {fileID: 7922786401554665656}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -20504,14 +20504,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 4287846911221922748}
   adjacentNodes:
-  - {fileID: 3962313477574843673}
-  - {fileID: 8749886719563596853}
   - {fileID: 3523349825729077911}
   - {fileID: 1525372065584709789}
   - {fileID: 5483076806763574868}
-  - {fileID: 7922786401554665656}
+  - {fileID: 3962313477574843673}
+  - {fileID: 8749886719563596853}
   - {fileID: 4880282624964039869}
   - {fileID: 1333028914}
+  - {fileID: 7922786401554665656}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -20545,13 +20545,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 5527826479471203139}
   adjacentNodes:
-  - {fileID: 6297394752683630399}
   - {fileID: 768405861524909724}
+  - {fileID: 6297394752683630399}
   - {fileID: 5483076806763574868}
-  - {fileID: 5724920570659418791}
-  - {fileID: 2050480457300267495}
   - {fileID: 6404159066674465706}
   - {fileID: 1333028914}
+  - {fileID: 5724920570659418791}
+  - {fileID: 2050480457300267495}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -20772,20 +20772,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 5344140628158779471}
   adjacentNodes:
-  - {fileID: 1340664999}
-  - {fileID: 551828923}
   - {fileID: 7714831525732752721}
-  - {fileID: 7123751210063803355}
-  - {fileID: 842891785671045046}
-  - {fileID: 1073350100372442277}
+  - {fileID: 1340664999}
+  - {fileID: 964612732}
   - {fileID: 6029987580951955817}
   - {fileID: 3017643195009719476}
-  - {fileID: 964612732}
-  - {fileID: 768405861524909724}
-  - {fileID: 7395180947032292927}
   - {fileID: 8956259195713479435}
+  - {fileID: 1073350100372442277}
+  - {fileID: 768405861524909724}
   - {fileID: 3962313477574843673}
   - {fileID: 8229473959558530999}
+  - {fileID: 7395180947032292927}
+  - {fileID: 7123751210063803355}
+  - {fileID: 842891785671045046}
+  - {fileID: 551828923}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -20878,13 +20878,13 @@ MonoBehaviour:
   boxCollider: {fileID: 629908237789431607}
   adjacentNodes:
   - {fileID: 1340664999}
-  - {fileID: 551828923}
-  - {fileID: 227576482}
+  - {fileID: 2173045378762763296}
+  - {fileID: 964612732}
+  - {fileID: 3017643195009719476}
   - {fileID: 7123751210063803355}
   - {fileID: 842891785671045046}
-  - {fileID: 2173045378762763296}
-  - {fileID: 3017643195009719476}
-  - {fileID: 964612732}
+  - {fileID: 551828923}
+  - {fileID: 227576482}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -20964,13 +20964,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 3009450540618073721}
   adjacentNodes:
-  - {fileID: 1073350100372442277}
   - {fileID: 8956259195713479435}
-  - {fileID: 8229473959558530999}
+  - {fileID: 1073350100372442277}
   - {fileID: 5984322924933975726}
-  - {fileID: 1152940059965316792}
-  - {fileID: 6404159066674465706}
+  - {fileID: 8229473959558530999}
   - {fileID: 1057170848146870489}
+  - {fileID: 6404159066674465706}
+  - {fileID: 1152940059965316792}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21207,18 +21207,18 @@ MonoBehaviour:
   boxCollider: {fileID: 2915205184817419461}
   adjacentNodes:
   - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
   - {fileID: 964612732}
+  - {fileID: 1073350100372442277}
+  - {fileID: 5984322924933975726}
   - {fileID: 768405861524909724}
-  - {fileID: 7395180947032292927}
   - {fileID: 3962313477574843673}
   - {fileID: 8749886719563596853}
   - {fileID: 8229473959558530999}
   - {fileID: 3007395139291451308}
-  - {fileID: 5984322924933975726}
-  - {fileID: 1152940059965316792}
-  - {fileID: 6404159066674465706}
+  - {fileID: 7395180947032292927}
   - {fileID: 1057170848146870489}
+  - {fileID: 6404159066674465706}
+  - {fileID: 1152940059965316792}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21526,15 +21526,15 @@ MonoBehaviour:
   boxCollider: {fileID: 3301581763785934397}
   adjacentNodes:
   - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
-  - {fileID: 7395180947032292927}
   - {fileID: 8956259195713479435}
-  - {fileID: 3007395139291451308}
-  - {fileID: 1525372065584709789}
+  - {fileID: 1073350100372442277}
   - {fileID: 5984322924933975726}
-  - {fileID: 1152940059965316792}
-  - {fileID: 6404159066674465706}
+  - {fileID: 1525372065584709789}
+  - {fileID: 3007395139291451308}
+  - {fileID: 7395180947032292927}
   - {fileID: 1057170848146870489}
+  - {fileID: 6404159066674465706}
+  - {fileID: 1152940059965316792}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21572,14 +21572,14 @@ MonoBehaviour:
   boxCollider: {fileID: 2886592015060942388}
   adjacentNodes:
   - {fileID: 2173045378762763296}
-  - {fileID: 6029987580951955817}
   - {fileID: 964612732}
-  - {fileID: 768405861524909724}
-  - {fileID: 7395180947032292927}
+  - {fileID: 6029987580951955817}
   - {fileID: 8956259195713479435}
+  - {fileID: 768405861524909724}
   - {fileID: 3962313477574843673}
   - {fileID: 8229473959558530999}
   - {fileID: 3007395139291451308}
+  - {fileID: 7395180947032292927}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21637,9 +21637,9 @@ MonoBehaviour:
   - {fileID: 8956259195713479435}
   - {fileID: 8229473959558530999}
   - {fileID: 3007395139291451308}
-  - {fileID: 1152940059965316792}
-  - {fileID: 6404159066674465706}
   - {fileID: 1057170848146870489}
+  - {fileID: 6404159066674465706}
+  - {fileID: 1152940059965316792}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21704,12 +21704,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 1543107410583027277}
   adjacentNodes:
-  - {fileID: 227576482}
   - {fileID: 842891785671045046}
+  - {fileID: 1057170848146870489}
+  - {fileID: 6404159066674465706}
   - {fileID: 4880282624964039869}
   - {fileID: 2050480457300267495}
-  - {fileID: 6404159066674465706}
-  - {fileID: 1057170848146870489}
+  - {fileID: 227576482}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21729,12 +21729,12 @@ MonoBehaviour:
   boxCollider: {fileID: 6223518843020188927}
   adjacentNodes:
   - {fileID: 842891785671045046}
-  - {fileID: 6794518956872500486}
-  - {fileID: 7922786401554665656}
-  - {fileID: 4880282624964039869}
   - {fileID: 6404159066674465706}
+  - {fileID: 6794518956872500486}
+  - {fileID: 4880282624964039869}
   - {fileID: 1333028914}
   - {fileID: 1145777094986475455}
+  - {fileID: 7922786401554665656}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21790,15 +21790,15 @@ MonoBehaviour:
   boxCollider: {fileID: 3968598798965780703}
   adjacentNodes:
   - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
   - {fileID: 964612732}
-  - {fileID: 768405861524909724}
   - {fileID: 8956259195713479435}
+  - {fileID: 1073350100372442277}
+  - {fileID: 768405861524909724}
+  - {fileID: 3523349825729077911}
+  - {fileID: 1525372065584709789}
   - {fileID: 3962313477574843673}
   - {fileID: 8749886719563596853}
   - {fileID: 8229473959558530999}
-  - {fileID: 3523349825729077911}
-  - {fileID: 1525372065584709789}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21834,9 +21834,9 @@ MonoBehaviour:
   adjacentNodes:
   - {fileID: 1340664999}
   - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
-  - {fileID: 3017643195009719476}
   - {fileID: 964612732}
+  - {fileID: 3017643195009719476}
+  - {fileID: 1073350100372442277}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21870,18 +21870,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 5277619338123518797}
   adjacentNodes:
-  - {fileID: 1340664999}
-  - {fileID: 551828923}
-  - {fileID: 227576482}
   - {fileID: 7714831525732752721}
-  - {fileID: 7123751210063803355}
-  - {fileID: 6794518956872500486}
+  - {fileID: 1340664999}
   - {fileID: 2173045378762763296}
-  - {fileID: 3017643195009719476}
   - {fileID: 964612732}
+  - {fileID: 3017643195009719476}
+  - {fileID: 7123751210063803355}
+  - {fileID: 6404159066674465706}
+  - {fileID: 6794518956872500486}
   - {fileID: 4880282624964039869}
   - {fileID: 2050480457300267495}
-  - {fileID: 6404159066674465706}
+  - {fileID: 551828923}
+  - {fileID: 227576482}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -21984,11 +21984,11 @@ MonoBehaviour:
   boxCollider: {fileID: 45350904432474890}
   adjacentNodes:
   - {fileID: 8956259195713479435}
+  - {fileID: 5984322924933975726}
   - {fileID: 8229473959558530999}
   - {fileID: 3007395139291451308}
-  - {fileID: 5984322924933975726}
-  - {fileID: 6404159066674465706}
   - {fileID: 1057170848146870489}
+  - {fileID: 6404159066674465706}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -22120,8 +22120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 7413441274093305646}
   adjacentNodes:
-  - {fileID: 6297394752683630399}
   - {fileID: 768405861524909724}
+  - {fileID: 6297394752683630399}
   - {fileID: 5483076806763574868}
   - {fileID: 1145777094986475455}
   radius: 100
@@ -22160,14 +22160,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 4852623314605554566}
   adjacentNodes:
-  - {fileID: 7395180947032292927}
-  - {fileID: 3962313477574843673}
-  - {fileID: 8749886719563596853}
   - {fileID: 1525372065584709789}
   - {fileID: 3320169909101754271}
-  - {fileID: 7922786401554665656}
+  - {fileID: 3962313477574843673}
+  - {fileID: 8749886719563596853}
+  - {fileID: 7395180947032292927}
   - {fileID: 4880282624964039869}
   - {fileID: 1333028914}
+  - {fileID: 7922786401554665656}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -22560,17 +22560,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxCollider: {fileID: 3057380301287268339}
   adjacentNodes:
-  - {fileID: 842891785671045046}
-  - {fileID: 6794518956872500486}
-  - {fileID: 3962313477574843673}
-  - {fileID: 8749886719563596853}
   - {fileID: 3523349825729077911}
   - {fileID: 1525372065584709789}
   - {fileID: 3320169909101754271}
-  - {fileID: 7922786401554665656}
-  - {fileID: 2050480457300267495}
+  - {fileID: 3962313477574843673}
+  - {fileID: 8749886719563596853}
+  - {fileID: 842891785671045046}
   - {fileID: 6404159066674465706}
+  - {fileID: 6794518956872500486}
   - {fileID: 1333028914}
+  - {fileID: 2050480457300267495}
+  - {fileID: 7922786401554665656}
   radius: 100
   layerMask:
     serializedVersion: 2
@@ -22608,17 +22608,17 @@ MonoBehaviour:
   boxCollider: {fileID: 6664469446212982187}
   adjacentNodes:
   - {fileID: 2173045378762763296}
-  - {fileID: 1073350100372442277}
   - {fileID: 964612732}
-  - {fileID: 6297394752683630399}
-  - {fileID: 7395180947032292927}
   - {fileID: 8956259195713479435}
-  - {fileID: 3962313477574843673}
-  - {fileID: 8749886719563596853}
+  - {fileID: 1073350100372442277}
+  - {fileID: 6297394752683630399}
   - {fileID: 1525372065584709789}
   - {fileID: 5483076806763574868}
-  - {fileID: 5724920570659418791}
+  - {fileID: 3962313477574843673}
+  - {fileID: 8749886719563596853}
+  - {fileID: 7395180947032292927}
   - {fileID: 1145777094986475455}
+  - {fileID: 5724920570659418791}
   radius: 100
   layerMask:
     serializedVersion: 2
