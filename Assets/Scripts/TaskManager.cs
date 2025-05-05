@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Diagnostics; // Add this using directive for Stopwatch
+using System.Diagnostics;
 using UnityEngine;
 
 public class TaskManager : MonoBehaviour
@@ -19,7 +19,6 @@ public class TaskManager : MonoBehaviour
         instance = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         // Initialize tasks
@@ -33,7 +32,6 @@ public class TaskManager : MonoBehaviour
         TimeTaskAssignment();
     }
 
-    // Function to initialize tasks
     private void InitializeTasks()
     {
         tasks.Add(new Task("Deliver Coffee", 10f, 'D', new Vector2(38f, 40f), new Vector2(15.5f, 0f), 1));
@@ -67,7 +65,6 @@ public class TaskManager : MonoBehaviour
         UnityEngine.Debug.Log($"Task assignment took {elapsedNanoseconds:0.##} ns.");
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (StrikesDisplay.instance.activeStrikes == 3)

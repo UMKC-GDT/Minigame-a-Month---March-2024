@@ -18,7 +18,7 @@ namespace BehaviorTree {
             blackboard = bb;
         }
 
-        public override NodeState Tick() {
+        protected override NodeState OnTick() {
             if (blackboard == null || blackboard.enemy == null || blackboard.agent == null)
                 return NodeState.Failure;
 

@@ -3,7 +3,7 @@ using UnityEngine;
 namespace BehaviorTree {public class SequenceNode : BTNode {
     public SequenceNode(Vector2 position) : base(position) { }
 
-    public override NodeState Tick() {
+    protected override NodeState OnTick() {
         foreach (var child in children) {
             var result = child.Tick();
             if (result == NodeState.Failure) return NodeState.Failure;

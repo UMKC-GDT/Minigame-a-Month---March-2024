@@ -12,7 +12,7 @@ public class HasEnemyBeenGrabbed : BTNode {
     // blackboard will be assigned later at runtime
     }
 
-    public override NodeState Tick() {
+    protected override NodeState OnTick() {
         return blackboard.enemyGrabbed ? NodeState.Success : NodeState.Failure;
     }
 }

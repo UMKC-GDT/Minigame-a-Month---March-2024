@@ -1,19 +1,34 @@
-using System;
 using System.Collections.Generic;
 using BehaviorTree;
 using UnityEngine;
+using System.Linq;
+using System;
 
 public class BossAgent : MonoBehaviour {
     public BehaviorTreeAsset treeAsset;
-    private BTNode root;
+    public Graph graph;
+    public GameObject player;
+    public GameObject hand;
+    public Node doorNode;
+    public float grabRange = 3f;
+
     private Blackboard blackboard;
+    private BTNode root;
 
     void Start() {
+        // Setup shared data
         blackboard = new Blackboard {
             agent = this.transform,
-            enemy = GameObject.FindWithTag("Enemy"),
-            enemyGrabbed = false
+            enemy = player,
+            hand = hand,
+            door = doorNode,
+            grabRange = 2.1f,
+            arrivalRange = 2.0f,
+            moveSpeed = 10f,
+            enemyGrabbed = false,
+            graph = graph
         };
+
 
         root = BuildTreeFromAsset(treeAsset);
     }
@@ -25,18 +40,15 @@ public class BossAgent : MonoBehaviour {
     BTNode BuildTreeFromAsset(BehaviorTreeAsset asset) {
         List<BTNode> builtNodes = new List<BTNode>();
 
-        // First pass: create nodes
+        // First pass: create node instances
         foreach (var data in asset.nodes) {
-            Type nodeType = Type.GetType("BehaviorTree." + data.typeName);
-            if (nodeType == null) {
-                Debug.LogError($"Node type {data.typeName} not found");
-                continue;
-            }
+            Type nodeType = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(a => a.GetTypes())
+                .FirstOrDefault(t => t.Name == data.typeName && typeof(BTNode).IsAssignableFrom(t));
 
             BTNode node = null;
 
-            // Create node and pass blackboard if needed
-            if (typeof(BTNode).IsAssignableFrom(nodeType)) {
+            if (nodeType != null) {
                 var constructor = nodeType.GetConstructor(new[] { typeof(Vector2), typeof(Blackboard) });
                 if (constructor != null)
                     node = (BTNode)constructor.Invoke(new object[] { data.position, blackboard });
@@ -44,14 +56,17 @@ public class BossAgent : MonoBehaviour {
                     node = (BTNode)Activator.CreateInstance(nodeType, data.position);
             }
 
+            if (node == null)
+                Debug.LogWarning($"Could not create node: {data.typeName}");
+
             builtNodes.Add(node);
         }
 
-        // Second pass: link children
-        for (int i = 0; i < builtNodes.Count; i++) {
-            var nodeData = asset.nodes[i];
-            foreach (var childIndex in nodeData.childrenIndices) {
-                builtNodes[i].AddChild(builtNodes[childIndex]);
+        // Second pass: hook up children
+        for (int i = 0; i < asset.nodes.Count; i++) {
+            foreach (int childIndex in asset.nodes[i].childrenIndices) {
+                if (childIndex >= 0 && childIndex < builtNodes.Count)
+                    builtNodes[i].AddChild(builtNodes[childIndex]);
             }
         }
 

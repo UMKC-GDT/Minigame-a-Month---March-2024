@@ -14,29 +14,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - typeName: RootNode
-    position: {x: 440, y: 175}
-    childrenIndices: 02000000
-  - typeName: SequenceNode
-    position: {x: 138, y: 360}
-    childrenIndices: 0300000004000000
+    position: {x: 660, y: 140}
+    childrenIndices: 01000000
   - typeName: SelectorNode
-    position: {x: 442, y: 263}
-    childrenIndices: 010000000500000008000000
+    position: {x: 660, y: 200}
+    childrenIndices: 040000000200000007000000
+  - typeName: SequenceNode
+    position: {x: 660, y: 260}
+    childrenIndices: 0300000006000000
   - typeName: IsEnemyWithinRange
-    position: {x: 39, y: 428}
+    position: {x: 580, y: 320}
+    childrenIndices: 
+  - typeName: SequenceNode
+    position: {x: 320, y: 260}
+    childrenIndices: 050000000d000000
+  - typeName: HasEnemyBeenGrabbed
+    position: {x: 240, y: 320}
     childrenIndices: 
   - typeName: Grab
-    position: {x: 217, y: 429}
+    position: {x: 740, y: 320}
+    childrenIndices: 
+  - typeName: SelectorNode
+    position: {x: 1060, y: 260}
+    childrenIndices: 0800000009000000
+  - typeName: SequenceNode
+    position: {x: 980, y: 320}
+    childrenIndices: 0a0000000b0000000c000000
+  - typeName: MoveToTarget
+    position: {x: 1140, y: 320}
+    childrenIndices: 
+  - typeName: FindPathToEnemy
+    position: {x: 900, y: 380}
+    childrenIndices: 
+  - typeName: IsNextNodeCloserThanEnemy
+    position: {x: 980, y: 440}
+    childrenIndices: 
+  - typeName: MoveAlongPath
+    position: {x: 1060, y: 380}
     childrenIndices: 
   - typeName: SequenceNode
-    position: {x: 436, y: 427}
-    childrenIndices: 0600000007000000
-  - typeName: HasEnemyBeenGrabbed
-    position: {x: 357, y: 493}
+    position: {x: 400, y: 320}
+    childrenIndices: 0e0000000f000000
+  - typeName: FindPathToEnemy
+    position: {x: 320, y: 380}
     childrenIndices: 
-  - typeName: ReturnToOffice
-    position: {x: 525, y: 496}
-    childrenIndices: 
-  - typeName: MoveToTarget
-    position: {x: 765, y: 361}
+  - typeName: MoveAlongPath
+    position: {x: 480, y: 380}
     childrenIndices: 

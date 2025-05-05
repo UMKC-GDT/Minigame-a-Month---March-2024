@@ -1,11 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace BehaviorTree {
-    public class Blackboard {
-        public GameObject enemy;
-        public bool enemyGrabbed;
-        public Transform agent;
-        public float visionRange = 10f;
-        public float grabRange = 5f;
-    }
+public class Blackboard {
+    // References
+    public Transform agent;
+    public GameObject enemy;
+    public GameObject hand;
+    public Node door;
+
+    // Pathfinding
+    public Graph graph;
+    public List<Node> currentPath;
+
+    // Behavior Variables
+    public float moveSpeed = 50f;
+    public float grabRange;
+    public float arrivalRange;
+    public bool enemyGrabbed;
+}
 }

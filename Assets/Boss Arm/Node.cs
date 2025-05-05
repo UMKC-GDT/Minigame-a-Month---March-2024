@@ -7,8 +7,8 @@ public class Node : MonoBehaviour
 {
     public BoxCollider2D boxCollider;
     public List<GameObject> adjacentNodes;
-    public float radius = 5f; // Radius of the circle cast
-    public LayerMask layerMask; // Layer mask to filter out unwanted hits
+    public float radius = 5f;
+    public LayerMask layerMask;
 
     public void FindAdjacentNodes()
     {

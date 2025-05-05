@@ -18,8 +18,14 @@ public class Grab : BTNode {
         blackboard = bb;
     }
 
-    public override NodeState Tick() {
+    protected override NodeState OnTick() {
         if (blackboard == null || blackboard.enemy == null)
+            return NodeState.Failure;
+
+        float dist = Vector3.Distance(blackboard.hand.transform.position, blackboard.enemy.transform.position);
+        Debug.Log($"[Grab] Distance to enemy: {dist}, GrabRange: {blackboard.grabRange}");
+
+        if (dist > blackboard.grabRange)
             return NodeState.Failure;
 
         blackboard.enemyGrabbed = true;

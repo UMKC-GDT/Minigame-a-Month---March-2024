@@ -4,7 +4,7 @@ namespace BehaviorTree {
     public class SelectorNode : BTNode {
     public SelectorNode(Vector2 position) : base(position) { }
 
-    public override NodeState Tick() {
+    protected override NodeState OnTick() {
         foreach (var child in children) {
             var result = child.Tick();
             if (result == NodeState.Success) return NodeState.Success;

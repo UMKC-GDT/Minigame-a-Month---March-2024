@@ -10,6 +10,7 @@ public class BTEditorWindow : EditorWindow {
     private BTNode draggedNode = null;
     private Vector2 dragOffset;
 
+    const int gridSize = 20;
     private BTNode selectedParentNode = null;
 
     private BehaviorTreeAsset currentTree;
@@ -23,16 +24,13 @@ public class BTEditorWindow : EditorWindow {
     static void OpenWindow() => GetWindow<BTEditorWindow>("Behavior Tree");
 
     void OnGUI() {
+        DrawConnections();
+        DrawNodes();
         GUILayout.BeginHorizontal();
         if (GUILayout.Button("Save Tree")) SaveTree();
         if (GUILayout.Button("Load Tree")) LoadTree();
         GUILayout.EndHorizontal();
 
-        //DrawGrid(20, 0.2f, Color.gray);
-        //DrawGrid(100, 0.4f, Color.gray);
-
-        DrawNodes();
-        DrawConnections();
         ProcessEvents(Event.current);
 
         if (GUI.changed) Repaint();
@@ -40,25 +38,37 @@ public class BTEditorWindow : EditorWindow {
 
     void DrawNodes() {
         foreach (var node in nodes) {
-            // Create custom style
-            GUIStyle style = new GUIStyle(GUI.skin.box);
-            style.alignment = TextAnchor.MiddleCenter;
-            style.normal.textColor = Color.white;
-            style.fontStyle = FontStyle.Bold;
+            // Style
+            GUIStyle style = new GUIStyle(GUI.skin.box) {
+                alignment = TextAnchor.MiddleCenter,
+                fontStyle = FontStyle.Bold,
+                fontSize = 14,
+                normal = { textColor = Color.white }
+            };
 
-            // Background color (temporary)
-            GUI.color = (node == selectedParentNode) ? Color.cyan : new Color(0.25f, 0.25f, 0.25f);
+            // Default color
+            Color color = new Color(0.2f, 0.2f, 0.2f);
 
+            // Type-based coloring
+            string typeName = node.GetType().Name;
+            if (typeName == "IsEnemyWithinRange" || typeName == "IsEnemyVisible" || typeName == "HasEnemyBeenGrabbed" || typeName == "IsNextNodeCloserThanEnemy") color = new Color(0.2f, 0.4f, 1f);
+            else if (typeName.Contains("Action") || typeName == "Grab" || typeName == "MoveToTarget" || typeName == "FindPathToEnemy" || typeName == "ReturnToOffice" || typeName == "MoveAlongPath") color = new Color(1f, 0.3f, 0.3f);
+            else if (typeName.Contains("Selector") || typeName.Contains("Sequence") || typeName.Contains("Invert")) color = new Color(1f, 0.5f, 0.2f);
+
+            if (node == selectedParentNode)
+                color = Color.cyan;
+
+            EditorGUI.DrawRect(node.rect, color);
+            GUI.color = Color.white;
             GUI.Box(node.rect, node.title, style);
         }
-
-        GUI.color = Color.white; // Reset after drawing
     }
 
     void ProcessEvents(Event e) {
         switch (e.type) {
             case EventType.MouseDown:
                 if (e.button == 0) {
+                    drag = Vector2.zero;
                     // Left click — try to start dragging a node
                     draggedNode = GetNodeAtPosition(e.mousePosition);
                     if (draggedNode != null)
@@ -73,13 +83,17 @@ public class BTEditorWindow : EditorWindow {
                     draggedNode = null;
                 break;
 
+            // In ProcessEvents (individual node drag)
             case EventType.MouseDrag:
                 if (e.button == 0) {
                     if (draggedNode != null) {
-                        draggedNode.rect.position = e.mousePosition - dragOffset;
+                        Vector2 newPos = e.mousePosition - dragOffset;
+                        newPos.x = Mathf.Round(newPos.x / gridSize) * gridSize;
+                        newPos.y = Mathf.Round(newPos.y / gridSize) * gridSize;
+                        draggedNode.rect.position = newPos;
                         GUI.changed = true;
                     } else {
-                        OnDrag(e.delta); // Pan view if not dragging a node
+                        OnDrag(e.delta);
                     }
                 }
                 break;
@@ -87,13 +101,28 @@ public class BTEditorWindow : EditorWindow {
     }
 
     void OnDrag(Vector2 delta) {
-        drag = delta;
-        for (int i = 0; i < nodes.Count; i++) {
-            nodes[i].rect.position += delta;
+        drag += delta;
+
+        Vector2 snap = Vector2.zero;
+
+        if (Mathf.Abs(drag.x) >= gridSize) {
+            snap.x = Mathf.Floor(drag.x / gridSize) * gridSize;
+            drag.x -= snap.x;
         }
-        GUI.changed = true;
+
+        if (Mathf.Abs(drag.y) >= gridSize) {
+            snap.y = Mathf.Floor(drag.y / gridSize) * gridSize;
+            drag.y -= snap.y;
+        }
+
+        if (snap != Vector2.zero) {
+            foreach (var node in nodes) {
+                node.rect.position += snap;
+            }
+            GUI.changed = true;
+        }
     }
-    
+
     void DrawConnections() {
         foreach (var parent in nodes) {
             foreach (var child in parent.children) {
