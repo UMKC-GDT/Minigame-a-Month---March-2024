@@ -15,7 +15,7 @@ public class BossAgent : MonoBehaviour {
 
     private Blackboard blackboard;
     private BTNode root;
-
+    public GameObject dialogBox;
     public UnityEvent onStartChasingPlayer;
     public UnityEvent onGrabPlayer;
     public UnityEvent onReturnToDoor;
@@ -39,11 +39,21 @@ public class BossAgent : MonoBehaviour {
         root = BuildTreeFromAsset(treeAsset);
     }
 
-    void FixedUpdate() {
+    void Update() {
         root?.Tick();
-        if(blackboard.enemyGrabbed && PlayerController.instance.isPaused == false) {
-            PlayerController.instance.pauseControls();
-            PlayerController.instance.gameObject.transform.SetParent(transform);
+        if(blackboard.enemyGrabbed) {
+            if(dialogBox.activeInHierarchy) {
+                dialogBox.SetActive(false);
+                PlayerController.instance.gameObject.transform.SetParent(transform);
+            }
+            else {
+                PlayerController.instance.pauseControls();
+                PlayerController.instance.gameObject.transform.SetParent(transform);
+            }
+            onGrabPlayer.Invoke();
+        }
+        if(blackboard.currentTarget == blackboard.door.gameObject && Vector3.Distance(blackboard.currentTarget.transform.position, blackboard.hand.transform.position) < 0.1f) {
+            onReturnToDoor.Invoke();
         }
     }
 

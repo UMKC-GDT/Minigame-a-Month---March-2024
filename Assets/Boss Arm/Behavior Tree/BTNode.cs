@@ -14,9 +14,9 @@ public abstract class BTNode {
     }
 
     public NodeState Tick() {
-        Debug.Log($"[BTNode] {title} starting Tick()");
+        // Debug.Log($"[BTNode] {title} starting Tick()");
         var result = OnTick();
-        Debug.Log($"[BTNode] {title} returned: {result}");
+        // Debug.Log($"[BTNode] {title} returned: {result}");
         return result;
     }
 
