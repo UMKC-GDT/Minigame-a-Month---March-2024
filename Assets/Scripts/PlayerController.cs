@@ -85,13 +85,11 @@ public class PlayerController : MonoBehaviour
 
     public void pauseControls()
     {
-
         isPaused = true;
     }
 
     public void playControls()
     {
-
         isPaused = false;
     }
 

@@ -3,7 +3,7 @@ using BehaviorTree;
 using UnityEngine;
 using System.Linq;
 using System;
-using UnityEditor.IMGUI.Controls;
+using UnityEngine.Events;
 
 public class BossAgent : MonoBehaviour {
     public BehaviorTreeAsset treeAsset;
@@ -16,6 +16,11 @@ public class BossAgent : MonoBehaviour {
     private Blackboard blackboard;
     private BTNode root;
 
+    public UnityEvent onStartChasingPlayer;
+    public UnityEvent onGrabPlayer;
+    public UnityEvent onReturnToDoor;
+
+
     void Start() {
         // Setup shared data
         blackboard = new Blackboard {
@@ -26,17 +31,20 @@ public class BossAgent : MonoBehaviour {
             door = doorNode,
             grabRange = 2.1f,
             arrivalRange = 2.0f,
-            moveSpeed = 10f,
+            moveSpeed = 20f,
             enemyGrabbed = false,
             graph = graph
         };
 
-
         root = BuildTreeFromAsset(treeAsset);
     }
 
-    void Update() {
+    void FixedUpdate() {
         root?.Tick();
+        if(blackboard.enemyGrabbed && PlayerController.instance.isPaused == false) {
+            PlayerController.instance.pauseControls();
+            PlayerController.instance.gameObject.transform.SetParent(transform);
+        }
     }
 
     BTNode BuildTreeFromAsset(BehaviorTreeAsset asset) {
